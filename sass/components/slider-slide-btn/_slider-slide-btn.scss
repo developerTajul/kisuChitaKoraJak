@@ -1,0 +1,30 @@
+.slider-arrow-btn.prev-btn.slick-arrow {
+    position: absolute;
+    bottom: 10px;
+    z-index: 11;
+    left: 6px;
+    width: 46px;
+    height: 46px;
+    color: #ffffff;
+    background: #131313;
+    @include transition;
+    &:hover{
+        background: #EDBC5A;
+    }
+
+
+}
+.slider-arrow-btn.next-btn.slick-arrow {
+    position: absolute;
+    bottom: 10px;
+    z-index: 11;
+    left: 56px;
+    width: 46px;
+    height: 46px;
+    color: #ffffff;
+    background: #131313;
+    @include transition;
+    &:hover{
+        background: #EDBC5A;
+    }
+}  

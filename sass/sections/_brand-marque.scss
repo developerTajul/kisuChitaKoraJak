@@ -1,0 +1,46 @@
+// Brand Marquee section
+// home-1-marque-star
+.brand-marquee-area{
+    &-shape{
+        position: absolute;
+        top: 99px;
+        right: 80px;
+    }
+    .brand-marquee-section {
+        overflow: hidden;
+        gap: 40px;
+        & .brand-marquee-wrapper {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 50px;
+    
+          &.first-brand-marquee{
+            animation: Scroll 32s linear infinite;
+          }
+          &.second-brand-marquee{
+            animation: Scroll 32s linear infinite;
+            animation-direction: reverse;
+          }
+        }
+        & .single-brand-marquee {
+          & .brand-marquee-title-one {
+            font-size: 250px;
+            letter-spacing: 12.5px;
+            white-space: nowrap;
+            
+          }
+          & .brand-marquee-title-two {
+            -webkit-text-stroke-width: 1px;
+            -webkit-text-stroke-color: rgba(255, 255, 255, 0.40);
+            color: transparent;
+            font-size: 250px;
+            letter-spacing: 7.5px;
+            margin-top: -3.2%;
+            white-space: nowrap;
+          }
+        }
+    }
+}
+
+// home-1-marque-End

@@ -1,0 +1,11 @@
+.bg-light-color {
+  position: absolute;
+  width: 376px;
+  height: 376px;
+  left: 1494px;
+  top: 50px;
+  background: rgba(237, 188, 90, 0.7);
+  -webkit-filter: blur(200px);
+          filter: blur(200px);
+  z-index: 11;
+}/*# sourceMappingURL=background-light-color.css.map */

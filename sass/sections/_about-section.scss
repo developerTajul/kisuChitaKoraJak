@@ -1,0 +1,28 @@
+
+.about-area{
+    &-heading-part{
+        & a {
+            width: 82px;
+            height: 82px;
+            background: #EDBC5A;
+            border-radius: 50%;
+            line-height: 78px;
+        }
+        & span {
+            font-family: Gilroy-Light;
+        }
+    }
+}
+
+
+
+.about-area-main-part {
+    background: #1A1717;
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+
+
+

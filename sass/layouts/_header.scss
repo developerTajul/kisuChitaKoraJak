@@ -1,0 +1,26 @@
+
+.header-area{
+  background:#131313;
+  &-main-menu{
+    & li{
+      margin-right: 80px;
+      padding: 57px 0;
+      line-height: normal;
+      list-style: none;
+      & a{
+      color: #fff;
+      color: var(--White, #FFF);
+      font-family: Gilroy-SemiBold;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      display: inline-block;
+      }
+    }
+  }
+  
+}
+
+  
+

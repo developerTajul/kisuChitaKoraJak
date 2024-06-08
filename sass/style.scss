@@ -1,0 +1,71 @@
+ /**
+ * Stylesheet:  style.css
+ * Theme:       Luxelife - Architecture & Interior Design HTML5 Template
+ * Version:     1.0
+ * Author:     	MonPakhi
+ * 
+ */
+/* Table of contents
+=========================
+1.Preloader
+2.Scrollup
+3.Nav Menu
+4.Slider Section
+5.Info Card
+6.Icon Card
+7.About Image Card
+8.About Info Card
+9.Counter Card
+10.Process Step Card
+11.Testimonial Card
+12.Accordion Card
+13.Client Logo Card
+14.Post Card
+15.Skill Progress Card
+16.Price Card
+17.Call To Action Card
+18.Title Card
+19.Breadcrumb
+20.Pagination's
+21.Project Details Page
+22.Sidebar
+23.Comment List
+24.Comment Form
+25.Team Member
+26.Portfolio
+27.About Page
+28.Contact Page
+29.Service Page
+30.Team Page
+Footer
+
+
+===========================*/
+/* Theme Default CSS */
+@import "./base/mixins";
+@import "./base/variables"; 
+@import "./base/theme-default";
+@import "./base/default-spacing";
+@import "./base/typography";
+@import "./base/keyframes";
+@import "./base/colors";
+@import "./base/unittest";
+@import "./base/common";
+
+// COMPONENTS 
+@import"./components/section-title/section-title";
+@import"./components/background-light-color/background-light-color";
+@import"./components/slider-slide-btn/slider-slide-btn";
+@import"./components/title-border/title-border.scss";
+@import"./components/section-card/section-card";
+
+// SECTIONS
+@import"./sections/hero-section";
+@import"./sections/brand-marque";
+@import"./sections/why-choose-us";
+@import"./sections/about-section";
+
+
+// LAYOUTS
+@import "./layouts/header";
+@import "./layouts/footer";
