@@ -1,0 +1,51 @@
+
+.blog-area{
+    @include xl{
+        padding-bottom: 20px;
+    }
+    &-card{
+        &:hover{
+            p{
+                display: block;
+                visibility: visible;
+                
+            }
+        }
+    }
+    &-card-wrapper{
+        span {
+            color: #B0B0B0;
+            display: block;
+        }
+        h5 {
+            color: #ffffff;
+            @include lg{
+                font-size: 16px;
+            }
+        }
+        p{
+            display: none;
+            visibility: hidden;
+            @include transition;
+            @include lg{
+                font-size: 12px;
+            }
+        }
+    }
+    &-icone-img{
+        position: absolute;
+        right: 20px;
+        bottom: -26px;
+        a {
+            height: 52px;
+            width: 52px;
+            background: #EDBC5A;
+            display: block;
+            text-align: center;
+            line-height: 52px;
+            border-radius: 50%;
+        }
+    }
+}
+
+

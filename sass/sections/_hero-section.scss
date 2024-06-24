@@ -1,35 +1,140 @@
 .hero-area{
-    background: #131313;
-    &-title{
-        &-one{
-             & span{
-                -webkit-text-stroke-width: 1px;
-                -webkit-text-stroke-color: #FFF;
-                color: transparent;
-            }
+    &::after{
+        content: "";
+        position: absolute;
+        width: 376px;
+        height: 376px;
+        right: 50px;
+        top: 50px;
+        background: rgba(237, 188, 90, 0.70);;
+        filter: blur(200px);
+        z-index: 5;
+        animation: zoomInOut 5s 2s infinite;
+      }
+    &-bg-one {
+        top: 3px;
+        left: 2px;
+        @include xl{
+            opacity: .3;
         }
-        &-two{
-            color: var(--White, #FFF);
-            font-family: Gilroy-Light;
-            font-size: 100px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 150%;
-            letter-spacing: 70px;
-            text-transform: uppercase;
+        @include lg{
+            opacity: .3;
         }
     }
-    &-block-shape{
-        width: 498px;
-        height: 543px;
+    &-bg-four{
+        right: 340px;
+        bottom: 325px;
+        @include rmaxwd(1550){
+            right: 15%;
+        }
+        @include lg{
+            right: 5%;
+        }
+    }
+    &-bg-block-shape{
         top: 0;
-        right: 106px;
+        right: 100px;
+        z-index: 11;
+        @include rmaxwd(1700){
+            max-width: 50%;
+            max-height: 50%;
+        }
+        @include rmaxwd(1500){
+            max-width: 45%;
+            max-height: 45%;
+
+        }
+        @include xl{
+            max-width: 35%;
+            max-height: 35%;
+            right: 65px;
+        }
+        @include lg{
+           display: none;
+           visibility: hidden;
+        }
+    }
+    &-title-one{
+        @include xl{
+            font-size: 120px;
+        }
+        & span{
+           -webkit-text-stroke-width: 1px;
+           -webkit-text-stroke-color: #FFF;
+           color: transparent;
+           &::before{
+                content: "";
+                width: 149px;
+                height: 132px; 
+                background: url(../../images/shape/hero-1-super-toroid-black-matte-2.png) no-repeat 100% 100%;
+                position: absolute;
+                right: 570px;
+                top: 0;
+                z-index: -1;
+                animation: rotated_circle 30s infinite;
+                
+                @include xl{
+                    right: 470px;
+                }
+                @include lg{
+                    right: 200px;
+                }
+           }
+           &::after{
+                content: "";
+                width: 180px;
+                height: 156px;
+                background: url(../../images/shape/hero-1-element-3.png) no-repeat 100% 100%;
+                position: absolute;
+                right: 350px;
+                top: 56px;
+                z-index: -1;
+                @include xl{
+                    right: 284px;
+                    top: 38px;
+                }
+                @include lg{
+                    right: -10px;
+                }
+           }
+       }
+   }
+   &-title-two{
+       color: var(--White, #FFF);
+       font-family: Gilroy-Light;
+       font-size: 100px;
+       font-style: normal;
+       font-weight: 400;
+       line-height: 150%;
+       letter-spacing: 70px;
+       text-transform: uppercase;
+       @include xl{
+        font-size: 65px;
+    }
+   }
+    &-slider-wrapper{
+        margin-top: -54px;
+        @include xl{
+            margin-top: -35px;
+        }
     }
     &-slider-img{
         width: 1278px;
         height: auto;
-        margin-top: -53px;
         overflow: hidden;
+        @include rmaxwd(1800){
+            width: 1100px;
+        }
+        @include rmaxwd(1600){
+            width: 978px;
+        }
+        @include rmaxwd(1500){
+            width: 930px;
+        }
+        @include xl{
+            width: 820px;
+        }
+        
     }
     &-slider-text{
         bottom: 140px;
@@ -46,10 +151,37 @@
         }
     }
     &-author-Wrapper{
-            margin-top: 375px;
+        margin-top: 375px;
+        @include lg{
+            visibility: hidden;
+        }
+        p{
+            @include xl{
+                font-size: 13px;
+            }
+        }
+        @include rmaxwd(1818){
+            padding-left: 70px;
+        }
+        @include rmaxwd(1800){
+            
+            padding-left: 30px;
+            margin-top: 250px;
+        }
+        @include rmaxwd(1650){
+            
+            padding-left: 20px;
+            padding-right: 20px;
+            margin-top: 200px;
+        }
+        @include xl{
+            margin-top: 181px;
+        }
+
     }
     
     &-author-text{
+
         & h5{
             color: #FFF;
             font-family: Rubik;
@@ -70,23 +202,7 @@
 }
 
                                         
-// body{
-//     background: #131313;
-// }
 
-.hero-area-bg-four{
-	right: 340px;
-	bottom: 325px;
-}
-.hero-area-bg-three {
-	right: 650px;
-	top: 45px;
-}
-.hero-area-bg-two{
-	right: 874px;
-	top: 0px;
-}
-.hero-area-bg-one.p-absolute {
-	top: 3px;
-	left: 2px;
-}
+
+
+

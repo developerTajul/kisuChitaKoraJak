@@ -1,5 +1,27 @@
 .section-title{
     &.style-1{
+        & h2{
+            @include lg{
+                font-size: 35px;
+            }
+        }
+        span{
+            color:#EDBC5A;
+            font-weight: 300;
+            letter-spacing: 3.52px;
+            text-transform: uppercase;
+            display: block;
+        }
+    }
+}
+.section-title{
+    &.style-2{
+        text-align: center;
+        & h2{
+            @include lg{
+                font-size: 35px;
+            }
+        }
         span{
             color:#EDBC5A;
             font-weight: 300;

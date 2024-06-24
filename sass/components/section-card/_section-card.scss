@@ -1,7 +1,10 @@
 .card-wrapper{
     &.style-1 {
-	border: 1px solid #262626;
-    padding: 42px 20px 18px 30px;
+        border: 1px solid #262626;
+        padding: 42px 30px 18px 30px;
+        @include lg{
+            padding: 42px 20px 18px 30px;
+        }
         & .card-text{
             h3 {
                 color: #FFF;
@@ -10,6 +13,10 @@
                 font-style: normal;
                 margin-bottom: 28px;
             }
+            p{
+                visibility: hidden;
+                @include transition;
+            }
         }
         & .card-content{
             & a {
@@ -19,6 +26,7 @@
                 display: inline-block;
                 border-radius: 50%;
                 text-align: center;
+                @include transition;
             }
             & span {
                 -webkit-text-stroke-width: 1px;
@@ -28,27 +36,26 @@
                 font-weight: 400;
                 line-height: normal;
                 color: transparent;
+                @include transition;
             }
         }
     }
     &:hover{
+        & .card-text{
+            p{
+                visibility: visible;
+            }
+        }
         & .card-content{
             & a {
-                width: 32px;
-                height: 32px;
-                background: #333;
-                display: inline-block;
-                border-radius: 50%;
-                text-align: center;
+                width: 42px;
+                height: 42px;
+                background: #EDBC5A;
+                line-height: 38px;
+                
             }
             & span {
-                -webkit-text-stroke-width: 1px;
-                -webkit-text-stroke-color: rgba(255, 255, 255, 0.15);
-                font-family: Gilroy-Medium;
-                font-size: 50px;
-                font-weight: 400;
-                line-height: normal;
-                color: transparent;
+                color: #EDBC5A;
             }
         }
     }

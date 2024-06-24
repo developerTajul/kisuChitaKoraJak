@@ -51,6 +51,7 @@ Footer
 @import "./base/colors";
 @import "./base/unittest";
 @import "./base/common";
+@import "./base/breakpoints";
 
 // COMPONENTS 
 @import"./components/section-title/section-title";
@@ -58,14 +59,25 @@ Footer
 @import"./components/slider-slide-btn/slider-slide-btn";
 @import"./components/title-border/title-border.scss";
 @import"./components/section-card/section-card";
+@import"./components/dropdown-menu/dropdown-menu";
 
 // SECTIONS
 @import"./sections/hero-section";
-@import"./sections/brand-marque";
-@import"./sections/why-choose-us";
+@import"./sections/text-marque-section";
+@import"./sections/gallery";
 @import"./sections/about-section";
+@import"./sections/portfolio-section";
+@import"./sections/why-choose-us-section";
+@import"./sections/team-section";
+@import"./sections/video-popup-section";
+@import"./sections/testimonial-section";
+@import"./sections/brand-marque";
+
 
 
 // LAYOUTS
 @import "./layouts/header";
+@import"./layouts/blog-news-section";
 @import "./layouts/footer";
+
+

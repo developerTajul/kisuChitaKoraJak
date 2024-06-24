@@ -1,30 +1,61 @@
-.slider-arrow-btn.prev-btn.slick-arrow {
-    position: absolute;
-    bottom: 10px;
-    z-index: 11;
-    left: 6px;
-    width: 46px;
-    height: 46px;
-    color: #ffffff;
-    background: #131313;
-    @include transition;
-    &:hover{
-        background: #EDBC5A;
+
+.hero-area{
+    .slider-arrow-btn.prev-btn.slick-arrow {
+        position: absolute;
+        bottom: 10px;
+        z-index: 11;
+        left: 6px;
+        width: 46px;
+        height: 46px;
+        color: #ffffff;
+        background: #131313;
+        @include transition;
+        &:hover{
+            background: #EDBC5A;
+        }
     }
-
-
+    .slider-arrow-btn.next-btn.slick-arrow {
+        position: absolute;
+        bottom: 10px;
+        z-index: 11;
+        left: 56px;
+        width: 46px;
+        height: 46px;
+        color: #ffffff;
+        background: #131313;
+        @include transition;
+        &:hover{
+            background: #EDBC5A;
+        }
+    }  
 }
-.slider-arrow-btn.next-btn.slick-arrow {
-    position: absolute;
-    bottom: 10px;
-    z-index: 11;
-    left: 56px;
-    width: 46px;
-    height: 46px;
-    color: #ffffff;
-    background: #131313;
-    @include transition;
-    &:hover{
-        background: #EDBC5A;
+
+
+.testimonial-area{
+    .slick-arrow.btn-prev{
+        position: absolute;
+        bottom: 47px;
+        z-index: 11;
+        left: 56px;
+        width: 44px;
+        height: 44px;
+        color: #ffffff;
+        background: #171717;
+        border-radius: 5px;
+        border: 1px solid rgba(255, 255, 255, 0.20);
+        @include transition;
     }
-}  
+    .slick-arrow.btn-next {
+        position: absolute;
+        bottom: 47px;
+        z-index: 11;
+        left: 0;
+        width: 44px;
+        height: 44px;
+        color: #ffffff;
+        background: #171717;
+        border: 1px solid rgba(255, 255, 255, 0.20);
+        border-radius: 5px;
+        @include transition;
+    }  
+}

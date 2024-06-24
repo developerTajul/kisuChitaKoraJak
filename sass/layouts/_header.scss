@@ -1,26 +1,121 @@
-
 .header-area{
   background:#131313;
+  &-image{
+    @include lg{
+      margin-left: 50px;
+    }
+    @include md{
+      padding: 20px 0;
+      margin-left: 50px;
+    }
+  }
   &-main-menu{
-    & li{
-      margin-right: 80px;
-      padding: 57px 0;
-      line-height: normal;
-      list-style: none;
-      & a{
-      color: #fff;
-      color: var(--White, #FFF);
-      font-family: Gilroy-SemiBold;
-      font-size: 18px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: normal;
-      display: inline-block;
+    & ul{
+      @include rmaxwd(1600){
+        margin-left: 180px;
+      }
+      @include rmaxwd(1500){
+        margin-left: 150px;
+      }
+      @include rmaxwd(991){
+        display: none;
+        visibility: hidden;
+      }
+      @include xl{
+        margin-left: 70px;
+      }
+      @include lg{
+        margin-left: 20px;
+      }
+      @include md{
+        margin-left: 0;
+      }
+
+      & li{
+        margin-left: 80px;
+        padding: 57px 0;
+        line-height: normal;
+        list-style: none;
+        position: relative;
+        @include xl{
+          margin-left: 60px;
+        }
+        @include lg{
+          margin-left: 35px;
+        }
+
+        & .sub-menu{
+          position: absolute;
+          left: -30px;
+          top: 400px;
+          width: 250px;
+          visibility: hidden;
+          display: none;
+          transition: all .5s;
+          & li{
+            margin-left: 0;
+            padding: 10px 20px;
+            background: #333333;
+            border: 1px solid #484848;
+            a{
+              color: #fff;
+              font-size: 16px;
+              transition: all 500ms ease;
+            }
+            &:hover{
+              a{
+                color: #EDBC5A;
+                text-decoration: underline;
+              }
+            }
+          }
+        }
+        &:hover{
+          & a{
+            color: #EDBC5A;
+          }
+          & .sub-menu{
+            display: block;
+            visibility: visible;
+            top: 140px;
+          }
+        }
+        & a{
+        color: #fff;
+        font-family: Gilroy-SemiBold;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        display: inline-block;
+        }
       }
     }
   }
+  &-dropdown-icon{
+    display: none;
+    visibility: hidden;
+    margin-right: 30px;
+    @include rmaxwd(991){
+      display: flex;
+      visibility: visible;
+      align-items: center;
+    }
+    a{
+      font-size: 30px;
+    }
+  }
+  &-menu-icon{
+    @include lg{
+      margin-right: 50px;
+    }
+    @include md{
+      margin-right: 50px;
+    }
+  }
+}
+.dropdown-active{
   
 }
-
   
 

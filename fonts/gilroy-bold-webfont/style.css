@@ -6,6 +6,12 @@
     font-weight: normal;
     src: local('Gilroy-Bold'), url('Gilroy-Bold.ttf') format('woff');
     }
+    @font-face {
+    font-family: 'Gilroy-SemiBold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Gilroy-SemiBold'), url('./Gilroy-SemiBold.ttf') format('woff');
+    }
     
 
     @font-face {

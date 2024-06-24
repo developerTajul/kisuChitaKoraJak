@@ -40,7 +40,7 @@
     .pr-#{1 * $i}{padding-right: 1px *$i;}
 }
 /*-- gap --*/
-@for $i from 1 through 100 {
+@for $i from 1 through 150 {
     .gap-#{1 * $i}{gap: 1px *$i;}
 }
 

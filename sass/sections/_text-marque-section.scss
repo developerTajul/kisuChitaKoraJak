@@ -1,0 +1,63 @@
+// Text Marquee section
+// home-1-marque-star
+.text-marque-area{
+  @include lg{
+    padding-bottom: 20px;
+  }
+    &-shape{
+      position: absolute;
+      top: 99px;
+      right: 80px;
+      animation: rotated_circle 30s infinite;
+    }
+    .text-marque-section {
+        gap: 40px;
+        & .text-marque-wrapper {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 50px;
+    
+          &.first-text-marque{
+            animation: Scroll 32s linear infinite;
+          }
+          &.second-text-marque{
+            animation: Scroll 32s linear infinite;
+            animation-direction: reverse;
+          }
+        }
+        & .single-text-marque {
+          & .text-marque-title-one {
+            font-size: 250px;
+            letter-spacing: 12.5px;
+            white-space: nowrap;
+            
+          }
+          & .text-marque-title-one {
+            @include xl{
+              font-size: 210px;
+            }
+            @include lg{
+              font-size: 180px;
+            }
+          }
+          & .text-marque-title-two {
+            -webkit-text-stroke-width: 1px;
+            -webkit-text-stroke-color: rgba(255, 255, 255, 0.40);
+            color: transparent;
+            font-size: 250px;
+            letter-spacing: 7.5px;
+            margin-top: -3.2%;
+            white-space: nowrap;
+            @include xl{
+              font-size: 210px;
+            }
+            @include lg{
+              font-size: 180px;
+            }
+          }
+        }
+    }
+}
+
+// home-1-marque-End

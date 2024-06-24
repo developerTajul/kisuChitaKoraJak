@@ -1,0 +1,143 @@
+.footer-area{
+    &-company-logo{
+        @include lg{
+            padding-bottom: 20px;
+        }
+    }
+    &-company-info{
+        .line-1 {
+            height: 443px;
+            width: 1px;
+            border-right: 1px solid rgba(255, 255, 255, 0.15);
+            top: 24px;
+            left: 323px;
+            @include xl{
+                left: 278px;
+                height: 432px;
+            }
+            @include lg{
+                left: 234px;
+                height: 385px;
+            }
+        }
+    }
+    &-heading-text{
+        h2{
+            text-transform: uppercase;
+            margin-bottom: 5px;
+            @include xl{
+                font-size: 45px;
+            }
+            @include lg{
+                font-size: 40px;
+            }
+        }
+        h4{
+            font-family: Gilroy-Light;
+            letter-spacing: 20.72px;
+            text-transform: uppercase; 
+            @include xl{
+                font-size: 24px;
+                letter-spacing: 19.72px;
+            }
+            @include lg{
+                font-size: 19px;
+                letter-spacing: 16.72px;
+            }
+        }
+    }
+    &-company-fast-email{
+        @include lg{
+            padding-bottom: 50px;
+        }
+        & a{
+            padding: 10px 30px;
+            border-radius: 83px;
+            border: 1px solid rgba(224, 224, 224, 0.15);
+            display: inline-block;
+            @include xl{
+                padding: 10px 20px;
+            }
+            @include lg{
+                padding: 10px 20px;
+                font-size: 12px;
+            }
+        }
+    }
+    hr{
+        width: 1293px;
+        border: 1px solid rgba(255, 255, 255, 0.15);
+        height: 1px;
+        display: flex;
+        justify-content: center;
+        @include xl{
+            width: 1115px;
+        }
+        @include lg{
+            width: 935px;
+        }
+    }
+
+    .footer-copy-right-info{
+        span{
+            color: var(--White, #FFF);
+            text-align: center;
+            font-family: Gilroy-Regular;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            a{
+                color: #EDBC5A;
+                font-family: Gilroy-SemiBold;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                display: inline-block;
+            }
+        }
+    }
+    &-social-info{
+        @include lg{
+            padding-bottom: 28px;
+        }
+        & .sce-email{
+            @include xl{
+                margin-left: 70px;
+            }
+            @include lg{
+                margin-left: 30px;
+            }
+            a{
+                display: inline-block;
+                @include lg{
+                    font-size: 12px;
+                }
+            }
+        }
+        .social-content{
+            a{
+                display: inline-block;
+                font-family: Rubik;
+                font-size: 14px;
+                line-height: normal;
+            }
+        }
+    }
+    &-quick-menu{
+        margin-left: 120px;
+        @include xl{
+            margin-left: 70px;
+        }
+        @include lg{
+            margin-left: 30px;
+            padding-top: 25px;
+        }
+    }
+    &-quick-menu-one{
+       li{
+        margin-bottom: 4.5px;
+       }
+    }
+}

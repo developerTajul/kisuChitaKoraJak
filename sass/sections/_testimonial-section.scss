@@ -1,0 +1,47 @@
+.testimonial-area{
+  &-main-slider{
+    margin-top: -130px;
+    z-index: 3;
+  }
+  &-slider-wrapper{
+    background: #1A1717;
+    padding: 105px 119px 105px 50px;
+
+    @include rmaxwd(1705){
+      padding: 105px 70px 105px 50px;
+    }
+
+    @include rmaxwd(1607){
+      padding: 100px 50px 100px 20px;
+    }
+    @include rmaxwd(1507){
+      padding: 60px 10px 60px 10px;
+    }
+    
+    & .fast-slider{
+      width: 30%;
+      & .slider-image{
+        margin-bottom: 27px;
+        & img{
+          width: 80px;
+          height: 80px;
+          border-radius: 50%;
+        }
+      }
+    }
+    & .second-slider{
+      width: 70%;
+      .slider-pra{
+        p{
+          @include rmaxwd(1500){
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+  .slick-center img{
+    border: 2px solid #fff;
+    margin-right: 55px;
+   }
+}

@@ -1,0 +1,54 @@
+.wcu-area{
+    @include xl{
+        padding-bottom: 100px;
+    }
+    @include lg{
+        padding-bottom: 150px;
+        padding-top: 50px;
+    }
+    &-text{
+        a{
+            color:#EDBC5A;
+            font-family: Gilroy-Medium;
+            font-size: 22px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            text-decoration-line: underline;
+            display: inline-block;
+        }
+        @include lg{
+            margin-right: 200px;
+        }
+    }
+    &-counter{
+        @include lg{
+            margin-right:25px;
+        }
+    }
+    &-counter-wrapper{
+        & span{
+            color: var#fff;
+            font-family: Gilroy-Bold;
+            font-size: 120px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+        p{
+            color: #FFF;
+            font-family: Rubik;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 29px; /* 161.111% */
+            letter-spacing: 6.66px;
+            text-transform: uppercase;
+            @include xl{
+                font-size: 16px;
+                letter-spacing: 4.66px;
+            }
+        }
+    }
+}
+

@@ -1,5 +1,43 @@
 
 .about-area{
+    @include xl{
+        padding-bottom: 45px;
+        padding-top: 35px;
+    }
+    @include lg{
+        padding-bottom: 20px;
+        padding-top: 20px;
+    }
+  
+    &-bg-shape {
+        left: 50px;
+        top: 24px;
+        z-index: -1;
+    }
+    &-bg-topographic{
+        top: -110px;
+        right: 0;
+        z-index: 1;
+    }
+    &-wrapper{
+        @include lg{
+            margin-left: 200px;
+        }
+    }
+    &-info{
+        @include xl{
+            margin-bottom: 100px;
+        }
+        @include lg{
+            margin-bottom: 50px;
+        }
+    }
+    &-text{
+        margin-right:0;
+        @include lg{
+            margin-left: 0;
+        }
+    }
     &-heading-part{
         & a {
             width: 82px;
@@ -12,15 +50,21 @@
             font-family: Gilroy-Light;
         }
     }
-}
-
-
-
-.about-area-main-part {
-    background: #1A1717;
-    width: 100%;
-    height: auto;
-    border-radius: 20px;
+    &-main-part {
+        background: #1A1717;
+        width: 100%;
+        height: auto;
+        border-radius: 20px;
+        .about-card-bg-topographic{
+            top: 0;
+            right: 0;
+            animation: zoomInOut 2s 2s infinite;
+        }
+    }
+    &-card-section{
+        padding-right: 50px;
+        padding-left: 50px;
+    }
 }
 
 

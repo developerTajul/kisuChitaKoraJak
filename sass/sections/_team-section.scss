@@ -1,0 +1,54 @@
+.team-area{
+    @include xl{
+        padding-bottom: 50px;
+    }
+    @include lg{
+        padding-bottom: 40px;
+    }
+    &-member-info-1 {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+    }
+    &-member-info-2 {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+        border-left: 1px solid rgba(255, 255, 255, 0.10);
+        @include lg{
+            padding-left: 80px;
+        }
+    }
+    &-member-info-4 {
+        border-left: 1px solid rgba(255, 255, 255, 0.10);
+    }
+    &-member-img{
+        width: 200px;
+        height: 200px;
+        @include lg{
+            width: 130px;
+            height: 130px;
+        }
+        img{
+            border-radius: 100%;
+        }
+    }
+    &-member-text{
+        h4{
+            margin-bottom: 5px;
+        }
+        
+    }
+    &-member-social-link{
+        li{
+            padding: 10px;
+            margin-right: 10px;
+            white-space:nowrap;
+            @include transition;
+            &:hover{
+                background: red;
+                border-radius: 50%;
+            }
+            a{
+                color: #fff;
+            }
+        }
+
+    }
+}
