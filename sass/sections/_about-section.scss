@@ -6,6 +6,14 @@
     }
     @include lg{
         padding-bottom: 20px;
+        padding-top: 35px;
+    }
+    @include md{
+        padding-bottom: 20px;
+        padding-top: 30px;
+    }
+    @include sm{
+        padding-bottom: 20px;
         padding-top: 20px;
     }
   
@@ -20,34 +28,80 @@
         z-index: 1;
     }
     &-wrapper{
+        @include xl{
+            margin-left: 230px;
+        }
         @include lg{
-            margin-left: 200px;
+            margin-left: 0;
+        }
+        @include md{
+            margin-left: 0;
+        }
+        @include sm{
+            margin-left: 0;
         }
     }
     &-info{
-        @include xl{
-            margin-bottom: 100px;
-        }
         @include lg{
+            margin-bottom: 70px;
+        }
+        @include md{
             margin-bottom: 50px;
+        }
+        @include sm{
+            margin-bottom: 30px;
         }
     }
     &-text{
-        margin-right:0;
+        @include xl{
+            margin-right: 0;
+        }
         @include lg{
+            margin-right: 22px;
+        }
+        @include md{
+            margin-right: 0;
+            margin-left: 0;
+        }
+        @include sm{
+            margin-right: 0;
             margin-left: 0;
         }
     }
     &-heading-part{
+        & h2{
+            @include md{
+                font-size: 38px;
+            }
+            @include sm{
+                font-size: 22px;
+            }
+        }
         & a {
             width: 82px;
             height: 82px;
             background: #EDBC5A;
             border-radius: 50%;
             line-height: 78px;
+            text-align: center;
+            @include md{
+                width: 60px;
+                height: 60px;
+                line-height: 58px;
+            }
+            @include sm{
+                width: 45px;
+                height: 45px;
+                line-height: 42px;
+            }
         }
         & span {
             font-family: Gilroy-Light;
+        }
+    }
+    &-inner-img{
+        @include sm{
+            width: 30%;
         }
     }
     &-main-part {
@@ -55,15 +109,46 @@
         width: 100%;
         height: auto;
         border-radius: 20px;
+        @include sm{
+            padding: 20px 0 20px 0;
+        }
         .about-card-bg-topographic{
             top: 0;
             right: 0;
             animation: zoomInOut 2s 2s infinite;
         }
+        @include md{
+            padding-bottom: 40px;
+        }
     }
-    &-card-section{
-        padding-right: 50px;
-        padding-left: 50px;
+    &-content-wrapper{
+        p{
+            font-family: Gilroy-Medium;
+            font-size: 22px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 32px;
+            &.pra-text{
+                position: relative;
+                padding-left: 40.5px;
+                &::before {
+                    width: 5px;
+                    height: 125px;
+                    background: $primary-color;
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    top: -14px;
+                }
+            }
+            
+        }
+    }
+    &-side-img{
+        .side-img-part{
+            top: 49px;
+            right: -71px;
+        }
     }
 }
 

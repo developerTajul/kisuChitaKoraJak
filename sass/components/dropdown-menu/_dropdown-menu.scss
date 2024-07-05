@@ -1,48 +1,62 @@
-.dropdown-active{
-        display: none;
-        visibility: hidden;
-    & .dropdown-menus{
-        z-index: 100;
-        top: 80px;
-        z-index: 100;
-        left: 0;
-        width: 100%;
-        padding: 0 50px;
-        .test-2{
-            display: block;
-            visibility: visible;
-        }
-        ul{
-            padding: 20px 0;
-            background: #222222;
-            
-            li{
-                border-top: 1px solid #383838;
-                border-bottom: 1px solid #383838;
-                position: relative;
+
+.toggle-menus{
+    display: none;
+    position: absolute;
+    z-index: 100;
+    top: 5000px;
+    z-index: 100;
+    left: -5000px;
+    width: 100%;
+    padding: 0 50px;
+   
+    ul{
+        padding: 25px 0;
+        background: #222222;
+        li{
+            border-top: 1px solid #383838;
+            border-bottom: 1px solid #383838;
+            position: relative;
+            line-height: 23px;
+            & a{
                 padding: 10px 23px;
-                line-height: 23px;
-                // & a{
-                    
-                // }
-                & .dropdown-btn{
-                    position: absolute;
-                    right: 10px;
-                    top: 0;
-                    width: 50px;
-                    height: 43px;
-                    text-align: center;
-                    line-height: 43px;
-                    border-left: 1px solid #383838;
-                    cursor: pointer;
+                display: inline-block;
+                &:hover{
+                    text-decoration: underline;
                 }
-                ul{
-                    &.single-dropdown{
-                        padding: 0 0;
-                        margin-top: 10px;
+            }
+            & .dropdown-btn{
+                position: absolute;
+                right: 10px;
+                top: 0;
+                width: 50px;
+                height: 43px;
+                text-align: center;
+                line-height: 43px;
+                border-left: 1px solid #383838;
+                cursor: pointer;
+            }
+            ul{
+                &.hidden-list{
+                    display: none;
+                    padding: 0 0;
+                    @include transition;
+                }
+                li{  
+                    & a{
+                        font-size: 14px;
+                        padding: 5px 23px;
                     }
                 }
             }
         }
     }
 }
+
+#toggle-active.active {
+    @include rmaxwd (991){
+        display: block;
+        left: 0;
+        top: 80px;
+    }
+}
+  

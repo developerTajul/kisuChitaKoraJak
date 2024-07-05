@@ -5,8 +5,33 @@
     @include lg{
         padding-bottom: 40px;
     }
+    @include md{
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    @include sm{
+        padding-top: 20px;
+        padding-bottom: 30px;
+    }
+    &-member-info-wrapper{
+        @include rmaxwd(400){
+            gap: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+    }
     &-member-info-1 {
         border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+        @include md{
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+        }
+        @include sm{
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+        }
     }
     &-member-info-2 {
         border-bottom: 1px solid rgba(255, 255, 255, 0.10);
@@ -14,9 +39,48 @@
         @include lg{
             padding-left: 80px;
         }
+        @include md{
+            border-left: none;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0 10px 0;
+        }
+        @include sm{
+            border-left: none;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0 10px 0;
+        }
+    }
+    &-member-info-3 {
+        @include md{
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+        }
+        @include sm{
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+        }
     }
     &-member-info-4 {
         border-left: 1px solid rgba(255, 255, 255, 0.10);
+        @include md{
+            border: none;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0 10px 0;
+        }
+        @include sm{
+            border: none;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0 10px 0;
+        }
+        
     }
     &-member-img{
         width: 200px;
@@ -25,6 +89,18 @@
             width: 130px;
             height: 130px;
         }
+        @include md{
+            width: 130px;
+            height: 130px;
+        }
+        @include sm{
+            width: 130px;
+            height: 130px;
+        }
+        @include rmaxwd(400){
+            width: 110px;
+            height: 110px;
+        }
         img{
             border-radius: 100%;
         }
@@ -32,6 +108,20 @@
     &-member-text{
         h4{
             margin-bottom: 5px;
+            @include md{
+                font-size: 20px;
+            }
+            @include sm{
+                font-size: 20px;
+            }
+            @include rmaxwd(400){
+                text-align: center;
+            }
+        }
+        p{
+            @include rmaxwd(400){
+                text-align: center;
+            }
         }
         
     }

@@ -5,32 +5,32 @@
       margin-left: 50px;
     }
     @include md{
-      padding: 20px 0;
+      padding: 25px 0;
       margin-left: 50px;
+    }
+    @include sm{
+      padding: 25px 0;
+      margin-left: 5px;
     }
   }
   &-main-menu{
     & ul{
-      @include rmaxwd(1600){
-        margin-left: 180px;
+      @include xxl{
+        margin-left: 210px;
       }
-      @include rmaxwd(1500){
-        margin-left: 150px;
+      @include xml{
+        margin-left: 80px;
+      }
+      @include xl{
+        margin-left: 50px;
+      }
+      @include lg{
+        margin-left: 30px;
       }
       @include rmaxwd(991){
         display: none;
         visibility: hidden;
       }
-      @include xl{
-        margin-left: 70px;
-      }
-      @include lg{
-        margin-left: 20px;
-      }
-      @include md{
-        margin-left: 0;
-      }
-
       & li{
         margin-left: 80px;
         padding: 57px 0;
@@ -43,15 +43,28 @@
         @include lg{
           margin-left: 35px;
         }
-
+        &:hover{
+          & a{
+            color: #EDBC5A;
+          }
+          & .sub-menu{
+            visibility: visible;
+            top: 140px;
+            opacity: 1;
+            transform: scaleY(1);
+          }
+        }
         & .sub-menu{
           position: absolute;
           left: -30px;
-          top: 400px;
+          top: 100%;
           width: 250px;
           visibility: hidden;
-          display: none;
-          transition: all .5s;
+          transition: all 0.5s ease 0s;
+          z-index: 1;
+          opacity: 0;
+          transform: scaleY(0);
+          transform-origin: top center;
           & li{
             margin-left: 0;
             padding: 10px 20px;
@@ -70,16 +83,6 @@
             }
           }
         }
-        &:hover{
-          & a{
-            color: #EDBC5A;
-          }
-          & .sub-menu{
-            display: block;
-            visibility: visible;
-            top: 140px;
-          }
-        }
         & a{
         color: #fff;
         font-family: Gilroy-SemiBold;
@@ -88,18 +91,41 @@
         font-weight: 400;
         line-height: normal;
         display: inline-block;
+        @include lg{
+          font-size: 16px;
+        }
+
+        &.plus-icon::after {
+          content: "\2b";
+          font-family: "FontAwesome";
+          font-size: 14px;
+          margin-left: 5px;
+          font-weight: 900;
+        }
         }
       }
     }
   }
-  &-dropdown-icon{
+  &-touch-btn{
+    margin-left: 20px;
+    a{
+      display: inline-block;
+      padding: 10px 26px;
+      border-radius: 111px;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+    }
+  }
+  #toggle-button{
     display: none;
     visibility: hidden;
     margin-right: 30px;
     @include rmaxwd(991){
-      display: flex;
+      display: block;
       visibility: visible;
-      align-items: center;
+    }
+    @include sm{
+      margin-right: 30px;
+      margin-top: 4px;
     }
     a{
       font-size: 30px;
@@ -111,11 +137,25 @@
     }
     @include md{
       margin-right: 50px;
+      padding-bottom: 6px;
+    }
+    @include sm{
+      margin-right: 10px;
+    }
+    a{
+      &.canvas::after {
+        content: 'Menu';
+        font-family: Rubik;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 29px;
+        margin: 15px;
+        margin-left: 15px;
+      }
     }
   }
 }
-.dropdown-active{
-  
-}
+
   
 

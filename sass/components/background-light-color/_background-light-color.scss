@@ -20,6 +20,12 @@
         right: 30px;
         top: 70px;
         animation: zoomInOut 5s 2s infinite;
+        @include sm{
+            right: 0%;
+            top: 0px;
+            background: rgba(237, 188, 90, 0.70);
+        filter: blur(250px);
+        }
     }
     &.style-3{
         position: absolute;
@@ -55,6 +61,10 @@
         @include xl{
             right: 380px;
             top: 240px;
+        }
+        @include lg{
+            right: 406px;
+            top: 150px;
         }
     }
 }

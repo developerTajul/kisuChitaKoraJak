@@ -2,6 +2,144 @@
     "use strict";
     $(document).ready(function () {
 
+        /*=======================
+        navba toggle active
+        =========================*/
+        const toggleButton = document.getElementById('toggle-button');
+        const topyMenu = document.getElementById('toggle-active');
+
+        toggleButton.addEventListener('click', function() {
+        topyMenu.classList.toggle('active');
+        });
+       
+       /*========================
+               Slider
+       ============================*/
+       $(".hero-slider-active").slick({
+        slidesToShow: 1,
+        infinite: true,
+        autoplay: true,
+        draggable: true,
+        arrows: true,
+        slidesToScroll: 1,
+        loop: true,
+        speed: 1500,
+            prevArrow: '<button class="slick-arrow btn-prev"><i class="fa-solid fa-arrow-right"></i></button>',
+            nextArrow: '<button class="slick-arrow btn-next"><i class="fa-solid fa-arrow-left"></i></button>',
+        responsive: [
+            {
+                breakpoint: 767,
+                settings: {
+                    autoplay: true,
+                },
+            },
+        ],
+        });
+        /*==========================
+        Testimonial Slider
+        ============================*/
+        $('.testimonial-active-slider').slick({
+            slidesToShow: 3,
+            centerMode: true,
+            centerPadding: '0',
+            vertical:true,
+            verticalSwiping:true,
+            autoplay: true,
+            autoplaySpeed: 1500,
+            arrows: false,
+            
+            });
+
+            $('.testimonial-active-slider-nav').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            dots: false,
+            autoplay: true,
+            autoplaySpeed: 1500,
+            asNavFor: '.testimonial-active-slider',
+            prevArrow: '<button class="slick-arrow btn-prev"><i class="fa-solid fa-caret-right"></i></button>',
+            nextArrow: '<button class="slick-arrow btn-next"><i class="fa-solid fa-caret-left"></i></button>',
+        });
+
+
+
+
+
+        $(".protfolio-area-active").slick({
+            slidesToShow: 3.35,
+            slidesToScroll: 1,
+            infinite: true,
+            autoplay: true,
+            speed: 1500,
+            draggable: true,
+            arrows: false,
+            slidesToScroll: 1,
+            loop: true,
+            dots: false,
+            rtl: false,
+            responsive: [{
+                    breakpoint: 1400,
+                    settings: {
+                        slidesToShow: 4,
+                    },
+                },
+                {
+                    breakpoint: 1200,
+                    settings: {
+                        slidesToShow: 3,
+                    },
+                },
+                {
+                    breakpoint: 992,
+                    settings: {
+                        slidesToShow: 3,
+                    },
+                },
+                {
+                    breakpoint: 767,
+                    settings: {
+                        slidesToShow: 2,
+                    },
+                },
+                {
+                    breakpoint: 460,
+                    settings: {
+                        slidesToShow: 1,
+                    },
+                },
+            ],
+        });
+
+
+
+      
+        /*============================
+        Magnific Popup
+        ============================*/
+        $(".video-play").magnificPopup({
+            disableOn: 700,
+            type: "iframe",
+            mainClass: "mfp-fade",
+            removalDelay: 160,
+            preloader: false,
+            fixedContentPos: false,
+        });
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
         /*
        Jquery Mobile Menu
        ============================*/
@@ -217,60 +355,11 @@
                 }
             });
         });
-        $(".dropdown-toggles").click(function(){
-            $(".dropdown-active").toggleClass(".test-2");
-          });
-        /*
-               Slider
-       ============================*/
-       $(".hero-slider-active").slick({
-        slidesToShow: 1,
-        infinite: true,
-        autoplay: true,
-        draggable: true,
-        arrows: true,
-        slidesToScroll: 1,
-        loop: true,
-        speed: 1500,
-        prevArrow:
-            "<button type='button' class='slider-arrow-btn prev-btn'><i class='fa-solid fa-arrow-left'></i></button>",
-        nextArrow:
-            "<button type='button' class='slider-arrow-btn next-btn'><i class='fa-solid fa-arrow-right'></i></button>",
-
-        responsive: [
-            {
-                breakpoint: 767,
-                settings: {
-                    autoplay: true,
-                },
-            },
-        ],
-    });
-    /*
-    Testimonial Slider
-    ============================*/
-    $('.testimonial-active-slider').slick({
-        slidesToShow: 3,
-        centerMode: true,
-        centerPadding: '0',
-        vertical:true,
-        verticalSwiping:true,
-        autoplay: true,
-        autoplaySpeed: 1500,
-        arrows: false,
         
-        });
+        $(".dropdown-toggles").click(function(){
+            $(".dropdown-menus").toggleClass("toggle-show");
+          });
 
-        $('.testimonial-active-slider-nav').slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        dots: false,
-        autoplay: true,
-        autoplaySpeed: 1500,
-        asNavFor: '.testimonial-active-slider',
-        prevArrow: '<button class="slick-arrow btn-prev"><i class="fa-solid fa-caret-right"></i></button>',
-        nextArrow: '<button class="slick-arrow btn-next"><i class="fa-solid fa-caret-left"></i></button>',
-    });
         /*
         Hero Gallery Slider
         ============================*/
@@ -510,41 +599,6 @@
                 },
             ],
         });
-
-
-        /*
-        Testimonial Slider
-        ============================*/
-        $(".testimonial_style_five").slick({
-            slidesToShow: 2,
-            infinite: true,
-            autoplay: true,
-            draggable: true,
-            arrows: false,
-            slidesToScroll: 1,
-            loop: true,
-            dots: false,
-            speed: 1500,
-            variableWidth: true,
-            rtl: false,
-            responsive: [{
-                    breakpoint: 1400,
-                    settings: {
-                        slidesToShow: 1,
-                        variableWidth: true,
-                        centerMode: true,
-                    },
-                },
-                {
-                    breakpoint: 992,
-                    settings: {
-                        slidesToShow: 1,
-                        variableWidth: false,
-                    },
-                },
-            ],
-        });
-
 
         /*
         Project Card Slider
@@ -823,17 +877,7 @@
             time: 1000,
         });
 
-        /*
-       Magnific Popup
-       ============================*/
-        $(".video-play").magnificPopup({
-            disableOn: 700,
-            type: "iframe",
-            mainClass: "mfp-fade",
-            removalDelay: 160,
-            preloader: false,
-            fixedContentPos: false,
-        });
+       
 
         /*
         Jquery Wow Js
@@ -851,6 +895,9 @@
         $('.tilt-animate').tilt({
             maxTilt: 12,
             perspective: 1500,
+        })
+        $('.js-tilt').tilt({
+            scale: 1.2
         })
 
         // Jquery Parallax Js
@@ -977,3 +1024,19 @@
 
     });
 })(jQuery);
+
+/*========================
+        /*=======================
+        Dropdown Toggle Active
+        =========================*/ 
+        function toggleList(listNumber) {
+            var allLists = document.querySelectorAll('.hidden-list');
+        
+            allLists.forEach(function(list) {
+                if (list.id === 'dropdown-toggle-menu-' + listNumber) {
+                    list.style.display = list.style.display === 'block' ? 'none' : 'block';
+                } else {
+                    list.style.display = 'none';
+                }
+            });
+        }

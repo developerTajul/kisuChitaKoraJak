@@ -1,14 +1,26 @@
-.gellary-area{
+.gallery-area{
     @include xl {
         padding-bottom: 35px;
     }
     @include lg {
         padding-bottom: 25px;
+        padding-top: 20px;
+    }
+    @include md {
+        padding-bottom: 20px;
+        padding-top: 20px;
+    }
+    @include sm {
+        padding-bottom: 20px;
+        padding-top: 15px;
     }
     &-bg-shape{
         top: -22px;
         left: 20px;
         z-index: 999;
+        @include sm{
+            display: none;
+        }
     }
     &-wrapper{
         @include rmaxwd(1800){
@@ -16,15 +28,29 @@
             margin: 0 20px;
         }
     }
-    // &-info{
-    //     @include lg{
-    //         display: none;
-    //         visibility: hidden;
-    //     }
-    // }
+    &-info{
+        @include sm{
+            display: none;
+            visibility: hidden;
+        }
+    }
     &-big-img{
         @include lg{
             margin-bottom: 30px;
+        }
+        @include md{
+            margin-bottom: 26px;
+        }
+        @include sm{
+            margin-bottom: 16px;
+        }
+    }
+    .shape-img{
+        @include lg{
+            width: 150px;
+        }
+        @include md{
+            width: 150px;
         }
     }
     &-text{
@@ -43,6 +69,11 @@
                 font-size: 28px;
                 letter-spacing: 8px;
             }
+            @include md{
+                font-size: 40px;
+                letter-spacing: 7px;
+                margin-bottom: 15px;
+            }
         }
         & h6{
             font-size: 47px;
@@ -57,10 +88,13 @@
                 font-size: 24px;
                 letter-spacing: 10.5px;
             }
+            @include md{
+                font-size: 20px;
+                letter-spacing: 7px;
+            }
         }
     }
     &-image-shape{
-        
         & .shape-1{
             left: 18px;
             top: 0;
@@ -69,6 +103,9 @@
             }
             @include lg {
                 max-width: 48%;
+            }
+            @include sm{
+                display: none;
             }
         }
         & .shape-2{
@@ -79,6 +116,14 @@
             @include lg {
                 max-width: 48%;
             }
+            @include sm{
+                display: none;
+            }
+        }
+    }
+    &-image-none{
+        @include sm{
+            display: none;
         }
     }
 }

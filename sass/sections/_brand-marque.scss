@@ -2,10 +2,24 @@
 .brand-marque-area{
     margin-bottom: -39px;
     overflow: hidden;
-    gap: 40px;
+    position: relative;
+    z-index: 11;
+    @include xl{
+        padding-bottom: 20px;
+    }
+    @include lg{
+        padding-top: 20px;
+      }
+    @include md{
+        padding-top: 20px;
+      }
+    @include sm{
+        padding-top: 20px;
+      }
     & .brand-marque-wrapper {
         &.first-text-marque{
         animation: Scroll 32s linear infinite;
+        gap: 10px;
         }
         & .single-img-marque {
             padding: 34px 115px 34px 115px;
@@ -15,6 +29,17 @@
             }
             @include lg{
                 padding: 25px 50px 25px 50px;
+            }
+            @include md{
+                padding: 20px 30px 20px 30px;
+            }
+            @include sm{
+                padding: 15px 20px 15px 20px;
+
+            }
+            @include xs{
+                padding: 10px 10px 10px 10px;
+
             }
         }
     }

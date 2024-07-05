@@ -1,0 +1,98 @@
+.services-area {
+    &-card-wrapper {
+        width: 100%;
+        position: relative;
+        &:hover{
+            .services-area-card-content {
+                padding: 30px 32px 23px 30px;
+
+            }
+            .services-area-card-element {
+                margin-bottom: 28px;
+            }
+            span{
+                margin-top: 0;
+                &::before{
+                    color: $white;
+                }
+            }
+            p{
+            visibility: visible;
+            max-height: 100px;
+            opacity: 1;
+            transition: transform 0.5s ease-out, max-height 0.5s ease-out;
+            }
+            a{
+                visibility: visible;
+            }
+            .card-change-img-1{
+                display: none;
+            }
+            .card-change-img-2{
+                display: block;
+            }
+        }
+    }
+    &-card-content {
+        width: 270px;
+        background: #1A1717;
+        padding: 10px 15px 23px 30px;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    &-card-element{
+        span{
+            font-size: 35px;
+            margin-top: 34px;
+            &::before{
+                color: $primary-color;
+            }
+        }
+        h2{
+            -webkit-text-stroke-width: 1px;
+            -webkit-text-stroke-color: rgba(255, 255, 255, 0.15);
+            font-family: Gilroy-Medium;
+            color: transparent;
+        }
+    }
+    &-card-text{
+        h4{
+            font-family: Gilroy-Medium;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        p{
+            visibility: hidden;
+            max-height: 0;
+            opacity: 0;
+            transition: transform 0.5s ease-out, max-height 0.5s ease-out;
+        }
+    }
+    &-card-btn{
+        a{
+            width: 42px;
+            height: 42px;
+            background: $primary-color;
+            display: inline-block;
+            text-align: center;
+            line-height: 42px;
+            border-radius: 50%;
+            visibility: hidden;
+            transition: all 0.1s ease-out;
+        }
+    }
+    &-card-img{
+        .card-change-img-1{
+            padding-top: 142px;
+            transition: all 0.5s ease-out;
+            
+        }
+        .card-change-img-2{
+            padding-top: 0;
+            height: 331px;
+            display: none;
+            transition: all 0.5s ease-out;
+        }
+    }
+}

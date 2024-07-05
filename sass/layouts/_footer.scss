@@ -3,6 +3,10 @@
         @include lg{
             padding-bottom: 20px;
         }
+        @include sm{
+            padding-bottom: 15px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+        }
     }
     &-company-info{
         .line-1 {
@@ -19,9 +23,25 @@
                 left: 234px;
                 height: 385px;
             }
+            @include md{
+                display: none;
+                overflow: hidden;
+            }
+            @include sm{
+                display: none;
+                overflow: hidden;
+            }
         }
     }
     &-heading-text{
+        @include md{
+            display: none;
+            overflow: hidden;
+        }
+        @include sm{
+            display: none;
+            overflow: hidden;
+        }
         h2{
             text-transform: uppercase;
             margin-bottom: 5px;
@@ -50,6 +70,14 @@
         @include lg{
             padding-bottom: 50px;
         }
+        @include md{
+            display: none;
+            visibility: hidden;
+        }
+        @include sm{
+            display: none;
+            visibility: hidden;
+        }
         & a{
             padding: 10px 30px;
             border-radius: 83px;
@@ -76,31 +104,22 @@
         @include lg{
             width: 935px;
         }
-    }
-
-    .footer-copy-right-info{
-        span{
-            color: var(--White, #FFF);
-            text-align: center;
-            font-family: Gilroy-Regular;
-            font-size: 14px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: normal;
-            a{
-                color: #EDBC5A;
-                font-family: Gilroy-SemiBold;
-                font-size: 14px;
-                font-style: normal;
-                font-weight: 400;
-                line-height: normal;
-                display: inline-block;
-            }
+        @include md{
+            width: 700px;
+        }
+        @include sm{
+            display: none;
         }
     }
     &-social-info{
         @include lg{
             padding-bottom: 28px;
+        }
+        @include md{
+            padding: 15px 0;
+        }
+        @include sm{
+            padding: 15px 0;
         }
         & .sce-email{
             @include xl{
@@ -108,6 +127,14 @@
             }
             @include lg{
                 margin-left: 30px;
+            }
+            @include md{
+                margin-left: 0;
+            }
+            @include sm{
+                margin-left: 0;
+                margin-bottom: 15px;
+            
             }
             a{
                 display: inline-block;
@@ -134,10 +161,75 @@
             margin-left: 30px;
             padding-top: 25px;
         }
+        @include md{
+            margin-left: 0;
+            padding-top: 25px;
+            display: flex;
+            justify-content: center;
+        }
+        @include sm{
+            margin-left: 0;
+            padding-top: 25px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding-bottom: 15px;
+        }
+        @include xs{
+            flex-direction: column;
+        }
     }
     &-quick-menu-one{
        li{
         margin-bottom: 4.5px;
        }
+    }
+    &-quick-menu-two{
+      @include sm{
+        margin-left: 20px;
+        margin-right: 50px;
+      }
+      @include rmaxwd (378){
+        margin-left: 20px;
+        margin-right: 0px;
+      }
+      @include xs{
+        margin: 0 0 0 0;
+      }
+    }
+    &-services{
+        h4{
+            @include xs{
+                margin: 15px 0 10px 0;
+            }
+        }
+    }
+    .footer-copy-right-info{
+        @include md{
+            padding: 15px 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.15);
+        }
+        @include sm{
+            padding: 15px 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.15);
+        }
+        span{
+            color: var(--White, #FFF);
+            text-align: center;
+            font-family: Gilroy-Regular;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            a{
+                color: #EDBC5A;
+                font-family: Gilroy-SemiBold;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                display: inline-block;
+            }
+        }
     }
 }

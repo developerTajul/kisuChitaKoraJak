@@ -51,15 +51,15 @@ Footer
 @import "./base/colors";
 @import "./base/unittest";
 @import "./base/common";
-@import "./base/breakpoints";
 
 // COMPONENTS 
 @import"./components/section-title/section-title";
 @import"./components/background-light-color/background-light-color";
 @import"./components/slider-slide-btn/slider-slide-btn";
-@import"./components/title-border/title-border.scss";
+@import"./components/title-border/title-border";
 @import"./components/section-card/section-card";
 @import"./components/dropdown-menu/dropdown-menu";
+@import"./components/counter/counter";
 
 // SECTIONS
 @import"./sections/hero-section";
@@ -72,6 +72,7 @@ Footer
 @import"./sections/video-popup-section";
 @import"./sections/testimonial-section";
 @import"./sections/brand-marque";
+@import"./sections/services";
 
 
 
@@ -79,5 +80,3 @@ Footer
 @import "./layouts/header";
 @import"./layouts/blog-news-section";
 @import "./layouts/footer";
-
-

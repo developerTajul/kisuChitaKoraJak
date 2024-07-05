@@ -1,8 +1,17 @@
 .section-title{
+    @include sm{
+        margin-bottom: 50px;
+    }
     &.style-1{
         & h2{
             @include lg{
                 font-size: 35px;
+            }
+            @include md{
+                font-size: 30px;
+            }
+            @include sm{
+                font-size: 25px;
             }
         }
         span{
@@ -11,16 +20,28 @@
             letter-spacing: 3.52px;
             text-transform: uppercase;
             display: block;
+            @include sm{
+                font-size: 16px;
+            }
         }
     }
 }
 .section-title{
+    @include sm{
+        margin-bottom: 50px;
+    }
     &.style-2{
         text-align: center;
         & h2{
             @include lg{
                 font-size: 35px;
             }
+            @include md{
+                font-size: 30px;
+            }
+            @include sm{
+                font-size: 25px;
+            }
         }
         span{
             color:#EDBC5A;
@@ -28,6 +49,9 @@
             letter-spacing: 3.52px;
             text-transform: uppercase;
             display: block;
+            @include sm{
+                font-size: 16px;
+            }
         }
     }
 }

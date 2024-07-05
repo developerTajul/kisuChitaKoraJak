@@ -5,7 +5,7 @@
         width: 376px;
         height: 376px;
         right: 50px;
-        top: 50px;
+        top: -90px;
         background: rgba(237, 188, 90, 0.70);;
         filter: blur(200px);
         z-index: 5;
@@ -30,6 +30,9 @@
         @include lg{
             right: 5%;
         }
+        @include sm{
+            display: none;
+        }
     }
     &-bg-block-shape{
         top: 0;
@@ -49,7 +52,7 @@
             max-height: 35%;
             right: 65px;
         }
-        @include lg{
+        @include rmaxwd(1199){
            display: none;
            visibility: hidden;
         }
@@ -57,6 +60,18 @@
     &-title-one{
         @include xl{
             font-size: 120px;
+        }
+        @include lg{
+            font-size: 120px;
+        }
+        @include md{
+            font-size: 100px;
+        }
+        @include sm{
+            font-size: 80px;
+        }
+        @include rmaxwd(576){
+            font-size: 50px;
         }
         & span{
            -webkit-text-stroke-width: 1px;
@@ -66,7 +81,8 @@
                 content: "";
                 width: 149px;
                 height: 132px; 
-                background: url(../../images/shape/hero-1-super-toroid-black-matte-2.png) no-repeat 100% 100%;
+                background: url(../images/shape/hero-1-super-toroid-black-matte-2.png) no-repeat 100% 100%;
+                background-size: 100% 100%;
                 position: absolute;
                 right: 570px;
                 top: 0;
@@ -77,7 +93,25 @@
                     right: 470px;
                 }
                 @include lg{
+                    right: 350px;
+                    width: 120px;
+                    height: 110px;
+                }
+                @include md{
                     right: 200px;
+                    width: 100px;
+                    height: 90px;
+                }
+                @include sm{
+                    width: 70px;
+                    height: 65px;
+                    right: 100px;
+                }
+                @include rmaxwd(576){
+                    width: 80px;
+                    height: 80px;
+                    right: 40px;
+                    top: -24px;
                 }
            }
            &::after{
@@ -85,6 +119,7 @@
                 width: 180px;
                 height: 156px;
                 background: url(../../images/shape/hero-1-element-3.png) no-repeat 100% 100%;
+                background-size: 100% 100%;
                 position: absolute;
                 right: 350px;
                 top: 56px;
@@ -95,12 +130,30 @@
                 }
                 @include lg{
                     right: -10px;
+                    right: 157px;
+                    width: 126px;
+                    height: 118px;
+                }
+                @include md{
+                    right: 48px;
+                    width: 100px;
+                    height: 90px;
+                    top: 35px;
+                }
+                @include sm{
+                    width: 70px;
+                    height: 65px;
+                    right: 5px;
+
+                }
+                @include rmaxwd(576){
+                    display: none;
                 }
            }
        }
    }
    &-title-two{
-       color: var(--White, #FFF);
+       color: #FFF;
        font-family: Gilroy-Light;
        font-size: 100px;
        font-style: normal;
@@ -111,37 +164,67 @@
        @include xl{
         font-size: 65px;
     }
-   }
-    &-slider-wrapper{
-        margin-top: -54px;
-        @include xl{
-            margin-top: -35px;
+        @include lg{
+            font-size: 45px;
+        }
+       @include md{
+        font-size: 46px;
+        }
+       @include sm{
+        font-size: 50px;
+        letter-spacing: 18px;
+        }
+        @include rmaxwd(576){
+            font-size: 40px;
         }
     }
-    &-slider-img{
-        width: 1278px;
-        height: auto;
-        overflow: hidden;
-        @include rmaxwd(1800){
-            width: 1100px;
+
+    &-slider-section{
+        margin-top: -53px;
+        @include lg{
+            margin-top: -20px;
         }
-        @include rmaxwd(1600){
-            width: 978px;
+        @include sm{
+            margin-top: 10px;
         }
-        @include rmaxwd(1500){
-            width: 930px;
+        &::after{
+        content: "";
+        width: 120px;
+        height: 120px;
+        background: #141413;
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: 11;
+            @include lg {
+                width: 75px;
+                height: 75px;
+            }
+            @include md {
+                width: 75px;
+                height: 75px;
+            }
+            @include sm {
+                display: none;
+            }
         }
-        @include xl{
-            width: 820px;
-        }
-        
     }
-    &-slider-text{
+    &-slider-inner-text{
         bottom: 140px;
-        margin-left: 114px;
-      }
+        left: 114px;
+        @include lg{
+            bottom: 60px;
+            left: 114px;
+        }
+        & h3{
+            @include lg{
+                margin-bottom: 15px;
+                font-size: 30px;
+            }
+        }
+    }
     &-slider-text-1 {
-        color: var(--Secondery, #B0B0B0);
+        color: #B0B0B0;
         letter-spacing: 6.4px;
         text-transform: uppercase;
     }
@@ -150,36 +233,41 @@
             font-family: Gilroy-Light;
         }
     }
+   
     &-author-Wrapper{
-        margin-top: 375px;
-        @include lg{
-            visibility: hidden;
+        position: absolute;
+        bottom: 0;
+
+        @include rmaxwd(1831){
+            padding-left: 120px;
         }
-        p{
-            @include xl{
-                font-size: 13px;
-            }
+        @include xxl{
+            padding: 0 55px 0 65px;
         }
-        @include rmaxwd(1818){
-            padding-left: 70px;
-        }
-        @include rmaxwd(1800){
-            
-            padding-left: 30px;
-            margin-top: 250px;
-        }
-        @include rmaxwd(1650){
-            
-            padding-left: 20px;
-            padding-right: 20px;
-            margin-top: 200px;
+        @include xml{
+            padding: 0 28px 0 28px;
         }
         @include xl{
-            margin-top: 181px;
+            padding: 0 28px 0 28px;
+        }
+        @include lg{
+            padding: 0 10px 0 10px;
+        }
+        @include sm{
+            display: none;
+            visibility: hidden;
         }
 
+        p{
+            @include xl{
+                font-size:14px;
+            }
+            @include lg{
+                font-size:11px;
+            }
+        }
     }
-    
+
     &-author-text{
 
         & h5{
@@ -201,8 +289,142 @@
     }
 }
 
-                                        
 
+// hero-area honme-2
+.hero-area-two{
+    position: relative;
+    &::after{
+        content: "";
+        position: absolute;
+        width: 376px;
+        height: 376px;
+        right: 58px;
+        top: 0px;
+        background: rgba(237, 188, 90, 0.70);;
+        filter: blur(200px);
+        animation: zoomInOut 5s 2s infinite;
+        z-index: 1;
+      }
+      .spiral-shape{
+        right: 90px;
+        top: 10px;
+        animation: rotated_circle 30s infinite;
+      }
+    &-wrapper{
+        margin: 0 auto;
+        width: 73.50%;
+    }
+    &-first-containt-inner{
+        h1{
+            text-transform: uppercase;
+            &.after-shape{
+                position: relative;
+                &::after{
+                    content: "";
+                    background: url(../../images/shape/h2-hero-star-shape.svg) no-repeat 100% 100%;
+                    background-size: 100% 100%;
+                    width: 132px;
+                    height: 132px;
+                    z-index: 1;
+                    position: absolute;
+                    margin-left: 55px;
+                }
+            }
+            span{
+                -webkit-text-stroke-width: 1px;
+                -webkit-text-stroke-color: #FFF;
+                color: transparent;
+            }
+            
+        }
+    }
+    &-second-inner{
+        width: 63%;
+    }
+    &-contain-img{
+        width: 859px;
+        height: 400px; 
+        border-radius: 250px;
+    }
+    &-contain-text{
+        width: 191px;
+        height: 191px;
+        border-radius: 50%;
+        background: $primary-color;
+        text-align: center;
+        padding: 40px 36px;
+        bottom: 0;
+        right: -10px;
+       a{
+            display: inline-block;
+            font-family: Gilroy-Bold;
+            span{
+                font-size: 40px;
+                color: $black;
+                @include transition;
+            }
+            h4{
+                font-size: 20px;
+                font-weight: 400;
+                color: $black;
+                @include transition;
+            }
+            &:hover{
+                span ,h4{
+                    color: $secondary-color;
+                }
+            }
+       }
+    }
+    &-clint-review{
+        width: 37%;
+        margin: 72px 59px 0 57px;
+    }
+    &-client-info{
+        .client-img{
+            .single-images{
+                width: 62px;
+                height: 62px;
+                border-radius: 50%;
+                border: 3px solid #fff;
+            }
+            .clint-1{
+                left: 0;
+                z-index: 1;
+            }
+            .clint-2{
+                left: 31px;
+                z-index: 2;
+            }
+            .clint-3{
+                left: 62px;
+                z-index: 3;
+            }
+        }
+        .pluse-shape{
+            a{
+                width: 62px;
+                height: 62px;
+                background: #EDBC5A;
+                display: inline-block;
+                border-radius: 50%;
+                text-align: center;
+                line-height: 60px;
+                border: 3px solid $secondary-color;
+                left: 96px;
+                z-index: 4;
+            }
+            &:hover{
+                a{
+                    color: $black;
+                }
+            }
 
-
-
+        }
+        .client-text{
+            p{
+                color: $secondary-color ;
+            }
+        }
+    }
+}

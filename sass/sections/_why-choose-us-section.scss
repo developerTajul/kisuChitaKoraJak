@@ -1,14 +1,22 @@
-.wcu-area{
-    @include xl{
+.wcu-area {
+    @include xl {
         padding-bottom: 100px;
     }
-    @include lg{
-        padding-bottom: 150px;
+    @include lg {
+        padding-bottom: 80px;
         padding-top: 50px;
     }
-    &-text{
-        a{
-            color:#EDBC5A;
+    @include md {
+        padding-bottom: 50px;
+        padding-top: 20px;
+    }
+    @include sm {
+        padding-bottom: 30px;
+        padding-top: 10px;
+    }
+    &-text {
+        a {
+            color: #EDBC5A;
             font-family: Gilroy-Medium;
             font-size: 22px;
             font-style: normal;
@@ -17,38 +25,57 @@
             text-decoration-line: underline;
             display: inline-block;
         }
-        @include lg{
+        @include lg {
             margin-right: 200px;
         }
-    }
-    &-counter{
-        @include lg{
-            margin-right:25px;
+        @include sm {
+            margin-right: 0px;
         }
     }
-    &-counter-wrapper{
-        & span{
-            color: var#fff;
-            font-family: Gilroy-Bold;
-            font-size: 120px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: normal;
+    &-card-info {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 24px;
+    }
+    &-info-card-wrapper {
+        margin-bottom: 33px;
+    }
+    &-circle-img {
+        position: absolute;
+        top: 98px;
+        right: 120px;
+        -webkit-animation: rotated_circle 30s infinite;
+        animation: rotated_circle 30s infinite;
+        z-index: 99;
+        overflow: hidden;
+        width: 580px;
+        height: 580px;
+    }
+    &-side-img-content {
+        position: relative;
+        top: 0;
+        left: 230px;
+        z-index: 11;
+        &::after {
+            content: "";
+            position: absolute;
+            width: 376px;
+            height: 376px;
+            right: -38px;
+            top: -223px;
+            background: rgba(237, 188, 90, 0.7);
+            -webkit-filter: blur(200px);
+            filter: blur(200px);
+            z-index: -1;
         }
-        p{
-            color: #FFF;
-            font-family: Rubik;
-            font-size: 18px;
-            font-style: normal;
-            font-weight: 700;
-            line-height: 29px; /* 161.111% */
-            letter-spacing: 6.66px;
+        h3 {
+            -webkit-text-stroke-width: 1px;
+            -webkit-text-stroke-color: $white;
+            color: transparent;
+            font-size: 35px;
+            letter-spacing: 15.75px;
             text-transform: uppercase;
-            @include xl{
-                font-size: 16px;
-                letter-spacing: 4.66px;
-            }
+            margin-left: 9px;
         }
     }
 }
-

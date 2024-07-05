@@ -1,31 +1,50 @@
 
 .hero-area{
-    .slider-arrow-btn.prev-btn.slick-arrow {
+    .slick-arrow.btn-prev{
         position: absolute;
-        bottom: 10px;
+        bottom: 0;
+        left: 50px;
         z-index: 11;
-        left: 6px;
         width: 46px;
         height: 46px;
         color: #ffffff;
         background: #131313;
         @include transition;
         &:hover{
-            background: #EDBC5A;
+            background:#EDBC5A;
+        }
+        @include lg{
+            width: 36px;
+            height: 36px;
+            left: 40px;
+        }
+        @include sm{
+            width: 36px;
+            height: 36px;
+            left: 40px;
         }
     }
-    .slider-arrow-btn.next-btn.slick-arrow {
+    .slick-arrow.btn-next {
         position: absolute;
-        bottom: 10px;
+        bottom: 0;
+        left: 0;
         z-index: 11;
-        left: 56px;
         width: 46px;
         height: 46px;
         color: #ffffff;
         background: #131313;
         @include transition;
         &:hover{
-            background: #EDBC5A;
+            background:#EDBC5A;
+        }
+        @include lg{
+            width: 36px;
+            height: 36px;
+        }
+        @include sm{
+            width: 36px;
+            height: 36px;
+
         }
     }  
 }
@@ -34,9 +53,9 @@
 .testimonial-area{
     .slick-arrow.btn-prev{
         position: absolute;
-        bottom: 47px;
+        bottom: 129px;
+        left: 66px;
         z-index: 11;
-        left: 56px;
         width: 44px;
         height: 44px;
         color: #ffffff;
@@ -47,9 +66,9 @@
     }
     .slick-arrow.btn-next {
         position: absolute;
-        bottom: 47px;
+        bottom: 129px;
+        left: 10px;
         z-index: 11;
-        left: 0;
         width: 44px;
         height: 44px;
         color: #ffffff;

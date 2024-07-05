@@ -4,12 +4,25 @@
   @include lg{
     padding-bottom: 20px;
   }
-    &-shape{
-      position: absolute;
-      top: 99px;
-      right: 80px;
-      animation: rotated_circle 30s infinite;
+  &-shape{
+    position: absolute;
+    width: 300px;
+    height: 289px; 
+    top: 99px;
+    right: 80px;
+    animation: rotated_circle 30s infinite;
+    @include md{
+      width: 100px;
+      height: 95px;
     }
+    @include sm{
+      width: 170px;
+      height: 165px;
+      top: 44px;
+    }
+
+  }
+  &.style-1{
     .text-marque-section {
         gap: 40px;
         & .text-marque-wrapper {
@@ -40,6 +53,14 @@
             @include lg{
               font-size: 180px;
             }
+            @include md{
+              font-size: 120px;
+              margin-right: 50px;
+            }
+            @include sm{
+              font-size: 90px;
+              margin-right: 30px;
+            }
           }
           & .text-marque-title-two {
             -webkit-text-stroke-width: 1px;
@@ -52,12 +73,101 @@
             @include xl{
               font-size: 210px;
             }
-            @include lg{
-              font-size: 180px;
+            @include md{
+              font-size: 120px;
+              margin-right: 30px;
+            }
+            @include sm{
+              font-size: 90px;
+              margin-right: 30px;
             }
           }
         }
     }
-}
+  }
+  &.style-2{
+    &-shape{
+      position: absolute;
+      width: 300px;
+      height: 289px; 
+      top: 99px;
+      right: 80px;
+      animation: rotated_circle 30s infinite;
+      @include md{
+        width: 100px;
+        height: 95px;
+      }
+      @include sm{
+        width: 170px;
+        height: 165px;
+        top: 44px;
+      }
 
-// home-1-marque-End
+    }
+    .text-marque-section {
+        gap: 40px;
+        & .text-marque-wrapper {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 50px;
+    
+          &.first-text-marque{
+            animation: Scroll 32s linear infinite;
+          }
+          &.second-text-marque{
+            animation: Scroll 32s linear infinite;
+            animation-direction: reverse;
+          }
+        }
+        & .single-text-marque {
+          & .text-marque-title-one {
+            font-size: 150px;
+            white-space: nowrap;
+            text-transform: uppercase;
+            span{
+              font-family: Gilroy-Light; 
+            }
+            @include xl{
+              font-size: 210px;
+            }
+            @include lg{
+              font-size: 180px;
+            }
+            @include md{
+              font-size: 120px;
+              margin-right: 50px;
+            }
+            @include sm{
+              font-size: 90px;
+              margin-right: 30px;
+            }
+          }
+          & .text-marque-title-two {
+            font-family: Gilroy-Light;
+            font-size: 80px;
+            letter-spacing: 40px;
+            text-transform: uppercase;
+            white-space: nowrap;
+            span{
+              text-align: center;
+              font-family: Gilroy-Bold;
+              font-size: 65px;
+              letter-spacing: 46.15px;
+            }
+            @include xl{
+              font-size: 210px;
+            }
+            @include md{
+              font-size: 120px;
+              margin-right: 30px;
+            }
+            @include sm{
+              font-size: 90px;
+              margin-right: 30px;
+            }
+          }
+        }
+    }
+  }
+}

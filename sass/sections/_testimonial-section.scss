@@ -1,12 +1,27 @@
 .testimonial-area{
+  @include md{
+    padding-bottom: 40px;
+  }
+  &-img-content{
+    margin-top: -30px;
+    &.style-2{
+      margin-top: 0;
+    }
+    @include md{
+      margin-left: 0;
+    }
+  }
+  
   &-main-slider{
     margin-top: -130px;
-    z-index: 3;
+    margin-right: -12px;
   }
   &-slider-wrapper{
     background: #1A1717;
-    padding: 105px 119px 105px 50px;
-
+    padding: 105px 119px 78px 50px;
+    &.style-2{
+      
+    }
     @include rmaxwd(1705){
       padding: 105px 70px 105px 50px;
     }
@@ -21,7 +36,7 @@
     & .fast-slider{
       width: 30%;
       & .slider-image{
-        margin-bottom: 27px;
+        margin-bottom: 50.50px;
         & img{
           width: 80px;
           height: 80px;
@@ -31,6 +46,7 @@
     }
     & .second-slider{
       width: 70%;
+      padding: 0 10px;
       .slider-pra{
         p{
           @include rmaxwd(1500){
@@ -42,6 +58,12 @@
   }
   .slick-center img{
     border: 2px solid #fff;
-    margin-right: 55px;
-   }
+    margin-right: 100px;
+    @include transition;
+  }
+  &-main-slider-style-2{
+    margin-top: 0px;
+    margin-right: -305px;
+    margin-left: 22px;
+  }
 }

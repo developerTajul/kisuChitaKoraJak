@@ -1,0 +1,38 @@
+.title-border-1{
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.00) 1.51%, #EDBC5A 105.37%);
+    width: 531px;
+    height: 1px;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+    @include lg {
+        width: 360px;
+        margin:22px 0 32px 0;
+    }
+}
+.title-border-2{
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.00) 1.51%, #EDBC5A 105.37%);
+    width: 386px;
+    height: 1px;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+    @include lg {
+        width: 320px;
+    }
+    @include md {
+        width: 200px;
+        transform: rotate(90deg);
+        margin-top: 60px;
+    }
+}
+.title-border-3{
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.00) 1.51%, #EDBC5A 105.37%);
+    width: 416px;
+    height: 1px;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+    @include lg {
+        width: 320px;
+    }
+    @include md {
+        width: 200px;
+        transform: rotate(90deg);
+        margin-top: 60px;
+    }
+}
