@@ -1,0 +1,117 @@
+.pricing-area{
+    &-bg-img{
+        top: -153px;
+    }
+    &-card{
+        &:hover{
+            .pricing-area-card-wrapper{
+                margin-top: -16px;
+                z-index: 1;
+            }
+            .pricing-area-cards-btn{
+                opacity: 1;
+                visibility: visible;
+                max-height: 100%;
+                transform: scaleY(1);
+                margin-top: 10px;
+            }
+            .pricing-area-card-wrapper{
+                &::before{
+                    opacity: 1;
+                    visibility: visible;
+                    transform: scaleY(1);
+                    top: -20px;
+                }
+            }
+        }
+    }
+    &-card-wrapper{
+        padding: 74px 60px 52px 60px;
+        border-radius: 10px;
+        border: 1px solid #292929;
+        transition: all 0.3s ease 0s;
+        background: #1A1717;
+        &::before {
+            content: "Popular Package";
+            border-radius: 54px;
+            background: $primary-color;
+            padding: 5px 20px;
+            color: $black;
+            font-size: 14px;
+            display: inline-block;
+            left: 134px;
+            top: -30px;
+            position: absolute;
+            visibility: hidden;
+            opacity: 0;
+            transition: all 0.3s ease 0s;
+            transform: scaleY(0);
+            transform-origin: top center;
+        }
+    }
+    &-card-icon{
+        font-size: 36px;
+        font-weight: 900;
+    }
+    &-card-text{
+        h5{
+            color: #FFF; 
+            margin-bottom: 41px;
+        }
+        h3{
+            span{
+                color: #FFF;
+                font-family: Rubik;
+                font-size: 16px;
+                font-weight: 400;
+            }
+        }
+    }
+    &-cards-list{
+        ul{
+            li{
+                margin-bottom: 20px;
+                display:flex;
+                align-items: center;
+                &.checkmark{
+                    &::before{
+                        content: "\e910";
+                        font-size: 20px;
+                        color: $primary-color;
+                        font-family: 'icomoon';
+                        margin:0 20px 0 0;
+                    }
+                }
+                &.closemark{
+                    &::before{
+                        content: "\e90c";
+                        font-size: 20px;
+                        color: $primary-color;
+                        font-family: 'icomoon';
+                        margin:0 20px 0 0;
+                    }
+                }
+            }
+        }
+    }
+    &-cards-btn{
+        display: flex;
+        justify-content: center;
+        opacity: 0;
+        visibility: hidden;
+        max-height: 0;
+        transition: all 0.3s ease 0s;
+        transform: scaleY(0);
+        transform-origin: top center;
+        a{
+            font-size: 14px;
+            padding: 10px 20px;
+            border-radius: 65px;
+            border: 1px solid #3C3C3C;
+            display: inline-block;
+        }
+        img{
+            padding-left: 15px;
+        }
+    }
+}

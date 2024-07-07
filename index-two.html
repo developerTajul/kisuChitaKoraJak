@@ -50,20 +50,20 @@
 <body> 
    <!-- Header Start -->
    <header>
-    <div class="header-area p-relative">
+    <div class="header-area body-black p-relative">
         <div class="container-fulid">
             <div class="row align-items-center gx-0">
-                <div class="col-6 col-xl-2 col-lg-3 col-md-5 p-0">
-                    <div class="header-area-image ml-100">
+                <div class="col-3 col-xl-2 col-lg-3 col-md-4 p-0">
+                    <div class="header-area-image style-2 ml-100">
                         <a href="index.html"><img src="./images/logo/header-logo.png" alt="logo"></a>
                     </div>
                 </div>
-                <div class="col-6 col-xl-10 col-lg-9 col-md-7">
-                    <div class="header-area-main-menu d-flex justify-content-end  d-xl-flex d-lg-flex  d-md-flex align-items-center justify-content-xl-between justify-content-lg-between justify-content-md-end   p-relative z-index-11">
+                <div class="col-9 col-xl-10 col-lg-9 col-md-8">
+                    <div class="header-area-menu style-2 d-flex justify-content-end  d-xl-flex d-lg-flex  d-md-flex align-items-center justify-content-xl-between justify-content-lg-between justify-content-md-end   p-relative z-index-11">
                         <nav>
-                            <ul class="d-xl-flex d-lg-flex justify-content-center align-items-center">
+                            <ul class="main-menu  d-xl-flex d-lg-flex justify-content-center align-items-center">
                                 <li>
-                                    <a class="plus-icon" href="index.html">Home</a>
+                                    <a class="plus-icon" href="#">Home</a>
                                     <ul class="sub-menu">
                                         <li><a href="index.html">HomeOne</a></li>
                                         <li><a href="index-two.html">HomeTwo</a></li>
@@ -111,7 +111,7 @@
                         <button id="toggle-button">
                             <a href="#"><i class="fa-solid fa-bars"></i></a>
                         </button>
-                        <div class="header-area-menu-icon mr-100">
+                        <div class="header-area-menu-icon style-2 mr-100">
                             <a class="canvas" href="#"><img src="./images/icon/h2-canvars.svg" alt="icone"></a>
                         </div>
                     </div>
@@ -121,16 +121,16 @@
                     <nav>
                         <ul class="dropdown">
                             <li>
-                                <a href="#">Home</a>
+                                <a href="index.html">Home</a>
                                 <div class="dropdown-btn">
                                     <button class="n  width-100" onclick="toggleList(1)"><i class="fa-solid fa-plus"></i></button>
                                 </div>
                                 <ul id="dropdown-toggle-menu-1" class=" hidden-list">
-                                    <li><a href="#">HomeOne</a></li>
-                                    <li><a href="#">HomeTwo</a></li>
+                                    <li><a href="index.html">HomeOne</a></li>
+                                    <li><a href="index-two.html">HomeTwo</a></li>
                                 </ul>
                             </li>
-                            <li><a href="#">About</a></li>
+                            <li><a href="">About</a></li>
                             <li><a href="#">Pages</a>
                                 <div class="dropdown-btn">
                                     <button class="dropdown-toggle-btn width-100" onclick="toggleList(2)"><i class="fa-solid fa-plus"></i></button>
@@ -182,42 +182,49 @@
     <!-- Main Start -->
     <main>
         <!-- Hero Area Start -->
-        <div class="hero-area-two body-black p-relative pt-88">
+        <div class="hero-area-two body-black p-relative pt-83">
             <div class="spiral-shape p-absolute">
                 <img src="./images/shape/h2-hero-spiral-shape.png" alt="">
             </div>
-            <div class="hero-area-two-wrapper">
-                <div class="hero-area-two-first-containt mb-52">
-                    <div class="hero-area-two-first-containt-inner">
-                        <h1 class="after-shape">Website</h1>
-                        <h1>Develop <span>Agency</span></h1>
+            <div class="hero-area-two-second-containt">
+                <div class="container">
+                    <div class="hero-area-two-wrapper">
+                        <div class="hero-area-two-first-containt mb-52">
+                            <div class="hero-area-two-first-containt-inner">
+                                <h1 class="after-shape">Website</h1>
+                                <h1>Develop <span>Agency</span></h1>
+                            </div>
+                        </div>
+                        
                     </div>
-                </div>
-                <div class="hero-area-two-second-containt">
-                    <div class="hero-area-two-second-wrapper d-flex justify-content-between ">
-                        <div class="hero-area-two-second-inner">
-                            <div class="hero-area-two-contain-img  p-relative">
-                                <img src="./images/hero/h2-hero-img.png" alt="">
-                                <div class="hero-area-two-contain-text p-absolute">
-                                    <a href="#"><span class="icon-send"></span ><h4>Explore More</h4></a>
+                    <div class="row">
+                        <div class="col-xl-8">
+                            <div class="hero-area-two-second-inner">
+                                <div class="hero-area-two-contain-img  p-relative">
+                                    <img src="./images/hero/h2-hero-img.png" alt="">
+                                    <div class="hero-area-two-contain-text p-absolute">
+                                        <a href="#"><span class="icon-send"></span ><h4>Explore More</h4></a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="hero-area-two-clint-review ">
-                            <p>Proin efficitur, mauris vel condimentum pulvinar, velit orci consectetur ligula, eget egestas magna mi ut arcu. Phasellus nec odio orci. Nunc id massa ante. Suspendisse sit amet neque euismod, convallis quam eget, dignissim massa. </p>
-                            <div class="title-border-3 mb-42 mt-32">
-                            </div>
-                            <div class="hero-area-two-client-info">
-                                <div class="client-img d-flex p-relative">
-                                    <img class="single-images clint-1 p-absolute" src="./images/hero/clint (1).jpg" alt="">
-                                    <img  class="single-images clint-2  p-absolute" src="./images/hero/clint (2).jpg" alt="">
-                                    <img  class="single-images clint-3  p-absolute" src="./images/hero/clint (3).jpg" alt="">
-                                    <div class="pluse-shape">
-                                        <a  class=" p-absolute" href="#"><i class="fa-solid fa-plus"></i></a>
-                                    </div>
+                        <div class="col-xl-4">
+                            <div class="hero-area-two-clint-review ">
+                                <p>Proin efficitur, mauris vel condimentum pulvinar, velit orci consectetur ligula, eget egestas magna mi ut arcu. Phasellus nec odio orci. Nunc id massa ante. Suspendisse sit amet neque euismod, convallis quam eget, dignissim massa. </p>
+                                <div class="title-border-3 mb-42 mt-32">
                                 </div>
-                                <div class="client-text ml-197">
-                                    <p>100+ Popular <br> Clients</p>
+                                <div class="hero-area-two-client-info">
+                                    <div class="client-img d-flex p-relative">
+                                        <img class="single-images clint-1 p-absolute" src="./images/hero/clint (1).jpg" alt="">
+                                        <img  class="single-images clint-2  p-absolute" src="./images/hero/clint (2).jpg" alt="">
+                                        <img  class="single-images clint-3  p-absolute" src="./images/hero/clint (3).jpg" alt="">
+                                        <div class="pluse-shape">
+                                            <a  class=" p-absolute" href="#"><i class="fa-solid fa-plus"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="client-text ml-197">
+                                        <p>100+ Popular <br> Clients</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -507,7 +514,7 @@
          </div>
         <!-- Why Choose Us End   -->
         <!-- Video-popup-area Start -->
-        <div class="video-popup-area pt-270 pb-270" style="background-image: url(./images/video-popup/h2-video-popup-bg.png); background-position: center;">
+        <div class="video-popup-area pt-270 pb-270" style="background-image: url(./images/video-popup/h2-video-popup-bg.png.png); background-position: center;">
             <div class="video-popup-area-wrapper p-relative z-index-1">
                 <div class="video-popup-area-img d-flex align-items-center justify-content-center">
                     <img class="" src="images/shape/h2-video-popup-shape.png" alt="">
@@ -518,9 +525,98 @@
             </div>
         </div>
         <!-- Video-popup-area End -->
-        
+        <!-- Pricing Area Start  -->
+         <div class="pricing-area body-black pt-140 p-relative">
+            <div class="pricing-area-bg-img p-absolute">
+                <img src="./images/pricing/pricing-bg-dot-shape 1.png" alt="">
+            </div>
+            <div class="container">
+                <div class="section-title mb-60 position-relative z-index-11 style-2">
+                    <span class="pb-15">Pricing Package<img src="./images/icon/section-title-arrow.svg" alt=""></span>
+                    <h2>Pricing Package For <br> All Web Design</h2>
+                </div>
+                <div class="row">
+                    <div class="col-xl-4">
+                        <div class="pricing-area-card p-relative">
+                            <div class="pricing-area-card-wrapper">
+                                <div class="pricing-area-card-icon mb-41">
+                                    <span class="icon-paint-can-open"></span>
+                                </div>
+                                <div class="pricing-area-card-text pb-32">
+                                    <h5>Regular Package</h5>
+                                    <h3>20.00 <span> / per month</span></h3>
+                                </div>
+                                <div class="pricing-area-cards-list">
+                                    <ul>
+                                        <li class="checkmark">Vestibulum luctus lorem vel</li>
+                                        <li class="checkmark">Etiam bibendum ex nec risus</li>
+                                        <li class="checkmark">Duis sit amet nunc quis elit</li>
+                                        <li class="closemark">Donec rutrum eros ut aliquet</li>
+                                        <li class="closemark">Suspendisse nec lorem bibendum</li>
+                                    </ul>
+                                    <div class="pricing-area-cards-btn">
+                                        <a href="#">Choose Package <img src="./images/icon/h2-bold-arrow.svg" alt=""></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4">
+                        <div class="pricing-area-card p-relative">
+                            <div class="pricing-area-card-wrapper">
+                                <div class="pricing-area-card-icon mb-41">
+                                    <span class="icon-paint-can-open"></span>
+                                </div>
+                                <div class="pricing-area-card-text pb-32">
+                                    <h5>Regular Package</h5>
+                                    <h3>20.00 <span> / per month</span></h3>
+                                </div>
+                                <div class="pricing-area-cards-list">
+                                    <ul>
+                                        <li class="checkmark">Vestibulum luctus lorem vel</li>
+                                        <li class="checkmark">Etiam bibendum ex nec risus</li>
+                                        <li class="checkmark">Duis sit amet nunc quis elit</li>
+                                        <li class="checkmark">Donec rutrum eros ut aliquet</li>
+                                        <li class="checkmark">Suspendisse nec lorem bibendum</li>
+                                    </ul>
+                                    <div class="pricing-area-cards-btn">
+                                        <a href="#">Choose Package <img src="./images/icon/h2-bold-arrow.svg" alt=""></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4">
+                        <div class="pricing-area-card p-relative">
+                            <div class="pricing-area-card-wrapper">
+                                <div class="pricing-area-card-icon mb-41">
+                                    <span class="icon-paint-can-open"></span>
+                                </div>
+                                <div class="pricing-area-card-text pb-32">
+                                    <h5>Regular Package</h5>
+                                    <h3>20.00 <span> / per month</span></h3>
+                                </div>
+                                <div class="pricing-area-cards-list">
+                                    <ul>
+                                        <li class="checkmark">Vestibulum luctus lorem vel</li>
+                                        <li class="checkmark">Etiam bibendum ex nec risus</li>
+                                        <li class="checkmark">Duis sit amet nunc quis elit</li>
+                                        <li class="checkmark">Donec rutrum eros ut aliquet</li>
+                                        <li class="checkmark">Suspendisse nec lorem bibendum</li>
+                                    </ul>
+                                    <div class="pricing-area-cards-btn">
+                                        <a href="#">Choose Package <img src="./images/icon/h2-bold-arrow.svg" alt=""></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </div>
+        <!-- Pricing Area End  -->
         <!-- Testimonial Area Start    -->
-        <div class="testimonial-area body-black p-relative z-index-11 pt-140">
+        <div class="testimonial-area style-2 body-black p-relative z-index-11 pt-140">
             <div class="container ">
                 <div class="row">
                     <div class="col-xl-6 col-lg-6">
@@ -645,7 +741,9 @@
                             <div class="blog-area-card-wrapper">
                                 <span class="mb-20">February - 22th 2024</span>
                                 <h5 class="mb-20">Will you be attending Affiliate Summit Europe?</h5>
-                                <p>I have been a loyal customer of this auto parts company for years and I cannot recommend them enough. Their extensive selection.</p>
+                                <div class="blog-area-pra">
+                                    <p>I have been a loyal customer of this auto parts company for years and I cannot recommend them enough. Their extensive selection.</p>
+                                </div>
                                 <div class="card-image mt-20 p-relative">
                                     <img src="images/blog/home-1-blog-img-3.png" alt="">
                                     <div class="blog-area-icone-img p-absolute">

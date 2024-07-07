@@ -1,5 +1,4 @@
 .header-area{
-  background:#131313;
   &-image{
     @include lg{
       margin-left: 50px;
@@ -12,20 +11,31 @@
       padding: 25px 0;
       margin-left: 5px;
     }
-  }
-  &-main-menu{
-    & ul{
-      @include xxl{
-        margin-left: 210px;
-      }
-      @include xml{
-        margin-left: 80px;
-      }
+    &.style-2{
       @include xl{
         margin-left: 50px;
       }
       @include lg{
-        margin-left: 30px;
+        margin-left: 10px;
+      }
+    }
+  }
+  &-menu{
+    & ul{
+      &.main-menu{
+        margin-left: 317px;
+        @include xxl{
+          margin-left: 210px;
+        }
+        @include xml{
+          margin-left: 80px;
+        }
+        @include xl{
+          margin-left: 50px;
+        }
+        @include lg{
+          margin-left: 30px;
+        }
       }
       @include rmaxwd(991){
         display: none;
@@ -49,7 +59,7 @@
           }
           & .sub-menu{
             visibility: visible;
-            top: 140px;
+            top: 100%;
             opacity: 1;
             transform: scaleY(1);
           }
@@ -105,14 +115,72 @@
         }
       }
     }
+    &.style-2{
+      ul{
+        &.main-menu{
+          margin-left: 0;
+        }
+        li{
+          @include rmaxwd(1700){
+            margin-left: 70px;
+          }
+          @include xml{
+            margin-left: 48px;
+          }
+          @include xl{
+            margin-left: 40px;
+          }
+          @include lg{
+            margin-left: 20px;
+            padding: 40px 0;
+          }
+          a{
+            @include xl{
+              font-size: 16px;
+            }
+            @include lg{
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
   }
   &-touch-btn{
     margin-left: 20px;
+    @include lg{
+      margin-left: 10px;
+    }
+    @include rmaxwd(991){
+      display: none;
+    }
     a{
       display: inline-block;
       padding: 10px 26px;
       border-radius: 111px;
       border: 1px solid rgba(255, 255, 255, 0.15);
+      @include xl{
+        font-size: 14px;
+        padding: 10px 20px;
+      }
+      @include lg{
+        font-size: 14px;
+        padding: 5px 10px;
+      }
+      @include md{
+        font-size: 14px;
+        padding: 8px 10px;
+      }
+      @include sm{
+        font-size: 14px;
+        padding: 8px 10px;
+      }
+      &::after{
+        content: "\e900";
+          color: #fff;
+          font-family: 'icomoon';
+          margin-left: 9px;
+      }
     }
   }
   #toggle-button{
@@ -142,6 +210,14 @@
     @include sm{
       margin-right: 10px;
     }
+    &.style-2{
+      @include xl{
+        margin-right: 50px;
+      }
+      @include lg{
+        margin-right: 10px;
+      }
+    }
     a{
       &.canvas::after {
         content: 'Menu';
@@ -152,6 +228,12 @@
         line-height: 29px;
         margin: 15px;
         margin-left: 15px;
+        @include xl{
+          font-size: 14px;
+        }
+        @include lg{
+          font-size: 14px;
+        }
       }
     }
   }

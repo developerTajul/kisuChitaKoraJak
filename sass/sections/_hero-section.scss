@@ -311,8 +311,6 @@
         animation: rotated_circle 30s infinite;
       }
     &-wrapper{
-        margin: 0 auto;
-        width: 73.50%;
     }
     &-first-containt-inner{
         h1{
@@ -339,7 +337,7 @@
         }
     }
     &-second-inner{
-        width: 63%;
+        margin-left: -60px;
     }
     &-contain-img{
         width: 859px;
@@ -377,8 +375,11 @@
        }
     }
     &-clint-review{
-        width: 37%;
-        margin: 72px 59px 0 57px;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        height: 100%;
     }
     &-client-info{
         .client-img{
