@@ -47,6 +47,14 @@
             autoplay: true,
             autoplaySpeed: 1500,
             arrows: false,
+            responsive: [
+                {
+                    breakpoint: 768,
+                    settings: {
+                        vertical:false,
+                    }
+                },
+            ],
             
             });
 
@@ -62,10 +70,10 @@
         });
 
 
-
-
-
-        $(".protfolio-area-active").slick({
+        /*==========================
+        Portfolio Slider
+        ============================*/
+        $(".portfolio-area-active").slick({
             slidesToShow: 3.35,
             slidesToScroll: 1,
             infinite: true,
@@ -80,7 +88,7 @@
             responsive: [{
                     breakpoint: 1400,
                     settings: {
-                        slidesToShow: 4,
+                        slidesToShow: 3,
                     },
                 },
                 {
@@ -96,7 +104,7 @@
                     },
                 },
                 {
-                    breakpoint: 767,
+                    breakpoint: 768,
                     settings: {
                         slidesToShow: 2,
                     },
@@ -109,6 +117,8 @@
                 },
             ],
         });
+
+        
 
 
 

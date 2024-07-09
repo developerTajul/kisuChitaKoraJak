@@ -1,4 +1,7 @@
 .section-title{
+    @include md{
+        margin-bottom: 30px;
+    }
     @include sm{
         margin-bottom: 50px;
     }

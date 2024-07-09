@@ -1,20 +1,30 @@
 
 .about-area{
+    &.style-2{
+        @include xl{
+            padding-top: 60px;
+        }
+        @include lg{
+            padding-top: 30px
+        }
+        @include md{
+            padding-top: 25px
+        }
+        @include sm{
+            padding-top: 20px
+        }
+    }
     @include xl{
-        padding-bottom: 45px;
-        padding-top: 35px;
+        padding-bottom: 105px;
     }
     @include lg{
-        padding-bottom: 20px;
-        padding-top: 35px;
+        padding-bottom: 70px;
     }
     @include md{
-        padding-bottom: 20px;
-        padding-top: 30px;
+        padding-bottom: 55px;
     }
     @include sm{
-        padding-bottom: 20px;
-        padding-top: 20px;
+        padding-bottom: 40px;
     }
   
     &-bg-shape {
@@ -131,6 +141,24 @@
             &.pra-text{
                 position: relative;
                 padding-left: 40.5px;
+                @include xl{
+                    font-size: 21px;
+                }
+                @include lg{
+                    font-size: 16px;
+                }
+                @include md{
+                    font-size: 13px;
+                    padding-left: 15px;
+                }
+                @include sm{
+                    font-size: 14px;
+                    padding-left: 15px;
+                }
+                @include rmaxwd (500) {
+                    padding:0 0 30px 0;
+                    font-size: 10px;
+                 }
                 &::before {
                     width: 5px;
                     height: 125px;
@@ -139,15 +167,55 @@
                     position: absolute;
                     left: 0;
                     top: -14px;
+                    @include rmaxwd (500) {
+                        display: none;
+                     }
                 }
             }
             
         }
     }
     &-side-img{
+        @include sm{
+            margin-top: 20px;
+        }
+        img{
+            @include xl{
+                max-width: 90%;
+            }
+            @include lg{
+                max-width: 90%;
+            }
+            @include md{
+                max-width: 90%;
+            }
+        }
         .side-img-part{
             top: 49px;
             right: -71px;
+            @include xl{
+                top: 35px;
+                right: -41px;
+                max-width: 60%;
+            }
+            @include lg{
+                top: 13px;
+                right: -47px;
+                max-width: 70%;
+            }
+            @include md{
+                top: 8px;
+                right: -32px;
+                max-width: 70%;
+            }
+            @include sm{
+                top: 36px;
+                right: 38px;
+                max-width: 70%;
+            }
+            @include rmaxwd (500) {
+               display: none;
+            }
         }
     }
 }

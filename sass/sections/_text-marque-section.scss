@@ -4,6 +4,12 @@
   @include lg{
     padding-bottom: 20px;
   }
+  @include md{
+    padding-bottom: 20px;
+  }
+  @include sm{
+    padding-bottom: 20px;
+  }
   &-shape{
     position: absolute;
     width: 300px;
@@ -12,15 +18,20 @@
     right: 80px;
     animation: rotated_circle 30s infinite;
     @include md{
-      width: 100px;
-      height: 95px;
+      width: 180px;
+      height: 160px;
+      top: 60px;
     }
     @include sm{
-      width: 170px;
-      height: 165px;
-      top: 44px;
+      width: 150px;
+      height: 135px;
+      top: 34px;
     }
-
+    @include rmaxwd(480) {
+      width: 100px;
+      height: 80px;
+      top: 25px;
+    }
   }
   &.style-1{
     .text-marque-section {
@@ -61,6 +72,10 @@
               font-size: 90px;
               margin-right: 30px;
             }
+            @include rmaxwd(480) {
+              font-size: 45px;
+              margin-right: 10px;
+            }
           }
           & .text-marque-title-two {
             -webkit-text-stroke-width: 1px;
@@ -73,36 +88,45 @@
             @include xl{
               font-size: 210px;
             }
+            @include lg{
+              margin-top: 1;
+              font-size: 180px;
+            }
             @include md{
               font-size: 120px;
               margin-right: 30px;
+              margin-top: 1;
             }
             @include sm{
               font-size: 90px;
               margin-right: 30px;
+              margin-top: 0;
+            }
+            @include rmaxwd(480) {
+              font-size: 45px;
+              margin-right: 10px;
+              margin-top: 0;
             }
           }
         }
     }
   }
   &.style-2{
-    &-shape{
-      position: absolute;
-      width: 300px;
-      height: 289px; 
-      top: 99px;
-      right: 80px;
-      animation: rotated_circle 30s infinite;
-      @include md{
-        width: 100px;
-        height: 95px;
-      }
-      @include sm{
-        width: 170px;
-        height: 165px;
-        top: 44px;
-      }
-
+    @include xl{
+      padding-top: 10px;
+      padding-bottom: 30px;
+    }
+    @include lg{
+      padding-top: 10px;
+      padding-bottom: 30px;
+    }
+    @include md{
+      padding-top: 10px;
+      padding-bottom: 30px;
+    }
+    @include sm{
+      padding-top: 10px;
+      padding-bottom: 30px;
     }
     .text-marque-section {
         gap: 40px;
@@ -111,7 +135,9 @@
           align-items: center;
           justify-content: center;
           gap: 50px;
-    
+          @include rmaxwd(1399){
+            margin-bottom: 0;
+          }
           &.first-text-marque{
             animation: Scroll 32s linear infinite;
           }
@@ -125,25 +151,27 @@
             font-size: 150px;
             white-space: nowrap;
             text-transform: uppercase;
+            @include md{
+              font-size: 120px;
+            }
+            @include sm{
+              font-size: 80px;
+            }
+            @include rmaxwd(480){
+              font-size: 50px;
+              letter-spacing: 10px;
+            }
             span{
               font-family: Gilroy-Light; 
             }
-            @include xl{
-              font-size: 210px;
-            }
-            @include lg{
-              font-size: 180px;
-            }
-            @include md{
-              font-size: 120px;
-              margin-right: 50px;
-            }
-            @include sm{
-              font-size: 90px;
-              margin-right: 30px;
-            }
           }
           & .text-marque-title-two {
+            @include sm{
+              margin-right: 30px;
+            }
+            @include sm{
+              margin-right: 15px;
+            }
             font-family: Gilroy-Light;
             font-size: 80px;
             letter-spacing: 40px;
@@ -154,17 +182,22 @@
               font-family: Gilroy-Bold;
               font-size: 65px;
               letter-spacing: 46.15px;
-            }
-            @include xl{
-              font-size: 210px;
-            }
-            @include md{
-              font-size: 120px;
-              margin-right: 30px;
+              @include sm{
+                font-size: 40px;
+                letter-spacing: 10px;
+              }
+              @include rmaxwd(480){
+                font-size: 30px;
+                letter-spacing: 10px;
+              }
             }
             @include sm{
-              font-size: 90px;
-              margin-right: 30px;
+              font-size: 40px;
+              letter-spacing: 13px;
+            }
+            @include rmaxwd(480){
+              font-size: 30px;
+              letter-spacing: 10px;
             }
           }
         }

@@ -1,17 +1,15 @@
 .portfolio-area{
     @include xl{
-        padding-top: 45px;
+        padding-bottom: 105px;
     }
     @include lg{
-        padding-top: 40px;
+        padding-bottom: 70px;
     }
     @include md{
-        padding-top: 35px;
-        padding-bottom: 10px;
+        padding-bottom: 55px;
     }
     @include sm{
-        padding-bottom: 30px;
-        padding-top: 25px;
+        padding-bottom: 40px;
     }
     &-wrapper{
        &::after{
@@ -153,9 +151,47 @@
         border-bottom: 1px dashed rgba(255, 255, 255, 0.50);
     }
 
+
+    &-slider{
+        @include xl{
+            padding-bottom: 50px;
+        }
+        @include lg{
+            padding-bottom: 50px;
+        }
+        @include md{
+            padding-bottom: 50px;
+        }
+        @include sm{
+            padding-bottom: 30px;
+        }
+    }
     &-slider-wrapper{
         position: relative;
         left: 199px;
+        @include xxl{
+            left: 167px;
+        }
+        @include xml{
+            left: 147px;
+        }
+        @include xl{
+            left: 0px;
+        }
+        @include lg{
+            left: 0px;
+        }
+        @include md{
+            left: 0px;
+            margin-left: 25px;
+        }
+        @include sm{
+            left: 0px;
+            margin-left: 20px;
+        }
+        @include rmaxwd(460){
+            margin-left: 0;
+        }
         &:hover{
             &.portfolio-area-slider-wrapper{
                &::after{

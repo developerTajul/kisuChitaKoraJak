@@ -4,18 +4,6 @@
     overflow: hidden;
     position: relative;
     z-index: 11;
-    @include xl{
-        padding-bottom: 20px;
-    }
-    @include lg{
-        padding-top: 20px;
-      }
-    @include md{
-        padding-top: 20px;
-      }
-    @include sm{
-        padding-top: 20px;
-      }
     & .brand-marque-wrapper {
         &.first-text-marque{
         animation: Scroll 32s linear infinite;

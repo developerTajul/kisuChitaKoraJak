@@ -66,10 +66,10 @@
     &.style-2{
         .counter-area-wrapper{
             @include md{
-                margin-left: 20px;
+                margin-right: 20px;
             }
             @include sm{
-                margin-bottom: 10px;
+                margin-right: 20px;
             }
             & span{
                 color: #fff;
@@ -78,6 +78,9 @@
                 font-style: normal;
                 font-weight: 400;
                 line-height: normal;
+                @include md{
+                    font-size: 60px;
+                }
                 @include sm{
                     font-size: 60px;
                 }
@@ -95,9 +98,13 @@
                     letter-spacing: 4.00px;
                     font-size: 17px;
                 }
+                @include lg{
+                    letter-spacing: 3.66px;
+                    font-size: 14px;
+                }
                 @include md{
-                    font-size: 16px;
-                    letter-spacing: 4.66px;
+                    letter-spacing: 1.66px;
+                    font-size: 14px;
                 }
                 @include sm{
                     font-size: 15px;

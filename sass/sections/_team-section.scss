@@ -1,17 +1,15 @@
 .team-area{
     @include xl{
-        padding-bottom: 50px;
+        padding-bottom: 105px;
     }
     @include lg{
-        padding-bottom: 40px;
+        padding-bottom: 70px;
     }
     @include md{
-        padding-top: 20px;
-        padding-bottom: 20px;
+        padding-bottom: 55px;
     }
     @include sm{
-        padding-top: 20px;
-        padding-bottom: 30px;
+        padding-bottom: 40px;
     }
     &-member-info-wrapper{
         @include rmaxwd(400){
