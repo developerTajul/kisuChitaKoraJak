@@ -1,17 +1,5 @@
 
 .blog-area{
-    @include xl{
-        padding-bottom: 105px;
-    }
-    @include lg{
-        padding-bottom: 70px;
-    }
-    @include md{
-        padding-bottom: 55px;
-    }
-    @include sm{
-        padding-bottom: 40px;
-    }
     &-card{
         &:hover{
             p{

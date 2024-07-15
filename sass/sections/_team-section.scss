@@ -1,16 +1,4 @@
 .team-area{
-    @include xl{
-        padding-bottom: 105px;
-    }
-    @include lg{
-        padding-bottom: 70px;
-    }
-    @include md{
-        padding-bottom: 55px;
-    }
-    @include sm{
-        padding-bottom: 40px;
-    }
     &-member-info-wrapper{
         @include rmaxwd(400){
             gap: 20px;
@@ -80,6 +68,11 @@
         }
         
     }
+    &-member-info-wrappe-secondary{
+        @include sm{
+            margin-bottom: 35px;
+        }
+    }
     &-member-img{
         width: 200px;
         height: 200px;
@@ -101,6 +94,31 @@
         }
         img{
             border-radius: 100%;
+        }
+    }
+    &-member-img-secondary{
+        width: 416px;
+        height: 416px;
+        margin-bottom: 40px;
+        @include xl{
+            width: 360px;
+            height: 360px;
+        }
+        @include lg{
+            width: 300px;
+            height: 300px;
+        }
+        @include md{
+            width: 220px;
+            height: 220px;
+        }
+        @include sm{
+            width: 220px;
+            height: 220px;
+            margin: 0 auto;
+            display: inline-block;
+            display: flex;
+            justify-content: center;
         }
     }
     &-member-text{

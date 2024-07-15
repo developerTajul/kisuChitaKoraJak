@@ -1,21 +1,9 @@
 .testimonial-area{
-  @include rmaxwd(991) {
-    padding-bottom: 40px;
-    padding-top: 40px;
-  }
-  &.style-2{
-    @include xl{
-      padding-bottom: 105px;
-  }
-  @include lg{
-      padding-bottom: 70px;
-  }
-  @include md{
-      padding-bottom: 55px;
-  }
-  @include sm{
+  &.style-1{
+    @include rmaxwd(991) {
       padding-bottom: 40px;
-  }
+      padding-top: 40px;
+    }
   }
   &.style-2{
     &::before{

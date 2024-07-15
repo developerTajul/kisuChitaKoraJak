@@ -60,6 +60,8 @@ Footer
 @import"./components/section-card/section-card";
 @import"./components/dropdown-menu/dropdown-menu";
 @import"./components/counter/counter";
+@import"./components/pages-heading/pages-heading";
+@import"./components/submit-form/submit-form";
 
 // SECTIONS
 @import"./sections/hero-section";
@@ -75,7 +77,15 @@ Footer
 @import"./sections/services";
 @import"./sections/pricing";
 
-
+// Pagses
+@import"./pages/about-page";
+@import"./pages/projects-page";
+@import"./pages/service-pages";
+@import"./pages/services-details";
+@import"./pages/team-page";
+@import"./pages/team-details-page";
+@import"./pages/blog-details";
+@import"./pages/contact";
 
 // LAYOUTS
 @import "./layouts/header";

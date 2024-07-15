@@ -118,10 +118,44 @@
             ],
         });
 
+
+           /*==========================
+        Blog Details Slider
+        ============================*/
+        $('.blog-page-active-slider').slick({
+            slidesToShow: 1,
+            centerMode: true,
+            centerPadding: '0',
+            autoplay: true,
+            autoplaySpeed: 1500,
+            arrows: false,
+            responsive: [
+                {
+                    breakpoint: 768,
+                    settings: {
+                        vertical:false,
+                    }
+                },
+            ],
+            
+            });
+
+         /*============================
+       Service Details Accordin
+        ============================*/
+        document.querySelectorAll('.wuc-accordion-wrapper').forEach((accordion) => {
+            const title = accordion.querySelector('.wuc-accordion-title');
+            const rightArrow = title.querySelector('.right-arrow');
+            const bottomArrow = title.querySelector('.bottom-arrow');
+            const content = accordion.querySelector('.wuc-accordion-pra');
         
-
-
-
+            title.addEventListener('click', () => {
+                content.classList.toggle('active');
+                rightArrow.classList.toggle('active');
+                bottomArrow.classList.toggle('active');
+            });
+        });
+       
       
         /*============================
         Magnific Popup

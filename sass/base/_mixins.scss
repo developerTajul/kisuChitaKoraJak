@@ -123,6 +123,35 @@
           #{$property}: #{$value};
 }
 
+@mixin padding-bottom-140{
+  @include xl{
+    padding-bottom: 105px;
+  }
+  @include lg{
+      padding-bottom: 70px;
+  }
+  @include md{
+      padding-bottom: 55px;
+  }
+  @include sm{
+      padding-bottom: 40px;
+  }
+}
+@mixin padding-top-140{
+  @include xl{
+    padding-top: 105px;
+  }
+  @include lg{
+      padding-top: 70px;
+  }
+  @include md{
+      padding-top: 55px;
+  }
+  @include sm{
+      padding-top: 40px;
+  }
+}
+
 // Small devices
 @mixin xs {
   @media only screen and (min-width: 0px) and (max-width:350px){

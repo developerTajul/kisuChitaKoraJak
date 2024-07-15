@@ -1,9 +1,11 @@
 
 .brand-marque-area{
-    margin-bottom: -39px;
-    overflow: hidden;
-    position: relative;
-    z-index: 11;
+    &.brand-marque-area-primary{
+        margin-bottom: -39px;
+        overflow: hidden;
+        position: relative;
+        z-index: 11;
+    }
     & .brand-marque-wrapper {
         &.first-text-marque{
         animation: Scroll 32s linear infinite;

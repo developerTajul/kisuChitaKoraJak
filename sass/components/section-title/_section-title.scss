@@ -3,7 +3,7 @@
         margin-bottom: 30px;
     }
     @include sm{
-        margin-bottom: 50px;
+        margin-bottom: 30px;
     }
     &.style-1{
         & h2{
@@ -27,11 +27,6 @@
                 font-size: 16px;
             }
         }
-    }
-}
-.section-title{
-    @include sm{
-        margin-bottom: 50px;
     }
     &.style-2{
         text-align: center;
@@ -58,3 +53,5 @@
         }
     }
 }
+
+

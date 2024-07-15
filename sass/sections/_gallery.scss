@@ -1,16 +1,4 @@
 .gallery-area{
-    @include xl{
-        padding-bottom: 105px;
-    }
-    @include lg{
-        padding-bottom: 70px;
-    }
-    @include md{
-        padding-bottom: 55px;
-    }
-    @include sm{
-        padding-bottom: 40px;
-    }
     &-bg-shape{
         top: -22px;
         left: 20px;

@@ -25,6 +25,11 @@
     @include sm{
         padding-bottom: 40px;
     }
+    .reverse{
+        @include rmaxwd(1199){
+            flex-direction: column-reverse;
+        }
+    }
     &-text {
         a {
             color: #EDBC5A;
@@ -55,6 +60,12 @@
         }
         @include sm{
             grid-template-columns: 1fr;
+            gap: 0;
+        }
+    }
+    &-card-info-secondary{
+        @include xl{
+            grid-template-columns: 1fr 1fr;
             gap: 0;
         }
     }
