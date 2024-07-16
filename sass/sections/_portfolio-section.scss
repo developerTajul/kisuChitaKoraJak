@@ -101,6 +101,12 @@
         border-radius: 50%;
         line-height: 99px;
         text-align: center;
+        &.style-2{
+            background: #B0B0B0;
+        }
+        &.style-3{
+            background: $white;
+        }
         @include xl{
             width: 80px;
             height: 80px;

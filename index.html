@@ -49,9 +49,9 @@
 <body> 
    <!-- Header Start -->
    <header>
-    <div class="header-area  body-black  ">
+    <div class="header-area body-black ">
         <div class="menu-bar fixed-menu ">
-            <div class="container-fulid">
+            <div class="container-fulid ">
                 <div class="row align-items-center  gx-0">
                     <div class="col-6 col-xl-2 col-lg-3 col-md-5 p-0">
                         <div class="header-area-image ml-100">
@@ -103,12 +103,12 @@
                             </div>
                         </div>
                     </div>
-                    
+                    <!-- Mobile Responsive Toggle Btn Start  -->
                     <div class="toggle-menus" id="toggle-active">
                         <nav>
                             <ul class="dropdown">
                                 <li>
-                                    <a href="#">Home</a>
+                                    <a href="index.html">Home</a>
                                     <div class="dropdown-btn">
                                         <button class="n  width-100" onclick="toggleList(1)"><i class="fa-solid fa-plus"></i></button>
                                     </div>
@@ -117,17 +117,16 @@
                                         <li><a href="index-two.html">HomeTwo</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="#">About</a></li>
+                                <li><a href="about.html">About</a></li>
                                 <li><a href="#">Pages</a>
                                     <div class="dropdown-btn">
                                         <button class="dropdown-toggle-btn width-100" onclick="toggleList(2)"><i class="fa-solid fa-plus"></i></button>
                                     </div>
                                     <ul id="dropdown-toggle-menu-2" class=" hidden-list">
-                                        <li><a href="#">PageOne</a></li>
-                                        <li><a href="#">PageTwo</a></li>
-                                        <li><a href="#">PageThree</a></li>
-                                        <li><a href="#">PageFour</a></li>
-                                        <li><a href="#">PageFive</a></li>
+                                        <li><a href="./pricing.html">Pricing</a></li>
+                                            <li><a href="./team.html">Team</a></li>
+                                            <li><a href="./team-details.html">Team Details</a></li>
+                                            <li><a href="./contact.html">Contact</a></li>
                                     </ul>
                                 </li>
                                 <li>
@@ -151,15 +150,16 @@
                                         <button class="dropdown-toggle-btn width-100" onclick="toggleList(4)"><i class="fa-solid fa-plus"></i></button>
                                     </div>
                                     <ul id="dropdown-toggle-menu-4" class=" hidden-list">
-                                        <li><a href="#">BlogOne</a></li>
-                                        <li><a href="#">BlogTwo</a></li>
-                                        <li><a href="#">BlogThree</a></li>
-                                        <li><a href="#">BlogFour</a></li>
-                                        <li><a href="#">BlogFive</a></li>
+                                        <li><a href="service.html">Services Page</a></li>
+                                        <li><a href="services-details.html">Services Details</a></li>
                                     </ul>
                                 </li>
                             </ul>
                         </nav>
+                    </div>
+                    <!-- Mobile Responsive Toggle Btn End  -->
+                    <div class="off-canvas-menu">
+                        
                     </div>
                 </div>
             </div>
@@ -505,7 +505,7 @@
                         </div>
                     </div>
                     <div class="portfolio-area-awards-wrapper portfolio-area-awards-spacing d-flex align-items-center gap-15 ml-80 mr-80  justify-content-center ">
-                        <div class="portfolio-area-awards-img">
+                        <div class="portfolio-area-awards-img style-2">
                             <img src="./images/icon/home-1-portfolio-dribbble-2.svg" alt="">
                         </div>
                         <div class="portfolio-area-awards-text">
@@ -516,7 +516,7 @@
                         </div>
                     </div>
                     <div class="portfolio-area-awards-wrapper d-flex justify-content-center align-items-center gap-15">
-                        <div class="portfolio-area-awards-img">
+                        <div class="portfolio-area-awards-img style-3">
                             <img src="./images/icon/home-1-portfolio-behance-3.svg" alt="">
                         </div>
                         <div class="portfolio-area-awards-text">
@@ -826,7 +826,7 @@
          </div>
         <!-- Blog & News Area End -->
         <!-- Brand Marquee Start -->
-        <div class="brand-marque-area body-black">
+        <div class="brand-marque-area body-black overflow-hidden">
             <div class="brand-marque-wrapper first-text-marque d-flex justify-content-center align-items-center gap-40 ">
                 <div class="single-img-marque">
                     <img src="./images/brand-marque/home-1-brand-marque-1.png" alt="">

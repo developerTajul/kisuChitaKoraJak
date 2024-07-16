@@ -15939,6 +15939,12 @@ body.admin-bar .header-menu-area.sticky_menu {
   line-height: 99px;
   text-align: center;
 }
+.portfolio-area-awards-img.style-2 {
+  background: #B0B0B0;
+}
+.portfolio-area-awards-img.style-3 {
+  background: #ffffff;
+}
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
   .portfolio-area-awards-img {
     width: 80px;
@@ -18466,10 +18472,10 @@ body.admin-bar .header-menu-area.sticky_menu {
 .header-area .fixed-menu {
   position: fixed;
   top: 0;
-  left: 0;
+  right: 0;
   width: 100%;
   background-color: transparent;
-  z-index: 99;
+  z-index: 999;
 }
 .header-area .fixed-menu.scrolled {
   background-color: #1a1a1a;

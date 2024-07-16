@@ -4,10 +4,10 @@
   .fixed-menu{
     position: fixed;
     top: 0;
-    left: 0;
+    right: 0;
     width: 100%;
     background-color: transparent;
-    z-index: 99;
+    z-index: 999;
     &.scrolled {
       background-color: #1a1a1a;
       @include transition;
@@ -263,5 +263,4 @@
   }
 }
 
-  
 
