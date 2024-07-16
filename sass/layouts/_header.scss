@@ -1,4 +1,25 @@
 .header-area{
+    width: 100%;
+    height: 153px;
+  .fixed-menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: transparent;
+    z-index: 99;
+    &.scrolled {
+      background-color: #1a1a1a;
+      @include transition;
+      ul{
+        li{
+          &.scroll-effect{
+            padding: 40px 0;
+          }
+        }
+      }
+    }
+  }
   &-image{
     @include lg{
       margin-left: 50px;
@@ -42,8 +63,11 @@
         visibility: hidden;
       }
       & li{
+        &.scroll-effect{
+          padding: 57px 0;
+          @include transition;
+        }
         margin-left: 80px;
-        padding: 57px 0;
         line-height: normal;
         list-style: none;
         position: relative;

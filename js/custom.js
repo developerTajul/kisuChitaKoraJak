@@ -170,7 +170,14 @@
         });
       
       
-      
+        $(window).on('scroll', function() {
+            if ($(window).scrollTop() > 50) {
+              $('.fixed-menu').addClass('scrolled');
+            } else {
+              $('.fixed-menu').removeClass('scrolled');
+            }
+          });
+          
       
       
       

@@ -51,123 +51,125 @@
    <!-- Header Start -->
    <header>
     <div class="header-area body-black p-relative ">
-        <div class="container-fulid">
-            <div class="row align-items-center gx-0">
-                <div class="col-3 col-xl-2 col-lg-3 col-md-4 p-0">
-                    <div class="header-area-image style-2 ml-100">
-                        <a href="index.html"><img src="./images/logo/header-logo.png" alt="logo"></a>
-                    </div>
-                </div>
-                <div class="col-9 col-xl-10 col-lg-9 col-md-8">
-                    <div class="header-area-menu style-2 d-flex justify-content-end  d-xl-flex d-lg-flex  d-md-flex align-items-center justify-content-xl-between justify-content-lg-between justify-content-md-end   p-relative z-index-11">
-                        <nav>
-                            <ul class="main-menu  d-xl-flex d-lg-flex justify-content-center align-items-center">
-                                <li>
-                                    <a class="plus-icon" href="#">Home</a>
-                                    <ul class="sub-menu">
-                                        <li><a href="index.html">HomeOne</a></li>
-                                        <li><a href="index-two.html">HomeTwo</a></li>
+        <div class="header-area body-black p-relative ">
+            <div class="menu-bar fixed-menu">
+                <div class="container-fulid">
+                    <div class="row align-items-center gx-0">
+                        <div class="col-3 col-xl-2 col-lg-3 col-md-4 p-0">
+                            <div class="header-area-image style-2 ml-100">
+                                <a href="index.html"><img src="./images/logo/header-logo.png" alt="logo"></a>
+                            </div>
+                        </div>
+                        <div class="col-9 col-xl-10 col-lg-9 col-md-8">
+                            <div class="header-area-menu style-2 d-flex justify-content-end  d-xl-flex d-lg-flex  d-md-flex align-items-center justify-content-xl-between justify-content-lg-between justify-content-md-end   p-relative z-index-11">
+                                <nav>
+                                    <ul class="main-menu  d-xl-flex d-lg-flex justify-content-center align-items-center">
+                                        <li class="scroll-effect">
+                                            <a class="plus-icon" href="#">Home</a>
+                                            <ul class="sub-menu">
+                                                <li><a href="index.html">HomeOne</a></li>
+                                                <li><a href="index-two.html">HomeTwo</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="scroll-effect"><a href="about.html">About</a></li>
+                                        <li class="scroll-effect"><a class="plus-icon" href="#">Pages</a>
+                                            <ul class="sub-menu">
+                                                <li><a href="./pricing.html">Pricing</a></li>
+                                                <li><a href="./team.html">Team</a></li>
+                                                <li><a href="./team-details.html">Team Details</a></li>
+                                                <li><a href="./contact.html">Contact</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="scroll-effect">
+                                            <a class="plus-icon" href="service.html">Services</a>
+                                            <ul class="sub-menu">
+                                                <li><a href="service.html">Services Page</a></li>
+                                                <li><a href="services-details.html">Services Details</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="scroll-effect"><a href="projects.html">Projects</a></li>
+                                        <li class="scroll-effect">
+                                            <a class="plus-icon" href="blog.html">Blogs</a>
+                                            <ul class="sub-menu">
+                                                <li><a href="./blog.html">Blog Page</a></li>
+                                                <li><a href="./blog-details.html">Blog Details</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                                        </li>
                                     </ul>
-                                </li>
-                                <li><a href="about.html">About</a></li>
-                                <li><a class="plus-icon" href="#">Pages</a>
-                                    <ul class="sub-menu">
-                                        <li><a href="./pricing.html">Pricing</a></li>
-                                        <li><a href="./team.html">Team</a></li>
-                                        <li><a href="./team-details.html">Team Details</a></li>
-                                        <li><a href="./contact.html">Contact</a></li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a class="plus-icon" href="service.html">Services</a>
-                                    <ul class="sub-menu">
-                                        <li><a href="service.html">Services Page</a></li>
-                                        <li><a href="services-details.html">Services Details</a></li>
+                                </nav>
+                                <div class="header-area-touch-btn">
+                                    <a href="#">Get In Touch</a>
+                                </div>
+                                <button id="toggle-button">
+                                    <a href="#"><i class="fa-solid fa-bars"></i></a>
+                                </button>
+                                <div class="header-area-menu-icon style-2 mr-100">
+                                    <a class="canvas" href="#"><img src="./images/icon/h2-canvars.svg" alt="icone"></a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="toggle-menus" id="toggle-active">
+                            <nav>
+                                <ul class="dropdown">
+                                    <li>
+                                        <a href="index.html">Home</a>
+                                        <div class="dropdown-btn">
+                                            <button class="n  width-100" onclick="toggleList(1)"><i class="fa-solid fa-plus"></i></button>
+                                        </div>
+                                        <ul id="dropdown-toggle-menu-1" class=" hidden-list">
+                                            <li><a href="index.html">HomeOne</a></li>
+                                            <li><a href="index-two.html">HomeTwo</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="about.html">About</a></li>
+                                    <li><a href="#">Pages</a>
+                                        <div class="dropdown-btn">
+                                            <button class="dropdown-toggle-btn width-100" onclick="toggleList(2)"><i class="fa-solid fa-plus"></i></button>
+                                        </div>
+                                        <ul id="dropdown-toggle-menu-2" class=" hidden-list">
+                                            <li><a href="#">PageOne</a></li>
+                                            <li><a href="#">PageTwo</a></li>
+                                            <li><a href="#">PageThree</a></li>
+                                            <li><a href="#">PageFour</a></li>
+                                            <li><a href="#">PageFive</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">Services</a>
+                                        <div class="dropdown-btn">
+                                            <button class="dropdown-toggle-btn width-100" onclick="toggleList(3)"><i class="fa-solid fa-plus"></i></button>
+                                        </div>
+                                        <ul id="dropdown-toggle-menu-3" class=" hidden-list">
+                                            <li><a href="#">ServicesOne</a></li>
+                                            <li><a href="#">ServicesTwo</a></li>
+                                            <li><a href="#">ServicesThree</a></li>
+                                            <li><a href="#">ServicesFour</a></li>
+                                            <li><a href="#">ServicesFive</a></li>
+                                        </ul>
                                         
-                                    </ul>
-                                </li>
-                                <li><a href="projects.html">Projects</a></li>
-                                <li>
-                                    <a class="plus-icon" href="blog.html">Blogs</a>
-                                    <ul class="sub-menu">
-                                        <li><a href="./blog.html">Blog Page</a></li>
-                                        <li><a href="./blog-details.html">Blog Details</a></li>
-
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
-                                </li>
-                            </ul>
-                        </nav>
-                        <div class="header-area-touch-btn">
-                            <a href="#">Get In Touch</a>
-                        </div>
-                        <button id="toggle-button">
-                            <a href="#"><i class="fa-solid fa-bars"></i></a>
-                        </button>
-                        <div class="header-area-menu-icon style-2 mr-100">
-                            <a class="canvas" href="#"><img src="./images/icon/h2-canvars.svg" alt="icone"></a>
+                                    </li>
+                                    <li><a href="#">Projects</a></li>
+                                    <li>
+                                        <a href="#">Blogs <span></a>
+                                        <div class="dropdown-btn">
+                                            <button class="dropdown-toggle-btn width-100" onclick="toggleList(4)"><i class="fa-solid fa-plus"></i></button>
+                                        </div>
+                                        <ul id="dropdown-toggle-menu-4" class=" hidden-list">
+                                            <li><a href="#">BlogOne</a></li>
+                                            <li><a href="#">BlogTwo</a></li>
+                                            <li><a href="#">BlogThree</a></li>
+                                            <li><a href="#">BlogFour</a></li>
+                                            <li><a href="#">BlogFive</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </nav>
                         </div>
                     </div>
-                </div>
-                
-                <div class="toggle-menus" id="toggle-active">
-                    <nav>
-                        <ul class="dropdown">
-                            <li>
-                                <a href="index.html">Home</a>
-                                <div class="dropdown-btn">
-                                    <button class="n  width-100" onclick="toggleList(1)"><i class="fa-solid fa-plus"></i></button>
-                                </div>
-                                <ul id="dropdown-toggle-menu-1" class=" hidden-list">
-                                    <li><a href="index.html">HomeOne</a></li>
-                                    <li><a href="index-two.html">HomeTwo</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="about.html">About</a></li>
-                            <li><a href="#">Pages</a>
-                                <div class="dropdown-btn">
-                                    <button class="dropdown-toggle-btn width-100" onclick="toggleList(2)"><i class="fa-solid fa-plus"></i></button>
-                                </div>
-                                <ul id="dropdown-toggle-menu-2" class=" hidden-list">
-                                    <li><a href="#">PageOne</a></li>
-                                    <li><a href="#">PageTwo</a></li>
-                                    <li><a href="#">PageThree</a></li>
-                                    <li><a href="#">PageFour</a></li>
-                                    <li><a href="#">PageFive</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="#">Services</a>
-                                <div class="dropdown-btn">
-                                    <button class="dropdown-toggle-btn width-100" onclick="toggleList(3)"><i class="fa-solid fa-plus"></i></button>
-                                </div>
-                                <ul id="dropdown-toggle-menu-3" class=" hidden-list">
-                                    <li><a href="#">ServicesOne</a></li>
-                                    <li><a href="#">ServicesTwo</a></li>
-                                    <li><a href="#">ServicesThree</a></li>
-                                    <li><a href="#">ServicesFour</a></li>
-                                    <li><a href="#">ServicesFive</a></li>
-                                </ul>
-                                
-                            </li>
-                            <li><a href="#">Projects</a></li>
-                            <li>
-                                <a href="#">Blogs <span></a>
-                                <div class="dropdown-btn">
-                                    <button class="dropdown-toggle-btn width-100" onclick="toggleList(4)"><i class="fa-solid fa-plus"></i></button>
-                                </div>
-                                <ul id="dropdown-toggle-menu-4" class=" hidden-list">
-                                    <li><a href="#">BlogOne</a></li>
-                                    <li><a href="#">BlogTwo</a></li>
-                                    <li><a href="#">BlogThree</a></li>
-                                    <li><a href="#">BlogFour</a></li>
-                                    <li><a href="#">BlogFive</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </nav>
                 </div>
             </div>
         </div>
