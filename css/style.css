@@ -16395,11 +16395,6 @@ body.admin-bar .header-menu-area.sticky_menu {
     margin: 0 50px 0 50px;
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .portfolio-area .portfolio-area-awards-spacing {
-    margin: 0 0 0 0;
-  }
-}
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .portfolio-area .portfolio-area-awards-spacing {
     margin: 20px 0 20px 0;
