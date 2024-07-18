@@ -15,6 +15,9 @@
         animation: zoomInOut 5s 2s infinite;
         z-index: 0;
         border-radius: 508px;
+        @include sm{
+            width: 270px;
+        }
     }
     &::after{
         content: "";

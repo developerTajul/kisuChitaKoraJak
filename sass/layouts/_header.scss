@@ -1,6 +1,9 @@
 .header-area{
     width: 100%;
     height: 153px;
+    @include sm{
+      height: 100px;
+    }
   .fixed-menu{
     position: fixed;
     top: 0;
@@ -139,6 +142,7 @@
         }
       }
     }
+
     &.style-2{
       ul{
         &.main-menu{
@@ -167,6 +171,13 @@
             }
           }
         }
+      }
+    }
+  }
+  &-menu-icon {
+    span{
+      &::before{
+        font-size: 30px;
       }
     }
   }
@@ -224,21 +235,27 @@
     }
   }
   &-menu-icon{
+    @include xl{
+      margin-right: 120px
+    }
     @include lg{
-      margin-right: 50px;
+      margin-right: 62px;
     }
     @include md{
-      margin-right: 50px;
-      padding-bottom: 6px;
+      margin-right: 120px
     }
     @include sm{
-      margin-right: 10px;
+      margin-right: 80px
     }
+    
     &.style-2{
       @include xl{
         margin-right: 50px;
       }
       @include lg{
+        margin-right: 10px;
+      }
+      @include sm{
         margin-right: 10px;
       }
     }
@@ -250,14 +267,22 @@
         font-style: normal;
         font-weight: 400;
         line-height: 29px;
-        margin: 15px;
         margin-left: 15px;
+        position: absolute;
         @include xl{
           font-size: 14px;
         }
         @include lg{
           font-size: 14px;
         }
+      }
+      &:hover{
+       span{
+        &::before{
+          color: $primary-color;
+          @include transition;
+        }
+       }
       }
     }
   }

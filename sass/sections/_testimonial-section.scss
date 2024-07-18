@@ -20,7 +20,7 @@
       -webkit-animation: zoomInOut 5s 2s infinite;
       animation: zoomInOut 5s 2s infinite;
       @include sm{
-        left: 0;
+        display: none;
       }
     }
   }
@@ -85,8 +85,8 @@
           max-height: 80px;
           border-radius: 50%;
           @include xl{
-            max-width: 75px;
-            max-height: 75px;
+            max-width: 65px;
+            max-height: 65px;
           }
           @include sm{
             max-width: 60px;
@@ -104,7 +104,7 @@
       .slider-pra{
         p{
           @include rmaxwd(1500){
-            font-size: 14px;
+            font-size: 12px;
           }
           @include sm{
             font-size: 12px;

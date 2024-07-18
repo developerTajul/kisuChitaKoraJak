@@ -164,11 +164,7 @@
                     top: 13px;
                 }
                 @include xs{
-                    width: 70px;
-                    height: 65px;
-                    left: 264px;
-                    top: 13px;
-
+                    display: none;
                 }
            }
        }
@@ -299,7 +295,7 @@
             padding: 0 28px 0 28px;
         }
         @include xl{
-            padding: 0 28px 0 28px;
+            padding: 0px 3px 0 11px;
         }
         @include lg{
             padding: 0 10px 0 10px;
@@ -368,11 +364,19 @@
         filter: blur(200px);
         animation: zoomInOut 5s 2s infinite;
         z-index: 1;
+        @include sm{
+            width: 276px;
+            height: 276px;
+            right: 20px;
+        }
       }
       .spiral-shape{
         right: 90px;
         top: 10px;
         animation: rotated_circle 30s infinite;
+        @include sm{
+            left: 10px;
+        }
       }
     
     &-first-containt-inner{
