@@ -141,7 +141,7 @@
             });
 
         /*============================
-        Service Details Accordin
+        Service Details Accordion
         ============================*/
         document.querySelectorAll('.wuc-accordion-wrapper').forEach((accordion) => {
             const title = accordion.querySelector('.wuc-accordion-title');
@@ -168,9 +168,8 @@
             preloader: false,
             fixedContentPos: false,
         });
-      
         /*
-        Window Load Offcanvas
+        Window nev scrolled fixed
         ============================*/
         $(window).on('scroll', function() {
             if ($(window).scrollTop() > 50) {
@@ -178,9 +177,11 @@
             } else {
               $('.fixed-menu').removeClass('scrolled');
             }
-          });
-          
-
+        });
+      
+        /*
+        Window Load Offcanvas
+        ============================*/
           $(".canvas-menu").click(function(){
             $(".off-canvas-menu").addClass("canvas-ative");
             $(".off-canvas-menu-overlay").addClass("canvas-overlay-ative");
@@ -189,6 +190,32 @@
             $(".off-canvas-menu").removeClass("canvas-ative");
             $(".off-canvas-menu-overlay").removeClass("canvas-overlay-ative");
           });
+        /*
+        /*
+        Window Load Offcanvas
+        ============================*/
+        $(document).ready(function() {
+            $(".search-btn-active").click(function() {
+                $('body').css('overflow', 'hidden');
+                $(".search-menu-container").addClass("search-menu-active");
+                $(".search-menu-overlay").addClass("search-menu-overlay-active");
+            });
+          
+            $(".close-btn").click(function() {
+                $('body').css('overflow', 'auto');
+                $(".search-menu-container").removeClass("search-menu-active");
+                $(".search-menu-overlay").removeClass("search-menu-overlay-active");
+            });
+          
+            window.onclick = function(e) {
+                if (e.target.matches(".search-menu-overlay")) {
+                    $('body').css('overflow', 'auto');
+                    $(".search-menu-container").removeClass("search-menu-active");
+                    $(".search-menu-overlay").removeClass("search-menu-overlay-active");
+                }
+            }
+          });
+          
       
       
         /*

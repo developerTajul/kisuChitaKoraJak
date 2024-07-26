@@ -47,8 +47,8 @@
 </head>
 
 <body>
-     <!-- Preloader Start  -->
-     <div id="preloader">
+    <!-- Preloader Start  -->
+    <div id="preloader">
         <div id="preloader-status">
             <div id="wifi-loader">
                 <svg viewBox="0 0 86 86" class="circle-outer">
@@ -112,7 +112,7 @@
                                         </ul>
                                     </li>
                                     <li>
-                                        <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                                        <a class="search-btn-active" href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
                                     </li>
                                 </ul>
                             </nav>
@@ -225,6 +225,21 @@
     <div class="off-canvas-menu-overlay">
     </div>
     <!-- Off Canvas End  -->
+    <!-- Search Btn Start -->
+    <div class="search-menu-container">
+        <form action="/search" method="GET">
+          <input type="text" name="query" class="input-field" placeholder="Search...">
+          <button type="submit" class="submit-btn">
+            <i class="fas fa-search"></i>
+          </button>
+        </form>
+        <button type="button" class="close-btn">
+          <i class="fas fa-times"></i>
+        </button>
+    </div>
+    <div class="search-menu-overlay">
+    </div>
+    <!-- Search Btn End -->
     <!-- Blog Page Star -->
     <div class="pricing-page body-black ">
         <div class="pages-heading p-relative">

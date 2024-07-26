@@ -13937,12 +13937,20 @@ body.admin-bar .header-menu-area.sticky_menu {
 }
 
 .toggle-menus {
-  display: none;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transform: scaleY(0);
+          transform: scaleY(0);
+  transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -ms-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
   position: absolute;
   z-index: 100;
-  top: 5000px;
+  top: -100%;
   z-index: 100;
-  left: -5000px;
+  left: 0;
   width: 100%;
   padding: 0 50px;
 }
@@ -13991,9 +13999,12 @@ body.admin-bar .header-menu-area.sticky_menu {
 
 @media (max-width: 991px) {
   #toggle-active.active {
-    display: block;
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+    visibility: visible;
+    opacity: 1;
     left: 0;
-    top: 80px;
+    top: 100%;
   }
 }
 
@@ -14925,6 +14936,121 @@ body.admin-bar .header-menu-area.sticky_menu {
 .scrollup-btn i {
   margin-top: -3px;
   display: block;
+}
+
+.search-menu-container {
+  position: fixed;
+  top: -100%;
+  left: 50%;
+  width: 700px;
+  z-index: 1000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transform: scaleY(0);
+          transform: scaleY(0);
+  -webkit-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+}
+.search-menu-container.search-menu-active {
+  visibility: visible;
+  opacity: 1;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: scaleY(1);
+          transform: scaleY(1);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+.search-menu-container form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #333333;
+  border-radius: 5px;
+  width: 100%;
+  padding: 15px;
+}
+.search-menu-container .input-field {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 15px;
+  font-size: 18px;
+  border: none;
+  border-bottom: 2px solid transparent;
+  border-radius: 4px;
+  outline: none;
+  background: #333333;
+  color: #ffffff;
+  -webkit-transition: border-color 0.3s;
+  transition: border-color 0.3s;
+}
+.search-menu-container .input-field:focus {
+  border-bottom: 2px solid #ffffff;
+}
+.search-menu-container .submit-btn {
+  padding: 10px;
+  border: none;
+  background: none;
+  color: #ffffff;
+  font-size: 22px;
+  border-radius: 4px;
+  cursor: pointer;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+}
+.search-menu-container .submit-btn:hover {
+  color: #EDBC5A;
+}
+.search-menu-container .close-btn {
+  margin-left: 10px;
+  padding: 10px;
+  border: none;
+  background: none;
+  color: #ffffff;
+  font-size: 32px;
+  border-radius: 4px;
+  cursor: pointer;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+}
+.search-menu-container .close-btn:hover {
+  color: #EDBC5A;
+}
+
+.search-menu-overlay {
+  position: fixed;
+  top: -100%;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transform: scaleY(0);
+          transform: scaleY(0);
+  -webkit-transform-origin: right center;
+          transform-origin: right center;
+  -webkit-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+}
+.search-menu-overlay.search-menu-overlay-active {
+  visibility: visible;
+  opacity: 1;
+  right: 0;
+  top: 0;
+  -webkit-transform: scaleY(1);
+          transform: scaleY(1);
 }
 
 @media (max-width: 1399px) {
@@ -19189,6 +19315,14 @@ body.admin-bar .header-menu-area.sticky_menu {
   color: #fff;
   font-family: "icomoon";
   margin-left: 9px;
+  transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -ms-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+}
+.header-area-touch-btn a:hover::after {
+  color: #EDBC5A;
 }
 .header-area #toggle-button {
   display: none;
@@ -19237,7 +19371,7 @@ body.admin-bar .header-menu-area.sticky_menu {
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .header-area-menu-icon.style-2 {
-    margin-right: 10px;
+    margin-right: 40px;
   }
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {

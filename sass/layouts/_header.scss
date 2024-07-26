@@ -212,9 +212,15 @@
       }
       &::after{
         content: "\e900";
-          color: #fff;
-          font-family: 'icomoon';
-          margin-left: 9px;
+        color: #fff;
+        font-family: 'icomoon';
+        margin-left: 9px;
+        @include transition;
+      }
+      &:hover{
+        &::after{
+          color: $primary-color;
+        }
       }
     }
   }
@@ -253,7 +259,7 @@
         margin-right: 50px;
       }
       @include lg{
-        margin-right: 10px;
+        margin-right: 40px;
       }
       @include sm{
         margin-right: 10px;
