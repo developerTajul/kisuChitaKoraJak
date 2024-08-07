@@ -24,8 +24,6 @@
     &-card{
         &:hover{
             .pricing-area-card-wrapper{
-                margin-top: -16px;
-                z-index: 1;
                 @include md{
                     margin-top: 50px;
                 }
@@ -44,15 +42,15 @@
                 opacity: 1;
                 visibility: visible;
                 max-height: 100%;
-                transform: scaleY(1);
                 margin-top: 10px;
+                @include transition;
+                transform: scaleY(1);
             }
             .pricing-area-card-wrapper{
                 &::before{
                     opacity: 1;
                     visibility: visible;
-                    transform: scaleY(1);
-                    top: -20px;
+                    top:-3px;
                 }
             }
         }
@@ -93,9 +91,8 @@
             position: absolute;
             visibility: hidden;
             opacity: 0;
-            transition: all 0.3s ease 0s;
-            transform: scaleY(0);
-            transform-origin: top center;
+            margin-top: -16px;
+            @include transition;
             @include xl{
                 left: 104px;
             }
@@ -122,7 +119,7 @@
                 color: $white;
                 font-size: 36px;
                 font-weight: 900;
-                transition: all 0.3s ease 0s;
+                @include transition;
             }
         }
     }
@@ -182,9 +179,27 @@
         opacity: 0;
         visibility: hidden;
         max-height: 0;
-        transition: all 0.3s ease 0s;
         transform: scaleY(0);
-        transform-origin: top center;
+        @include transition;
+        a{
+            font-size: 14px;
+            padding: 10px 20px;
+            border-radius: 65px;
+            border: 1px solid #3C3C3C;
+            display: inline-block;
+        }
+        img{
+            padding-left: 15px;
+        }
+    }
+    .visibles-card{
+        display: flex;
+        justify-content: center;
+        opacity: 1;
+        visibility: visible;
+        max-height: auto;
+        @include transition;
+        
         a{
             font-size: 14px;
             padding: 10px 20px;

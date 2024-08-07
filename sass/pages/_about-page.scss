@@ -131,9 +131,4 @@
             }
         }
     }
-    .team-area{
-       &.team-area-secondary{
-            @include padding-bottom-140;
-        }
-    }
 }

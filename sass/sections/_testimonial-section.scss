@@ -48,9 +48,6 @@
     display: flex;
     background: #1A1717;
     padding: 105px 119px 78px 50px;
-    @include sm{
-      display: block;
-    }
     @include rmaxwd(1705){
       padding: 105px 70px 105px 50px;
     }
@@ -67,7 +64,8 @@
       padding: 60px 25px 60px 25px;
     }
     @include sm{
-      padding: 45px 35px 45px 35px;
+      padding: 45px 5px 45px 5px;
+      display: block;
     }
     & .fast-slider{
       width: 30%;
@@ -100,32 +98,36 @@
       padding: 0 10px;
       @include sm{
         width: 100%;
+        padding: 0 5px;
       }
-      .slider-pra{
-        p{
-          @include rmaxwd(1500){
-            font-size: 12px;
-          }
-          @include sm{
-            font-size: 12px;
+      .slider-wrapper{
+        .slider-pra{
+          p{
+            @include rmaxwd(1500){
+              font-size: 12px;
+            }
+            @include sm{
+              font-size: 12px;
+            }
           }
         }
-      }
-      .slider-info{
-        .slider-info-text{
-          h5{
-            @include sm{
-              font-size: 16px;
+        .slider-info{
+          .slider-info-text{
+            h5{
+              color: #fff;
+              @include sm{
+                font-size: 16px;
+              }
+            }
+            span{
+              color: #B0B0B0;
             }
           }
           span{
-            font-size: 14px;
-          }
-        }
-        span{
-          &::before{
-            font-size: 80px;
-            color: #484545;
+            &::before{
+              font-size: 80px;
+              color: #484545;
+            }
           }
         }
       }

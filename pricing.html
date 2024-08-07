@@ -70,12 +70,12 @@
             <div class="menu-bar fixed-menu">
                 <div class="container-fulid">
                     <div class="row align-items-center gx-0">
-                        <div class="col-3 col-xl-2 col-lg-3 col-md-4 p-0">
+                        <div class="col-5 col-xl-2 col-lg-3 col-md-4 p-0">
                             <div class="header-area-image style-2 ml-100">
                                 <a href="index.html"><img src="./images/logo/header-logo.png" alt="logo"></a>
                             </div>
                         </div>
-                        <div class="col-9 col-xl-10 col-lg-9 col-md-8">
+                        <div class="col-7 col-xl-10 col-lg-9 col-md-8">
                             <div class="header-area-menu style-2 d-flex justify-content-end  d-xl-flex d-lg-flex  d-md-flex align-items-center justify-content-xl-between justify-content-lg-between justify-content-md-end   p-relative z-index-11">
                                 <nav>
                                     <ul class="main-menu  d-xl-flex d-lg-flex justify-content-center align-items-center">
@@ -118,9 +118,9 @@
                                 <div class="header-area-touch-btn">
                                     <a href="#">Get In Touch</a>
                                 </div>
-                                <button id="toggle-button">
+                                <div id="toggle-button">
                                     <a href="#"><i class="fa-solid fa-bars"></i></a>
-                                </button>
+                                </div>
                                 <div class="header-area-menu-icon mr-157">
                                     <a class="canvas canvas-menu" href="#"><span class="icon-wish-list"></span></a>
                                 </div>
@@ -128,6 +128,14 @@
                         </div>
                         <!-- Mobile Responsive Toggle Btn Start  -->
                         <div class="toggle-menus" id="toggle-active">
+                            <div class="toggle-menu-header d-flex justify-content-between mb-40">
+                                <div class="logo">
+                                    <img src="./images/logo/header-logo.png" alt="">
+                                </div>
+                                <div class="toggle-close-icon">
+                                    <i class="fa-solid fa-xmark"></i>
+                                </div>
+                            </div>
                             <nav>
                                 <ul class="dropdown">
                                     <li>
@@ -165,7 +173,7 @@
                                     </li>
                                     <li><a href="./projects.html">Projects</a></li>
                                     <li>
-                                        <a href="./blog.html">Blogs <span></a>
+                                        <a href="./blog.html">Blogs</a>
                                         <div class="dropdown-btn">
                                             <button class="dropdown-toggle-btn width-100" onclick="toggleList(4)"><i class="fa-solid fa-plus"></i></button>
                                         </div>
@@ -176,6 +184,29 @@
                                     </li>
                                 </ul>
                             </nav>
+                            <div class="toggle-menu-contact">
+                                <h4 class="mb-25">Contact Info</h4>
+                                <div class="address mb-20">
+                                    <i class="mr-10 fa-solid fa-location-dot"></i>
+                                    <span>2972 Westheimer Rd. Santa Ana </span>
+                                </div>
+                                <div class="email mb-20">
+                                    <i class="mr-10 fa-regular fa-envelope"></i>
+                                    <a href="mailto:georgia.young@example.com"> georgia.young@example.com </a>
+                                </div>
+                                <div class="phone">
+                                    <i class="mr-10 fa-solid fa-phone"></i>
+                                    <span> +123-456-7890 </span>
+                                </div>
+                            </div>
+                            <div class="toggle-social-icon">
+                                <ul class="d-flex justify-content-between">
+                                    <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                    <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                                    <li><a href="#"><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                                    <li><a href="#"><i class="fa-solid fa-basketball"></i></a></li>
+                                </ul>
+                            </div>
                         </div>
                         <!-- Mobile Responsive Toggle Btn End  -->
                     </div>
@@ -259,7 +290,7 @@
                 </div>
                 <div class="row">
                     <div class="col-xl-4 col-lg-4">
-                        <div class="pricing-area-card p-relative">
+                        <div class="pricing-area-card p-relative" id="cards-1">
                             <div class="pricing-area-card-wrapper">
                                 <div class="pricing-area-card-icon mb-41">
                                     <span class="icon-paint-can-open"></span>
@@ -276,7 +307,7 @@
                                         <li class="closemark">Donec rutrum eros ut aliquet</li>
                                         <li class="closemark">Suspendisse nec lorem bibendum</li>
                                     </ul>
-                                    <div class="pricing-area-cards-btn">
+                                    <div class="pricing-area-cards-btn hidden-card">
                                         <a href="#">Choose Package <img src="./images/icon/h2-bold-arrow.svg" alt=""></a>
                                     </div>
                                 </div>
@@ -284,8 +315,8 @@
                         </div>
                     </div>
                     <div class="col-xl-4 col-lg-4">
-                        <div class="pricing-area-card p-relative">
-                            <div class="pricing-area-card-wrapper">
+                        <div class="pricing-area-card p-relative" id="cards-2">
+                            <div class="pricing-area-card-wrapper style-3">
                                 <div class="pricing-area-card-icon mb-41">
                                     <span class="icon-inclined-marker"></span>
                                 </div>
@@ -301,7 +332,7 @@
                                         <li class="checkmark">Donec rutrum eros ut aliquet</li>
                                         <li class="checkmark">Suspendisse nec lorem bibendum</li>
                                     </ul>
-                                    <div class="pricing-area-cards-btn">
+                                    <div class="visibles-card">
                                         <a href="#">Choose Package <img src="./images/icon/h2-bold-arrow.svg" alt=""></a>
                                     </div>
                                 </div>
@@ -309,7 +340,7 @@
                         </div>
                     </div>
                     <div class="col-xl-4 col-lg-4 ">
-                        <div class="pricing-area-card p-relative">
+                        <div class="pricing-area-card p-relative" id="cards-3">
                             <div class="pricing-area-card-wrapper">
                                 <div class="pricing-area-card-icon mb-41">
                                     <span class="icon-pencil-can"></span>
@@ -326,7 +357,7 @@
                                         <li class="checkmark">Donec rutrum eros ut aliquet</li>
                                         <li class="checkmark">Suspendisse nec lorem bibendum</li>
                                     </ul>
-                                    <div class="pricing-area-cards-btn">
+                                    <div class="pricing-area-cards-btn hidden-card">
                                         <a href="#">Choose Package <img src="./images/icon/h2-bold-arrow.svg" alt=""></a>
                                     </div>
                                 </div>
@@ -356,7 +387,7 @@
                                 <h4>Together</h4>
                             </div>
                             <div class="footer-area-company-fast-email pb-69">
-                                <a href= "mailto: alma.lawson@example.com"> alma.lawson@example.com <img class="pl-10" src="./images/icon/footer-up-awrro.svg" alt=""> </a>
+                                <a href= "mailto:alma.lawson@example.com"> alma.lawson@example.com <img class="pl-10" src="./images/icon/footer-up-awrro.svg" alt=""> </a>
                             </div>
                             <hr class="mt-0 mb-16">
                         </div>
@@ -365,7 +396,7 @@
                         <div class="footer-area-contract-info ">
                             <div class="footer-area-social-info d-block d-xl-flex d-lg-flex d-md-flex justify-content-between align-items-center pt-74 pb-34">
                                 <div class="sce-email ml-120">
-                                    <a href= "mailto: georgia.young@example.com"><img class="mr-15" src="./images/icon/footer-email.svg" alt=""> georgia.young@example.com </a>
+                                    <a href="mailto:georgia.young@example.com"><img class="mr-15" src="./images/icon/footer-email.svg" alt=""> georgia.young@example.com </a>
                                 </div>
                                 <div class="social-content d-flex gap-40">
                                     <a href="#"><img class="mr-10" src="images/icon/footer-social_facebook.svg" alt="">facebook</a>
@@ -413,7 +444,7 @@
                 <span>©2024 <a href="#">Consalpro</a> All Rights Reserved</span>
             </div>
         </div>
-     </footer>
+    </footer>
      <!-- Scroll Up Section Start -->
      <div id="scrollTop" class="scrollup-wrapper">
         <div class="scrollup-btn">

@@ -1,27 +1,46 @@
 
 .toggle-menus{
     visibility: hidden;
-    opacity: 0;
-    transform: scaleY(0);
-    @include transition;
-    position: absolute;
+    opacity: 1;
+    transform: scaleX(0);
+    transform-origin: right center;
+    transition: all 0.5s ease 0s;
+    position: fixed;
     z-index: 100;
-    top: -100%;
-    z-index: 100;
-    left: 0;
-    width: 100%;
-    padding: 0 50px;
-   
+    top: 0;
+    z-index: 99999;
+    right: 0;
+    width: 450px;
+    height: 100%;
+    padding: 50px;
+    background: #222222;
+    &.toggle-menu-active{
+        visibility: visible;
+        opacity: 1;
+        transform: scaleX(1);
+    }
+    @include sm{
+        width: 300px;
+        padding: 20px;
+    }
+    .toggle-menu-header{
+        @include sm{
+            margin-bottom: 15px;
+        }
+        .toggle-close-icon{
+            font-size: 30px;
+            cursor: pointer;
+        }
+    }
     ul{
         padding: 25px 0;
-        background: #222222;
         li{
             border-top: 1px solid #383838;
             border-bottom: 1px solid #383838;
             position: relative;
             line-height: 23px;
             & a{
-                padding: 10px 23px;
+                padding: 10px 0;
                 display: inline-block;
                 &:hover{
                     text-decoration: underline;
@@ -40,29 +59,68 @@
             }
             ul{
                 &.hidden-list{
-                    display: none;
-                    padding: 0 0;
-                    @include transition;
+                    height: 0;
+                    visibility: hidden;
+                    opacity: 0;
+                    overflow: hidden;
+                    padding: 0;
                     margin-left: 20px;
+                    transition: all 0.5s ease 0s;
                 }
                 li{  
                     & a{
                         font-size: 14px;
-                        padding: 5px 23px;
+                        padding: 6px 0px;
                     }
                 }
             }
         }
     }
-}
+    .toggle-menu-contact{
+        h4{
+            @include sm{
+                margin-bottom: 10px;
+                font-size: 18px;
+            }
+        }
+        span{
+            @include sm{
+                font-size: 14px;
+            }
+        }
+        .address{
+            @include sm{
+                margin-bottom: 10px;
+            }
+        }
+        .email{
+            @include sm{
+                margin-bottom: 10px;
+            }
+        }
+        .phone{
+            @include sm{
+                margin-bottom: 10px;
+            }
+        }
 
-#toggle-active.active {
-    @include rmaxwd (991){
-        transform: scaleY(1);
-        visibility: visible;
-        opacity: 1;
-        left: 0;
-        top: 100%;
+    }
+    .toggle-social-icon{
+        ul{
+            padding-top: 20px;
+            li{
+                border: none;
+                a{
+                    display: inline-block;
+                    padding: 10px;
+                    &:hover{
+                        background: red;
+                        padding: 10px;
+                        border-radius: 50%;
+                    }
+                }
+            }
+        }
     }
 }
   

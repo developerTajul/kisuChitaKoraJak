@@ -1,29 +1,43 @@
-
-.blog-area{
-    &-card{
-        &:hover{
-            p{
-                visibility:visible;
+.blog-area {
+    &-card {
+        position: relative;
+        @include md{
+            margin-bottom: 40px;
+        }
+        @include sm{
+            margin-bottom: 30px;
+        }
+        &:hover {
+            p {
+                &.hidden-card{
+                    visibility: visible;
+                    opacity: 1;
+                    max-height: 100%;
+                    transform: scaleY(1);
+                    transition: all 0.4s ease 0s;
+                }
+            }
+            .blog-area-icon-img {
+                visibility: visible;
                 opacity: 1;
-                max-height: 100%;
-                transform: scaleY(1);
             }
         }
     }
-    &-card-wrapper{
-        @include md{
+
+    &-card-wrapper {
+        @include md {
             margin: 0px 135px 50px 135px;
         }
-        @include sm{
+        @include sm {
             margin: 0px 43px 50px 43px;
         }
-        @include rmaxwd (576){
+        @include rmaxwd(576) {
             margin: 0px 63px 50px 63px;
         }
-        @include rmaxwd (430){
+        @include rmaxwd(430) {
             margin: 0px 42px 50px 42px;
         }
-        @include rmaxwd (390){
+        @include rmaxwd(390) {
             margin: 0px 10px 30px 10px;
         }
         span {
@@ -32,43 +46,45 @@
         }
         h5 {
             color: #ffffff;
-            @include xl{
+            @include xl {
                 font-size: 20px;
             }
-            color: #ffffff;
-            @include lg{
+            @include lg {
                 font-size: 16px;
             }
-            @include sm{
+            @include sm {
                 font-size: 20px;
             }
-            @include rmaxwd (500){
+            @include rmaxwd(500) {
                 font-size: 16px;
             }
         }
-        p{
+        .hidden-card {
             visibility: hidden;
             opacity: 0;
             max-height: 0;
             transform: scaleY(0);
             transition: all 0.4s ease 0s;
-            @include lg{
+            @include lg {
                 font-size: 12px;
             }
-            @include sm{
+            @include sm {
                 font-size: 14px;
             }
         }
     }
-    &-icone-img{
+
+    &-icon-img {
         position: absolute;
         right: 20px;
         bottom: -26px;
-        transition: all 0.4s ease 0s;
-        @include sm{
+        visibility: hidden;
+        opacity: 0;
+        transition: all 0.2s ease 0s;
+        @include sm {
             right: 20px;
         }
-        @include rmaxwd (420) {
+        @include rmaxwd(420) {
             bottom: -20px;
         }
         a {
@@ -79,7 +95,7 @@
             text-align: center;
             line-height: 52px;
             border-radius: 50%;
-            @include rmaxwd (420) {
+            @include rmaxwd(420) {
                 height: 40px;
                 width: 40px;
                 line-height: 38px;
@@ -87,5 +103,3 @@
         }
     }
 }
-
-

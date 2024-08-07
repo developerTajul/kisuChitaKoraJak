@@ -3,13 +3,13 @@
     $(document).ready(function () {
 
         /*=======================
-        navba toggle active
+        navbar toggle active
         =========================*/
-        const toggleButton = document.getElementById('toggle-button');
-        const topyMenu = document.getElementById('toggle-active');
-
-        toggleButton.addEventListener('click', function() {
-        topyMenu.classList.toggle('active');
+        $("#toggle-button").click(function(){
+            $(".toggle-menus").addClass("toggle-menu-active");
+        });
+        $(".toggle-close-icon").click(function(){
+            $(".toggle-menus").removeClass("toggle-menu-active");
         });
        
        /*========================
@@ -123,11 +123,21 @@
         Blog Details Slider
         ============================*/
         $('.blog-page-active-slider').slick({
-            slidesToShow: 1,
             centerMode: true,
             centerPadding: '0',
             autoplay: true,
             autoplaySpeed: 1500,
+            arrows: false,
+        });
+
+        $('.marquee-active').slick({
+            slidesToShow: 4,
+            speed: 5000,
+            autoplay: true,
+            autoplaySpeed: 0,
+            cssEase: 'linear',
+            variableWidth: true,
+            infinite: true,
             arrows: false,
             responsive: [
                 {
@@ -138,7 +148,7 @@
                 },
             ],
             
-            });
+        });
 
         /*============================
         Service Details Accordion
@@ -214,10 +224,8 @@
                     $(".search-menu-overlay").removeClass("search-menu-overlay-active");
                 }
             }
-          });
+        });
           
-      
-      
         /*
         Window Load
         ============================*/
@@ -263,7 +271,67 @@
                 return false;
             });
         });
-
+        /*Blog Hover Card
+        ============================*/
+        $('#card-1, #card-3').hover(
+            function() {
+                $('#card-2 .visible-card').css({
+                    'visibility': 'hidden',
+                    'opacity': '0',
+                    'max-height': '0',
+                    'transform': 'scaleY(0)',
+                });
+            },
+            function() {
+                $('#card-2 .visible-card').css({
+                    'visibility': 'visible',
+                    'opacity': '1',
+                    'max-height': '100%',
+                    'transform': 'scaleY(1)',
+                    'transition': 'all 0.4s ease 0s',
+                });
+            }
+        );
+        $('#card-4, #card-6').hover(
+            function() {
+                $('#card-5 .visible-card').css({
+                    'visibility': 'hidden',
+                    'opacity': '0',
+                    'max-height': '0',
+                    'transform': 'scaleY(0)',
+                });
+            },
+            function() {
+                $('#card-5 .visible-card').css({
+                    'visibility': 'visible',
+                    'opacity': '1',
+                    'max-height': '100%',
+                    'transform': 'scaleY(1)',
+                    'transition': 'all 0.4s ease 0s',
+                });
+            }
+        );
+        /*pricing Hover Card
+        ============================*/
+        $('#cards-1, #cards-3').hover(
+            function() {
+                $('#cards-2 .visibles-card').css({
+                    'visibility': 'hidden',
+                    'opacity': '0',
+                    'height': '0',
+                    'transform': 'scaleY(0)',
+                });
+            },
+            function() {
+                $('#cards-2 .visibles-card').css({
+                    'visibility': 'visible',
+                    'opacity': '1',
+                    'height': 'auto',
+                    'transform': 'scaleY(1)',
+                    'transition': 'all 0.4s ease 0s',
+                });
+            }
+        );
     });
 })(jQuery);
 
@@ -275,9 +343,19 @@ function toggleList(listNumber) {
 
     allLists.forEach(function(list) {
         if (list.id === 'dropdown-toggle-menu-' + listNumber) {
-            list.style.display = list.style.display === 'block' ? 'none' : 'block';
+            if (list.style.visibility === 'visible') {
+                list.style.visibility = 'hidden';
+                list.style.opacity = 0;
+                list.style.height = '0px';
+            } else {
+                list.style.visibility = 'visible';
+                list.style.opacity = 1;
+                list.style.height = list.scrollHeight + 'px';
+            }
         } else {
-            list.style.display = 'none';
+            list.style.visibility = 'hidden';
+            list.style.opacity = 0;
+            list.style.height = '0px';
         }
     });
 }

@@ -375,7 +375,8 @@
         top: 10px;
         animation: rotated_circle 30s infinite;
         @include sm{
-            left: 10px;
+            left: 76px;
+            width: 189px;    
         }
       }
     

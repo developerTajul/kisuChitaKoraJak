@@ -92,6 +92,9 @@
             padding: 5px 20px;
             border: 1px solid rgba(255, 255, 255, 0.10);
             display: inline-block;
+            @include sm{
+                padding: 5px 15px;
+            }
         }
     }
     &-author{

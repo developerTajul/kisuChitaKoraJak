@@ -33,15 +33,7 @@
     }
     @include sm{
       padding: 25px 0;
-      margin-left: 5px;
-    }
-    &.style-2{
-      @include xl{
-        margin-left: 50px;
-      }
-      @include lg{
-        margin-left: 10px;
-      }
+      margin-left: 30px;
     }
   }
   &-menu{
@@ -227,7 +219,7 @@
   #toggle-button{
     display: none;
     visibility: hidden;
-    margin-right: 30px;
+    margin-right: 50px;
     @include rmaxwd(991){
       display: block;
       visibility: visible;
@@ -247,11 +239,8 @@
     @include lg{
       margin-right: 62px;
     }
-    @include md{
-      margin-right: 120px
-    }
-    @include sm{
-      margin-right: 80px
+    @include rmaxwd(991){
+      display: none;
     }
     
     &.style-2{

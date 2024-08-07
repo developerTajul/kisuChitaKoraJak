@@ -1,21 +1,9 @@
 .services-area {
-    @include xl{
-        padding-bottom: 100px;
-    }
-    @include lg{
-        padding-bottom: 65px;
-    }
-    @include md{
-        padding-bottom: 50px;
-    }
-    @include sm{
-        padding-bottom: 35px;
-    }
     &-card-wrapper {
         width: 100%;
         position: relative;
         @include sm{
-            margin-bottom: 20px;
+            margin-bottom: 40px;
         }
         &:hover{
             .services-area-card-content {
