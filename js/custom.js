@@ -332,6 +332,19 @@
                 });
             }
         );
+        /*Js-Tilt Animation
+        ============================*/
+        $('.tilt-zoom').tilt({
+            scale: 1.1,
+            perspective: 1500,
+        })
+
+        /*Jquery Tilt Js
+       ============================*/
+        $('.tilt-animate').tilt({
+            maxTilt: 12,
+            perspective: 1000,
+        })
     });
 })(jQuery);
 

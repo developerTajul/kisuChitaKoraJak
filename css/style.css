@@ -15524,6 +15524,9 @@ body.admin-bar .header-menu-area.sticky_menu {
   font-weight: 300;
   line-height: normal;
 }
+.hero-area-author-profile img {
+  border-radius: 50%;
+}
 
 .hero-area-two {
   position: relative;
@@ -18070,6 +18073,16 @@ body.admin-bar .header-menu-area.sticky_menu {
   .project-page .projects-wrapper {
     margin: 0 0;
   }
+}
+.project-page .projects-wrapper .portfolio-area-img img {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+.project-page .projects-wrapper .portfolio-area-img img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .project-page .projects-wrapper .portfolio-area-content h4 {
