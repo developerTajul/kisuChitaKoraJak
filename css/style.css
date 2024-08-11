@@ -15380,8 +15380,8 @@ body.admin-bar .header-menu-area.sticky_menu {
   height: 120px;
   background: #141413;
   position: absolute;
-  right: 0;
-  top: 0;
+  right: -2px;
+  top: -1px;
   z-index: 11;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -17467,20 +17467,6 @@ body.admin-bar .header-menu-area.sticky_menu {
     margin-bottom: 40px;
   }
 }
-.services-area-card-wrapper:hover .services-area-card-content {
-  padding: 30px 32px 23px 30px;
-}
-.services-area-card-wrapper:hover .services-area-card-element {
-  margin-bottom: 28px;
-}
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
-  .services-area-card-wrapper:hover .services-area-card-element {
-    margin-bottom: 8px;
-  }
-}
-.services-area-card-wrapper:hover span {
-  margin-top: 0;
-}
 .services-area-card-wrapper:hover span::before {
   color: #ffffff;
 }
@@ -17502,18 +17488,21 @@ body.admin-bar .header-menu-area.sticky_menu {
   }
 }
 .services-area-card-wrapper:hover .card-change-img-1 {
-  display: none;
+  padding-top: 0;
+  height: 331px;
 }
-.services-area-card-wrapper:hover .card-change-img-2 {
-  display: block;
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .services-area-card-wrapper:hover .card-change-img-1 {
+    height: 272px;
+  }
 }
 .services-area-card-content {
   width: 270px;
   background: #1A1717;
-  padding: 10px 15px 23px 30px;
+  padding: 15px 15px 23px 30px;
   position: absolute;
-  top: 0;
-  right: 0;
+  top: -2px;
+  right: -2px;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .services-area-card-content {
@@ -17528,10 +17517,15 @@ body.admin-bar .header-menu-area.sticky_menu {
 }
 .services-area-card-element span {
   font-size: 35px;
-  margin-top: 34px;
+  margin-top: 32px;
 }
 .services-area-card-element span::before {
   color: #EDBC5A;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .services-area-card-element {
+    margin-bottom: 19px;
+  }
 }
 .services-area-card-element h2 {
   -webkit-text-stroke-width: 1px;
@@ -17580,24 +17574,18 @@ body.admin-bar .header-menu-area.sticky_menu {
   line-height: 42px;
   border-radius: 50%;
   visibility: hidden;
-  -webkit-transition: all 0.1s ease-out;
-  transition: all 0.1s ease-out;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
 }
 .services-area-card-img .card-change-img-1 {
   padding-top: 142px;
   -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
 }
-.services-area-card-img .card-change-img-2 {
-  padding-top: 0;
-  height: 331px;
-  display: none;
-  -webkit-transition: all 0.5s ease-out;
-  transition: all 0.5s ease-out;
-}
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .services-area-card-img .card-change-img-2 {
-    height: 301px;
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .services-area-card-img .card-change-img-1 {
+    -webkit-transition: all 0s ease-out;
+    transition: all 0s ease-out;
   }
 }
 
@@ -17699,6 +17687,30 @@ body.admin-bar .header-menu-area.sticky_menu {
     padding: 15px 15px 15px 15px;
   }
 }
+.pricing-area-card-wrapper.card-wrapper-visible::before {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transform: scaleY(1);
+          transform: scaleY(1);
+  top: -3px;
+  transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -ms-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+}
+.pricing-area-card-wrapper.hidden-before::before {
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transform: scaleY(0);
+          transform: scaleY(0);
+  top: -30px;
+  transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -ms-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+}
 .pricing-area-card-wrapper::before {
   content: "Popular Package";
   border-radius: 54px;
@@ -17744,6 +17756,11 @@ body.admin-bar .header-menu-area.sticky_menu {
     left: 90px;
   }
 }
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .pricing-area-card-icon {
+    margin-bottom: 20px;
+  }
+}
 @media (max-width: 480px) {
   .pricing-area-card-icon {
     margin-bottom: 15px;
@@ -17759,6 +17776,11 @@ body.admin-bar .header-menu-area.sticky_menu {
   -ms-transition: all 0.5s ease-out;
   -o-transition: all 0.5s ease-out;
 }
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .pricing-area-card-text {
+    padding-bottom: 22px;
+  }
+}
 @media (max-width: 480px) {
   .pricing-area-card-text {
     padding-bottom: 15px;
@@ -17767,6 +17789,11 @@ body.admin-bar .header-menu-area.sticky_menu {
 .pricing-area-card-text h5 {
   color: #FFF;
   margin-bottom: 41px;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .pricing-area-card-text h5 {
+    margin-bottom: 20px;
+  }
 }
 @media (max-width: 480px) {
   .pricing-area-card-text h5 {
@@ -19466,31 +19493,6 @@ body.admin-bar .header-menu-area.sticky_menu {
   visibility: visible;
   opacity: 1;
 }
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .blog-area-card-wrapper {
-    margin: 0px 135px 50px 135px;
-  }
-}
-@media only screen and (min-width: 0px) and (max-width: 767px) {
-  .blog-area-card-wrapper {
-    margin: 0px 43px 50px 43px;
-  }
-}
-@media (max-width: 576px) {
-  .blog-area-card-wrapper {
-    margin: 0px 63px 50px 63px;
-  }
-}
-@media (max-width: 430px) {
-  .blog-area-card-wrapper {
-    margin: 0px 42px 50px 42px;
-  }
-}
-@media (max-width: 390px) {
-  .blog-area-card-wrapper {
-    margin: 0px 10px 30px 10px;
-  }
-}
 .blog-area-card-wrapper span {
   color: #B0B0B0;
   display: block;
@@ -19506,11 +19508,6 @@ body.admin-bar .header-menu-area.sticky_menu {
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .blog-area-card-wrapper h5 {
     font-size: 16px;
-  }
-}
-@media only screen and (min-width: 0px) and (max-width: 767px) {
-  .blog-area-card-wrapper h5 {
-    font-size: 20px;
   }
 }
 @media (max-width: 500px) {
@@ -19532,9 +19529,14 @@ body.admin-bar .header-menu-area.sticky_menu {
     font-size: 12px;
   }
 }
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .blog-area-card-wrapper .card-image .blog-main-img {
+    width: 100%;
+  }
+}
 @media only screen and (min-width: 0px) and (max-width: 767px) {
-  .blog-area-card-wrapper .hidden-card {
-    font-size: 14px;
+  .blog-area-card-wrapper .card-image .blog-main-img {
+    width: 100%;
   }
 }
 .blog-area-icon-img {

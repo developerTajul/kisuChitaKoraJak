@@ -216,8 +216,8 @@
         height: 120px;
         background: #141413;
         position: absolute;
-        right: 0;
-        top: 0;
+        right: -2px;
+        top: -1px;
         z-index: 11;
             @include lg {
                 width: 75px;

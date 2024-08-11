@@ -44,8 +44,8 @@
             centerPadding: '0',
             vertical:true,
             verticalSwiping:true,
-            autoplay: true,
-            autoplaySpeed: 1500,
+            // autoplay: true,
+            // autoplaySpeed: 1500,
             arrows: false,
             responsive: [
                 {
@@ -62,8 +62,8 @@
             slidesToShow: 1,
             slidesToScroll: 1,
             dots: false,
-            autoplay: true,
-            autoplaySpeed: 1500,
+            // autoplay: true,
+            // autoplaySpeed: 1500,
             asNavFor: '.testimonial-active-slider',
             prevArrow: '<button class="slick-arrow btn-prev"><i class="fa-solid fa-caret-right"></i></button>',
             nextArrow: '<button class="slick-arrow btn-next"><i class="fa-solid fa-caret-left"></i></button>',
@@ -178,6 +178,13 @@
             preloader: false,
             fixedContentPos: false,
         });
+        /*============================
+        Counter Js
+        ============================*/
+        $('.counter').counterUp({
+            delay: 10,
+            time: 1000
+        });
         /*
         Window nev scrolled fixed
         ============================*/
@@ -280,15 +287,27 @@
                     'opacity': '0',
                     'max-height': '0',
                     'transform': 'scaleY(0)',
+                    'transition': 'all 0.4s ease 0s',
+                });
+                $('#card-2 .blog-area-icon-img').css({
+                    'visibility': 'hidden',
+                    'opacity': '0',
                 });
             },
             function() {
                 $('#card-2 .visible-card').css({
                     'visibility': 'visible',
                     'opacity': '1',
-                    'max-height': '100%',
+                    'max-height': '100px',
                     'transform': 'scaleY(1)',
                     'transition': 'all 0.4s ease 0s',
+                });
+                $('#card-2 .blog-area-icon-img').css({
+                    'visibility': 'visible',
+                    'opacity': '1',
+                    'transition': 'all 0.3s ease 0s',
+                    
+                    
                 });
             }
         );
@@ -299,15 +318,25 @@
                     'opacity': '0',
                     'max-height': '0',
                     'transform': 'scaleY(0)',
+                    'transition': 'all 0.4s ease 0s',
+                });
+                $('#card-5 .blog-area-icon-img').css({
+                    'visibility': 'hidden',
+                    'opacity': '0',
                 });
             },
             function() {
                 $('#card-5 .visible-card').css({
                     'visibility': 'visible',
                     'opacity': '1',
-                    'max-height': '100%',
+                    'max-height': '100px',
                     'transform': 'scaleY(1)',
                     'transition': 'all 0.4s ease 0s',
+                });
+                $('#card-5 .blog-area-icon-img').css({
+                    'visibility': 'visible',
+                    'opacity': '1',
+                    'transition': 'all 0.3s ease 0s',
                 });
             }
         );
@@ -321,6 +350,7 @@
                     'height': '0',
                     'transform': 'scaleY(0)',
                 });
+                $('#cards-2 .card-wrapper-visible').addClass('hidden-before');
             },
             function() {
                 $('#cards-2 .visibles-card').css({
@@ -330,8 +360,10 @@
                     'transform': 'scaleY(1)',
                     'transition': 'all 0.4s ease 0s',
                 });
+                $('#cards-2 .card-wrapper-visible').removeClass('hidden-before');
             }
         );
+        
         /*Js-Tilt Animation
         ============================*/
         $('.tilt-zoom').tilt({

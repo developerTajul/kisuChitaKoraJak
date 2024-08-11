@@ -25,21 +25,6 @@
     }
 
     &-card-wrapper {
-        @include md {
-            margin: 0px 135px 50px 135px;
-        }
-        @include sm {
-            margin: 0px 43px 50px 43px;
-        }
-        @include rmaxwd(576) {
-            margin: 0px 63px 50px 63px;
-        }
-        @include rmaxwd(430) {
-            margin: 0px 42px 50px 42px;
-        }
-        @include rmaxwd(390) {
-            margin: 0px 10px 30px 10px;
-        }
         span {
             color: #B0B0B0;
             display: block;
@@ -51,9 +36,6 @@
             }
             @include lg {
                 font-size: 16px;
-            }
-            @include sm {
-                font-size: 20px;
             }
             @include rmaxwd(500) {
                 font-size: 16px;
@@ -68,8 +50,15 @@
             @include lg {
                 font-size: 12px;
             }
-            @include sm {
-                font-size: 14px;
+        }
+        .card-image{
+            .blog-main-img{
+                @include md{
+                    width: 100%;
+                }
+                @include sm{
+                    width: 100%;
+                }
             }
         }
     }

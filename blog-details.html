@@ -67,153 +67,153 @@
     <!-- Preloader End  -->
     <!-- Header Start -->
     <header>
-    <div class="header-area body-black p-relative ">
-        <div class="menu-bar fixed-menu">
-            <div class="container-fulid">
-                <div class="row align-items-center gx-0">
-                    <div class="col-5 col-xl-2 col-lg-3 col-md-4 p-0">
-                        <div class="header-area-image style-2 ml-100">
-                            <a href="index.html"><img src="./images/logo/header-logo.png" alt="logo"></a>
+        <div class="header-area body-black p-relative ">
+            <div class="menu-bar fixed-menu">
+                <div class="container-fulid">
+                    <div class="row align-items-center gx-0">
+                        <div class="col-5 col-xl-2 col-lg-3 col-md-4 p-0">
+                            <div class="header-area-image style-2 ml-100">
+                                <a href="index.html"><img src="./images/logo/header-logo.png" alt="logo"></a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-7 col-xl-10 col-lg-9 col-md-8">
-                        <div class="header-area-menu style-2 d-flex justify-content-end  d-xl-flex d-lg-flex  d-md-flex align-items-center justify-content-xl-between justify-content-lg-between justify-content-md-end   p-relative z-index-11">
+                        <div class="col-7 col-xl-10 col-lg-9 col-md-8">
+                            <div class="header-area-menu style-2 d-flex justify-content-end  d-xl-flex d-lg-flex  d-md-flex align-items-center justify-content-xl-between justify-content-lg-between justify-content-md-end   p-relative z-index-11">
+                                <nav>
+                                    <ul class="main-menu  d-xl-flex d-lg-flex justify-content-center align-items-center">
+                                        <li class="scroll-effect">
+                                            <a class="plus-icon" href="./index.html">Home</a>
+                                            <ul class="sub-menu">
+                                                <li><a href="index.html">HomeOne</a></li>
+                                                <li><a href="index-two.html">HomeTwo</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="scroll-effect"><a href="about.html">About</a></li>
+                                        <li class="scroll-effect"><a class="plus-icon" href="#">Pages</a>
+                                            <ul class="sub-menu">
+                                                <li><a href="./pricing.html">Pricing</a></li>
+                                                <li><a href="./team.html">Team</a></li>
+                                                <li><a href="./team-details.html">Team Details</a></li>
+                                                <li><a href="./contact.html">Contact</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="scroll-effect">
+                                            <a class="plus-icon" href="service.html">Services</a>
+                                            <ul class="sub-menu">
+                                                <li><a href="service.html">Services Page</a></li>
+                                                <li><a href="services-details.html">Services Details</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="scroll-effect"><a href="projects.html">Projects</a></li>
+                                        <li class="scroll-effect">
+                                            <a class="plus-icon" href="blog.html">Blogs</a>
+                                            <ul class="sub-menu">
+                                                <li><a href="./blog.html">Blog Page</a></li>
+                                                <li><a href="./blog-details.html">Blog Details</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a class="search-btn-active" href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                                <div class="header-area-touch-btn">
+                                    <a href="#">Get In Touch</a>
+                                </div>
+                                <div id="toggle-button">
+                                    <a href="#"><i class="fa-solid fa-bars"></i></a>
+                                </div>
+                                <div class="header-area-menu-icon mr-157">
+                                    <a class="canvas canvas-menu" href="#"><span class="icon-wish-list"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Mobile Responsive Toggle Btn Start  -->
+                        <div class="toggle-menus" id="toggle-active">
+                            <div class="toggle-menu-header d-flex justify-content-between mb-40">
+                                <div class="logo">
+                                    <img src="./images/logo/header-logo.png" alt="">
+                                </div>
+                                <div class="toggle-close-icon">
+                                    <i class="fa-solid fa-xmark"></i>
+                                </div>
+                            </div>
                             <nav>
-                                <ul class="main-menu  d-xl-flex d-lg-flex justify-content-center align-items-center">
-                                    <li class="scroll-effect">
-                                        <a class="plus-icon" href="./index.html">Home</a>
-                                        <ul class="sub-menu">
+                                <ul class="dropdown">
+                                    <li>
+                                        <a href="index.html">Home</a>
+                                        <div class="dropdown-btn">
+                                            <button class="n  width-100" onclick="toggleList(1)"><i class="fa-solid fa-plus"></i></button>
+                                        </div>
+                                        <ul id="dropdown-toggle-menu-1" class=" hidden-list">
                                             <li><a href="index.html">HomeOne</a></li>
                                             <li><a href="index-two.html">HomeTwo</a></li>
                                         </ul>
                                     </li>
-                                    <li class="scroll-effect"><a href="about.html">About</a></li>
-                                    <li class="scroll-effect"><a class="plus-icon" href="#">Pages</a>
-                                        <ul class="sub-menu">
+                                    <li><a href="about.html">About</a></li>
+                                    <li><a href="#">Pages</a>
+                                        <div class="dropdown-btn">
+                                            <button class="dropdown-toggle-btn width-100" onclick="toggleList(2)"><i class="fa-solid fa-plus"></i></button>
+                                        </div>
+                                        <ul id="dropdown-toggle-menu-2" class=" hidden-list">
                                             <li><a href="./pricing.html">Pricing</a></li>
-                                            <li><a href="./team.html">Team</a></li>
-                                            <li><a href="./team-details.html">Team Details</a></li>
-                                            <li><a href="./contact.html">Contact</a></li>
+                                                <li><a href="./team.html">Team</a></li>
+                                                <li><a href="./team-details.html">Team Details</a></li>
+                                                <li><a href="./contact.html">Contact</a></li>
                                         </ul>
                                     </li>
-                                    <li class="scroll-effect">
-                                        <a class="plus-icon" href="service.html">Services</a>
-                                        <ul class="sub-menu">
+                                    <li>
+                                        <a href="./service.html">Services</a>
+                                        <div class="dropdown-btn">
+                                            <button class="dropdown-toggle-btn width-100" onclick="toggleList(3)"><i class="fa-solid fa-plus"></i></button>
+                                        </div>
+                                        <ul id="dropdown-toggle-menu-3" class=" hidden-list">
                                             <li><a href="service.html">Services Page</a></li>
                                             <li><a href="services-details.html">Services Details</a></li>
                                         </ul>
+                                        
                                     </li>
-                                    <li class="scroll-effect"><a href="projects.html">Projects</a></li>
-                                    <li class="scroll-effect">
-                                        <a class="plus-icon" href="blog.html">Blogs</a>
-                                        <ul class="sub-menu">
+                                    <li><a href="./projects.html">Projects</a></li>
+                                    <li>
+                                        <a href="./blog.html">Blogs</a>
+                                        <div class="dropdown-btn">
+                                            <button class="dropdown-toggle-btn width-100" onclick="toggleList(4)"><i class="fa-solid fa-plus"></i></button>
+                                        </div>
+                                        <ul id="dropdown-toggle-menu-4" class=" hidden-list">
                                             <li><a href="./blog.html">Blog Page</a></li>
                                             <li><a href="./blog-details.html">Blog Details</a></li>
                                         </ul>
                                     </li>
-                                    <li>
-                                        <a class="search-btn-active" href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
-                                    </li>
                                 </ul>
                             </nav>
-                            <div class="header-area-touch-btn">
-                                <a href="#">Get In Touch</a>
+                            <div class="toggle-menu-contact">
+                                <h4 class="mb-25">Contact Info</h4>
+                                <div class="address mb-20">
+                                    <i class="mr-10 fa-solid fa-location-dot"></i>
+                                    <span>2972 Westheimer Rd. Santa Ana </span>
+                                </div>
+                                <div class="email mb-20">
+                                    <i class="mr-10 fa-regular fa-envelope"></i>
+                                    <a href="mailto:georgia.young@example.com"> georgia.young@example.com </a>
+                                </div>
+                                <div class="phone">
+                                    <i class="mr-10 fa-solid fa-phone"></i>
+                                    <span> +123-456-7890 </span>
+                                </div>
                             </div>
-                            <div id="toggle-button">
-                                <a href="#"><i class="fa-solid fa-bars"></i></a>
-                            </div>
-                            <div class="header-area-menu-icon mr-157">
-                                <a class="canvas canvas-menu" href="#"><span class="icon-wish-list"></span></a>
+                            <div class="toggle-social-icon">
+                                <ul class="d-flex justify-content-between">
+                                    <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                    <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                                    <li><a href="#"><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                                    <li><a href="#"><i class="fa-solid fa-basketball"></i></a></li>
+                                </ul>
                             </div>
                         </div>
+                        <!-- Mobile Responsive Toggle Btn End  -->
                     </div>
-                    <!-- Mobile Responsive Toggle Btn Start  -->
-                    <div class="toggle-menus" id="toggle-active">
-                        <div class="toggle-menu-header d-flex justify-content-between mb-40">
-                            <div class="logo">
-                                <img src="./images/logo/header-logo.png" alt="">
-                            </div>
-                            <div class="toggle-close-icon">
-                                <i class="fa-solid fa-xmark"></i>
-                            </div>
-                        </div>
-                        <nav>
-                            <ul class="dropdown">
-                                <li>
-                                    <a href="index.html">Home</a>
-                                    <div class="dropdown-btn">
-                                        <button class="n  width-100" onclick="toggleList(1)"><i class="fa-solid fa-plus"></i></button>
-                                    </div>
-                                    <ul id="dropdown-toggle-menu-1" class=" hidden-list">
-                                        <li><a href="index.html">HomeOne</a></li>
-                                        <li><a href="index-two.html">HomeTwo</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="about.html">About</a></li>
-                                <li><a href="#">Pages</a>
-                                    <div class="dropdown-btn">
-                                        <button class="dropdown-toggle-btn width-100" onclick="toggleList(2)"><i class="fa-solid fa-plus"></i></button>
-                                    </div>
-                                    <ul id="dropdown-toggle-menu-2" class=" hidden-list">
-                                        <li><a href="./pricing.html">Pricing</a></li>
-                                            <li><a href="./team.html">Team</a></li>
-                                            <li><a href="./team-details.html">Team Details</a></li>
-                                            <li><a href="./contact.html">Contact</a></li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a href="./service.html">Services</a>
-                                    <div class="dropdown-btn">
-                                        <button class="dropdown-toggle-btn width-100" onclick="toggleList(3)"><i class="fa-solid fa-plus"></i></button>
-                                    </div>
-                                    <ul id="dropdown-toggle-menu-3" class=" hidden-list">
-                                        <li><a href="service.html">Services Page</a></li>
-                                        <li><a href="services-details.html">Services Details</a></li>
-                                    </ul>
-                                    
-                                </li>
-                                <li><a href="./projects.html">Projects</a></li>
-                                <li>
-                                    <a href="./blog.html">Blogs</a>
-                                    <div class="dropdown-btn">
-                                        <button class="dropdown-toggle-btn width-100" onclick="toggleList(4)"><i class="fa-solid fa-plus"></i></button>
-                                    </div>
-                                    <ul id="dropdown-toggle-menu-4" class=" hidden-list">
-                                        <li><a href="./blog.html">Blog Page</a></li>
-                                        <li><a href="./blog-details.html">Blog Details</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </nav>
-                        <div class="toggle-menu-contact">
-                            <h4 class="mb-25">Contact Info</h4>
-                            <div class="address mb-20">
-                                <i class="mr-10 fa-solid fa-location-dot"></i>
-                                <span>2972 Westheimer Rd. Santa Ana </span>
-                            </div>
-                            <div class="email mb-20">
-                                <i class="mr-10 fa-regular fa-envelope"></i>
-                                <a href="mailto:georgia.young@example.com"> georgia.young@example.com </a>
-                            </div>
-                            <div class="phone">
-                                <i class="mr-10 fa-solid fa-phone"></i>
-                                <span> +123-456-7890 </span>
-                            </div>
-                        </div>
-                        <div class="toggle-social-icon">
-                            <ul class="d-flex justify-content-between">
-                                <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-                                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-                                <li><a href="#"><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
-                                <li><a href="#"><i class="fa-solid fa-basketball"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <!-- Mobile Responsive Toggle Btn End  -->
                 </div>
             </div>
         </div>
-    </div>
     </header>
     <!-- Header End -->
     <!-- Off Canvas Start  -->
@@ -288,7 +288,7 @@
                     <div class="col-xl-8 col-lg-8">
                         <div class="blog-details-main-part">
                             <div class="blog-details-main-content">
-                                <div class="blog-details-content-img">
+                                <div class="blog-details-content-img tilt-animate">
                                     <img src="./images/blog/block-page/blog-details-img.png" alt="">
                                 </div>
                                 <div class="blog-details-content-pra">
@@ -335,8 +335,8 @@
                                 </div>
                                 <div class="blog-details-post-part mb-100">
                                     <div class="blog-details-post-img d-flex gap-22">
-                                        <img src="./images/blog/block-page/blog-details-solution-img-1.png" alt="">
-                                        <img src="./images/blog/block-page/blog-details-solution-img-2.png" alt="">
+                                        <img class="tilt-animate" src="./images/blog/block-page/blog-details-solution-img-1.png" alt="">
+                                        <img class="tilt-animate" src="./images/blog/block-page/blog-details-solution-img-2.png" alt="">
                                     </div>
                                     <div class="blog-details-post-content mb-80">
                                         <h3 class="mt-60 mb-20">Amazing post For Web Design</h3>
@@ -362,7 +362,7 @@
                                     </div>
                                 </div>
                                 <div class="blog-details-author d-flex gap-35">
-                                    <div class="blog-details-author-img">
+                                    <div class="blog-details-author-img tilt-zoom">
                                         <img src="./images/blog/block-page/blog-details-author.png" alt="">
                                     </div>
                                     <div class="blog-details-author-content">
@@ -463,7 +463,7 @@
                             </div>
                         </div>
                         <div class="author-card p-relative z-index-11">
-                            <div class="author-card-img">
+                            <div class="author-card-img tilt-zoom">
                                 <img src="images/blog/block-page/block-details-side-img.png" alt="">
                             </div>
                             <div class="team-area-member-text text-center">
@@ -498,7 +498,7 @@
                             <div class="title-border-3"></div>
                             <div class="blog-details-news-content mt-30">
                                 <div class="blog-details-news-content-wrapper d-flex gap-30 mb-20">
-                                    <div class="blog-details-news-img">
+                                    <div class="blog-details-news-img tilt-zoom">
                                         <img src="./images/blog/block-page/blog-details-news-1.png" alt="">
                                     </div>
                                     <div class="blog-details-news-title">
@@ -507,7 +507,7 @@
                                     </div>
                                 </div>
                                 <div class="blog-details-news-content-wrapper d-flex gap-30 mb-20">
-                                    <div class="blog-details-news-img">
+                                    <div class="blog-details-news-img tilt-zoom">
                                         <img src="./images/blog/block-page/blog-details-news-2.png" alt="">
                                     </div>
                                     <div class="blog-details-news-title">
@@ -516,7 +516,7 @@
                                     </div>
                                 </div>
                                 <div class="blog-details-news-content-wrapper d-flex gap-30">
-                                    <div class="blog-details-news-img">
+                                    <div class="blog-details-news-img tilt-zoom">
                                         <img src="./images/blog/block-page/blog-details-news-3.png" alt="">
                                     </div>
                                     <div class="blog-details-news-title">
