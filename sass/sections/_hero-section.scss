@@ -226,6 +226,8 @@
             @include md {
                 width: 75px;
                 height: 75px;
+                right: 0;
+                top: 0;
             }
             @include sm {
                 display: none;
@@ -335,8 +337,12 @@
         }
     }
     &-author-profile{
-        img{
-            border-radius: 50%;
+        .author-img-wrapper{
+            width: 62px;
+            height: 62px;
+            img{
+                border-radius: 50%;
+            }
         }
     }
 }

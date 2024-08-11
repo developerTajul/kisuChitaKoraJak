@@ -44,8 +44,8 @@
             centerPadding: '0',
             vertical:true,
             verticalSwiping:true,
-            // autoplay: true,
-            // autoplaySpeed: 1500,
+            autoplay: true,
+            autoplaySpeed: 1500,
             arrows: false,
             responsive: [
                 {
@@ -62,8 +62,8 @@
             slidesToShow: 1,
             slidesToScroll: 1,
             dots: false,
-            // autoplay: true,
-            // autoplaySpeed: 1500,
+            autoplay: true,
+            autoplaySpeed: 1500,
             asNavFor: '.testimonial-active-slider',
             prevArrow: '<button class="slick-arrow btn-prev"><i class="fa-solid fa-caret-right"></i></button>',
             nextArrow: '<button class="slick-arrow btn-next"><i class="fa-solid fa-caret-left"></i></button>',
@@ -306,8 +306,6 @@
                     'visibility': 'visible',
                     'opacity': '1',
                     'transition': 'all 0.3s ease 0s',
-                    
-                    
                 });
             }
         );
