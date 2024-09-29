@@ -1,31 +1,38 @@
-.video-popup-area{
-    @include sm{
+.video-popup-area {
+    @include sm {
         padding: 80px 0 80px 0;
     }
-    &-img{
+
+    &-img {
         width: 218px;
         height: 224px;
-        margin:0 auto;
-        @include sm{
+        margin: 0 auto;
+
+        @include sm {
             width: 118px;
             height: 124px;
         }
     }
-    &-text{
+
+    &-text {
         top: 50%;
         left: 49%;
         transform: translateY(-50%);
-        @include md{
+
+        @include md {
             left: 48%;
         }
-        @include sm{
+
+        @include sm {
             left: 47%;
             top: 48%;
         }
-        a{
+
+        a {
             color: #fff;
             font-family: Gilroy-Regular;
-            @include sm{
+
+            @include sm {
                 font-size: 18px;
             }
         }

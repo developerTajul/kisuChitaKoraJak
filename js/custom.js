@@ -178,6 +178,7 @@
             preloader: false,
             fixedContentPos: false,
         });
+
         /*============================
         Counter Js
         ============================*/
@@ -185,6 +186,42 @@
             delay: 10,
             time: 1000
         });
+
+        /*=======================
+        Responsive Dropdown Toggle Active
+        =========================*/ 
+        function toggleList(listNumber) {
+            var $allLists = $('.hidden-list');
+            var $targetList = $('#dropdown-toggle-menu-' + listNumber);
+
+            $allLists.each(function() {
+                var $list = $(this);
+                
+                if ($list.is($targetList)) {
+                    if ($list.css('visibility') === 'visible') {
+                        $list.css({
+                            'visibility': 'hidden',
+                            'opacity': 0,
+                            'height': '0px'
+                        });
+                    } else {
+                        $list.css({
+                            'visibility': 'visible',
+                            'opacity': 1,
+                            'height': $list[0].scrollHeight + 'px'
+                        });
+                    }
+                } else {
+                    $list.css({
+                        'visibility': 'hidden',
+                        'opacity': 0,
+                        'height': '0px'
+                    });
+                }
+            });
+        }
+        window.toggleList = toggleList;
+
         /*
         Window nev scrolled fixed
         ============================*/
@@ -375,30 +412,20 @@
             maxTilt: 12,
             perspective: 1000,
         })
+
+         /*
+        Window Preload
+        ============================*/
+        $(window).on("load", function () {
+            /*
+            Preeloader
+            ============================*/
+            $("#preloader").fadeOut();
+            $("#preloader-status").delay(200).fadeOut("slow");
+            $("body").delay(200).css({
+                "overflow-x": "hidden"
+            });
+        });
+
     });
 })(jQuery);
-
-/*=======================
-Dropdown Toggle Active
-=========================*/ 
-function toggleList(listNumber) {
-    var allLists = document.querySelectorAll('.hidden-list');
-
-    allLists.forEach(function(list) {
-        if (list.id === 'dropdown-toggle-menu-' + listNumber) {
-            if (list.style.visibility === 'visible') {
-                list.style.visibility = 'hidden';
-                list.style.opacity = 0;
-                list.style.height = '0px';
-            } else {
-                list.style.visibility = 'visible';
-                list.style.opacity = 1;
-                list.style.height = list.scrollHeight + 'px';
-            }
-        } else {
-            list.style.visibility = 'hidden';
-            list.style.opacity = 0;
-            list.style.height = '0px';
-        }
-    });
-}

@@ -1,15 +1,14 @@
-
-.brand-marque-area{
-    &.brand-marque-area-primary{
+.brand-marque-area {
+    &.brand-marque-area-primary {
         margin-bottom: -39px;
         overflow: hidden;
         position: relative;
         z-index: 11;
     }
+
     & .brand-marque-wrapper {
-        &.first-text-marque{
-        
-        }
+        &.first-text-marque {}
+
         & .single-img-marque {
             display: flex;
             align-items: center;
@@ -18,19 +17,21 @@
             height: 100px;
             background: #1D1D1D;
             margin: 0 20px;
-            @include lg{
+
+            @include lg {
                 width: 350px;
                 height: 80px;
             }
-            @include md{
+
+            @include md {
                 width: 300px;
                 height: 80px;
             }
-            @include sm{
+
+            @include sm {
                 width: 200px;
                 height: 70px;
             }
         }
     }
 }
-
