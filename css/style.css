@@ -16303,7 +16303,7 @@ html {
   color: #ffffff;
 }
 .wcu-area-text a {
-  color: #EDBC5A;
+  color: #edbc5a;
   font-family: Gilroy-Medium;
   font-size: 22px;
   font-style: normal;
@@ -17143,7 +17143,7 @@ html {
   border-radius: 10px;
   border: 1px solid #292929;
   transition: all 0.3s ease 0s;
-  background: #1A1717;
+  background: #1a1717;
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
   .pricing-area-card-wrapper {
@@ -17249,9 +17249,13 @@ html {
     margin-bottom: 15px;
   }
 }
+.pricing-area-card-icon span {
+  display: inline-block;
+}
 .pricing-area-card-icon span::before {
   color: #ffffff;
-  font-size: 36px;
+  font-size: 50px;
+  line-height: 50px;
   font-weight: 900;
   transition: all 0.5s ease-out;
   -webkit-transition: all 0.5s ease-out;
@@ -17270,7 +17274,7 @@ html {
   }
 }
 .pricing-area-card-text h5 {
-  color: #FFF;
+  color: #fff;
   margin-bottom: 41px;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -17284,7 +17288,7 @@ html {
   }
 }
 .pricing-area-card-text h3 span {
-  color: #FFF;
+  color: #fff;
   font-family: Rubik;
   font-size: 16px;
   font-weight: 400;
@@ -17330,7 +17334,7 @@ html {
   font-size: 14px;
   padding: 10px 20px;
   border-radius: 65px;
-  border: 1px solid #3C3C3C;
+  border: 1px solid #3c3c3c;
   display: inline-block;
 }
 .pricing-area-cards-btn img {
@@ -17352,7 +17356,7 @@ html {
   font-size: 14px;
   padding: 10px 20px;
   border-radius: 65px;
-  border: 1px solid #3C3C3C;
+  border: 1px solid #3c3c3c;
   display: inline-block;
 }
 .pricing-area .visibles-card img {
