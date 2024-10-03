@@ -14029,7 +14029,7 @@ html {
 
 .team-secondary-partner.blog-details-form {
   padding: 80px 83px 87px 80px;
-  background: #1A1717;
+  background: #1a1717;
   border-radius: 20px;
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
@@ -14070,7 +14070,6 @@ html {
 .team-secondary-partner .contact-form form .contract-group {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 10px;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .team-secondary-partner .contact-form form .contract-group {
@@ -14084,7 +14083,7 @@ html {
 }
 .team-secondary-partner .contact-form form .contract-group .input-col {
   width: calc(50% - 24px);
-  margin-bottom: 58px;
+  margin-bottom: 40px;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .team-secondary-partner .contact-form form .contract-group .input-col {
@@ -14219,7 +14218,7 @@ html {
   display: inline-block;
   padding: 22px 19px 22px 42px;
   border: 1px solid #EDBC5A;
-  color: var(--White, #FFF);
+  color: var(--White, #fff);
   font-family: Gilroy-Medium;
   font-size: 28px;
   font-weight: 400;
