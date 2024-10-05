@@ -49,7 +49,7 @@
       centerPadding: '0',
       vertical: true,
       verticalSwiping: true,
-      autoplay: false,
+      autoplay: true,
       autoplaySpeed: 1500,
       arrows: false,
       responsive: [
@@ -287,17 +287,12 @@
     /*
         Window Load
         ============================*/
-    $(window).on('load', function () {
-      /*
-            Preeloader
-            ============================*/
-      $('#preloader').fadeOut();
-      $('#preloader-status').delay(200).fadeOut('slow');
-      $('body').delay(200).css({
-        'overflow-x': 'hidden',
-      });
-    });
-
+    // $(window).on('load', function () {
+    //   $('#preloader').fadeOut();
+    //   $('body').delay(200).css({ 'overflow-x': 'hidden' });
+    // });
+    $('#preloader').fadeOut();
+    $('body').delay(200).css({ 'overflow-x': 'hidden' });
     /*
         Scroll To Top Js
         ============================*/

@@ -88,9 +88,7 @@
       @include sm {
         width: 100%;
       }
-      & .slick-track {
-        margin: -40px 0;
-      }
+
       & .slider-image {
         margin-bottom: 50.5px;
 
@@ -112,12 +110,6 @@
           @include sm {
             max-width: 60px;
             max-height: 60px;
-          }
-        }
-        &.slick-center {
-          & img {
-            // max-width: 110px !important;
-            // max-height: 110px !important;
           }
         }
       }
